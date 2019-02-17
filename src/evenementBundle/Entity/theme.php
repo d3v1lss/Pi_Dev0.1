@@ -3,20 +3,19 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:52
+ * Time: 15:28
  */
 
-namespace AppBundle\Entity;
-
+namespace evenementBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 /**
  * Conseil
  *
- * @ORM\Table(name="salle")
+ * @ORM\Table(name="theme")
  * @ORM\Entity
  */
-class salle
+class theme
 {
     /**
      * @ORM\Id
@@ -28,10 +27,6 @@ class salle
      * @ORM\Column(type="string")
      */
     private $nom;
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $capacite;
 
     /**
      * @return mixed
@@ -63,22 +58,6 @@ class salle
     public function setNom($nom)
     {
         $this->nom = $nom;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCapacite()
-    {
-        return $this->capacite;
-    }
-
-    /**
-     * @param mixed $capacite
-     */
-    public function setCapacite($capacite)
-    {
-        $this->capacite = $capacite;
     }
 
 }

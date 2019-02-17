@@ -3,18 +3,19 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:50
+ * Time: 15:22
  */
 
-namespace AppBundle\Entity;
+namespace bibliothequeBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
+
 /**
- * Conseil
- *
- * @ORM\Table(name="film")
  * @ORM\Entity
+ * @ORM\Table(name="livre")
  */
-class film
+
+class livre
 {
     /**
      * @ORM\Id
@@ -30,21 +31,19 @@ class film
     /**
      * @ORM\Column(type="string")
      */
-    private $discription;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $duree;
+    private $type;
     /**
      * @ORM\Column(type="string")
      */
     private $categorie;
     /**
-
-    @ORM\Column(type="date")
+     * @ORM\Column(type="string")
      */
-
-    private $datesotie;
+    private $auteur;
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $caution;
 
     /**
      * @return mixed
@@ -81,33 +80,17 @@ class film
     /**
      * @return mixed
      */
-    public function getDiscription()
+    public function getType()
     {
-        return $this->discription;
+        return $this->type;
     }
 
     /**
-     * @param mixed $discription
+     * @param mixed $type
      */
-    public function setDiscription($discription)
+    public function setType($type)
     {
-        $this->discription = $discription;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDuree()
-    {
-        return $this->duree;
-    }
-
-    /**
-     * @param mixed $duree
-     */
-    public function setDuree($duree)
-    {
-        $this->duree = $duree;
+        $this->type = $type;
     }
 
     /**
@@ -129,61 +112,33 @@ class film
     /**
      * @return mixed
      */
-    public function getDatesotie()
+    public function getAuteur()
     {
-        return $this->datesotie;
+        return $this->auteur;
     }
 
     /**
-     * @param mixed $datesotie
+     * @param mixed $auteur
      */
-    public function setDatesotie($datesotie)
+    public function setAuteur($auteur)
     {
-        $this->datesotie = $datesotie;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDatedebut()
-    {
-        return $this->datedebut;
-    }
-
-    /**
-     * @param mixed $datedebut
-     */
-    public function setDatedebut($datedebut)
-    {
-        $this->datedebut = $datedebut;
+        $this->auteur = $auteur;
     }
 
     /**
      * @return mixed
      */
-    public function getDatefin()
+    public function getCaution()
     {
-        return $this->datefin;
+        return $this->caution;
     }
 
     /**
-     * @param mixed $datefin
+     * @param mixed $caution
      */
-    public function setDatefin($datefin)
+    public function setCaution($caution)
     {
-        $this->datefin = $datefin;
+        $this->caution = $caution;
     }
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datedebut;
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datefin;
 
 }

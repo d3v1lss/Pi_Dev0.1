@@ -3,20 +3,21 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:51
+ * Time: 15:29
  */
 
-namespace AppBundle\Entity;
+namespace evenementBundle\Entity;
+
+
 
 use Doctrine\ORM\Mapping as ORM;
 /**
  * Conseil
  *
- * @ORM\Table(name="publication")
+ * @ORM\Table(name="reservation")
  * @ORM\Entity
  */
-
-class publication
+class reservation
 {
     /**
      * @ORM\Id
@@ -24,10 +25,6 @@ class publication
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $contenu;
 
     /**
      * @return mixed
@@ -43,22 +40,6 @@ class publication
     public function setId($id)
     {
         $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getContenu()
-    {
-        return $this->contenu;
-    }
-
-    /**
-     * @param mixed $contenu
-     */
-    public function setContenu($contenu)
-    {
-        $this->contenu = $contenu;
     }
 
 }

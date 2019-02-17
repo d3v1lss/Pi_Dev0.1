@@ -3,10 +3,10 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:51
+ * Time: 15:27
  */
 
-namespace AppBundle\Entity;
+namespace e_commerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

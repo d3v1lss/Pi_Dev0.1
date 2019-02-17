@@ -3,19 +3,20 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:53
+ * Time: 15:30
  */
 
-namespace AppBundle\Entity;
+namespace forumBundle\Entity;
+
 
 use Doctrine\ORM\Mapping as ORM;
+
 /**
- * Conseil
- *
- * @ORM\Table(name="theme")
  * @ORM\Entity
+ * @ORM\Table(name="forum")
  */
-class theme
+
+class forum
 {
     /**
      * @ORM\Id
@@ -23,10 +24,6 @@ class theme
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $nom;
 
     /**
      * @return mixed
@@ -60,4 +57,28 @@ class theme
         $this->nom = $nom;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getDiscription()
+    {
+        return $this->discription;
+    }
+
+    /**
+     * @param mixed $discription
+     */
+    public function setDiscription($discription)
+    {
+        $this->discription = $discription;
+    }
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $nom;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $discription;
 }

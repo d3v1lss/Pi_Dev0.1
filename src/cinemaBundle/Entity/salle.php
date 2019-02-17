@@ -3,19 +3,20 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:50
+ * Time: 15:25
  */
 
-namespace AppBundle\Entity;
+namespace cinemaBundle\Entity;
+
 
 use Doctrine\ORM\Mapping as ORM;
-
 /**
+ * Conseil
+ *
+ * @ORM\Table(name="salle")
  * @ORM\Entity
- * @ORM\Table(name="forum")
  */
-
-class forum
+class salle
 {
     /**
      * @ORM\Id
@@ -23,6 +24,14 @@ class forum
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $nom;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $capacite;
 
     /**
      * @return mixed
@@ -59,25 +68,17 @@ class forum
     /**
      * @return mixed
      */
-    public function getDiscription()
+    public function getCapacite()
     {
-        return $this->discription;
+        return $this->capacite;
     }
 
     /**
-     * @param mixed $discription
+     * @param mixed $capacite
      */
-    public function setDiscription($discription)
+    public function setCapacite($capacite)
     {
-        $this->discription = $discription;
+        $this->capacite = $capacite;
     }
 
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $nom;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $discription;
 }

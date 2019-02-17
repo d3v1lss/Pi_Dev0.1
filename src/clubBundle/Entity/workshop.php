@@ -3,10 +3,10 @@
  * Created by PhpStorm.
  * User: HCHAICHI
  * Date: 17/02/2019
- * Time: 13:54
+ * Time: 15:26
  */
 
-namespace AppBundle\Entity;
+namespace clubBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
