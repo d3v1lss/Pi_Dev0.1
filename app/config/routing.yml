@@ -1,0 +1,34 @@
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+user:
+    resource: "@userBundle/Resources/config/routing.yml"
+    prefix:   /
+e.commerce:
+    resource: "@e_commerceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bibliotheque:
+    resource: "@bibliothequeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+evenement:
+    resource: "@evenementBundle/Resources/config/routing.yml"
+    prefix:   /
+
+cinema:
+    resource: "@cinemaBundle/Resources/config/routing.yml"
+    prefix:   /
+
+club:
+    resource: "@clubBundle/Resources/config/routing.yml"
+    prefix:   /
+
+forum:
+    resource: "@forumBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
