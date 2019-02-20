@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliothequeBundle/Entity/emprunt.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliothequeBundle/Entity/emprunt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bibliothequeBundle/Entity/livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/bibliothequeBundle/Entity/livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Entity/film.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Entity/film.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Entity/salle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Entity/salle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/club.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/club.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/e_commerceBundle/Entity/commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/e_commerceBundle/Entity/commande.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/e_commerceBundle/Entity/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/e_commerceBundle/Entity/produit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evenementBundle/Entity/evenement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Entity/evenement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evenementBundle/Entity/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Entity/reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evenementBundle/Entity/theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Entity/theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forumBundle/Entity/forum.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/forumBundle/Entity/forum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forumBundle/Entity/publication.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/forumBundle/Entity/publication.php" afterDir="false" />
-    </list>
+    <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +16,7 @@
     <session id="1497996052">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.26" value="1" />
@@ -399,7 +382,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PI_Dev0.1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
@@ -436,12 +419,12 @@
       <workItem from="1550628711677" duration="1245000" />
       <workItem from="1550634538062" duration="353000" />
       <workItem from="1550634920982" duration="2871000" />
-      <workItem from="1550652835822" duration="738000" />
+      <workItem from="1550652835822" duration="1659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18946000" />
+    <option name="totallyTimeSpent" value="19867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
