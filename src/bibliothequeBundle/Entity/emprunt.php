@@ -84,5 +84,46 @@ class emprunt
     {
         $this->dateretour = $dateretour;
     }
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="emprunt")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     */
+    private $user;
+    /**
+     * @ORM\ManyToOne(targetEntity="bibliothequeBundle\Entity\livre" ,inversedBy="emprunt")
+     * @ORM\JoinColumn(name="livre_id",referencedColumnName="id")
+     */
+    private $livre;
 
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLivre()
+    {
+        return $this->livre;
+    }
+
+    /**
+     * @param mixed $livre
+     */
+    public function setLivre($livre)
+    {
+        $this->livre = $livre;
+    }
 }

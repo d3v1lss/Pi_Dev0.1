@@ -7,7 +7,7 @@
  */
 
 namespace clubBundle\Entity;
-
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 /**
  * Conseil
@@ -161,12 +161,25 @@ class club
         $this->nbrparticipant = $nbrparticipant;
     }
 
+
+
+
     /**
-     * @return mixed
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="clubs")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
+    private $user;
+    /**
+     * @ORM\OneToMany(targetEntity="clubBundle\Entity\workshop" ,mappedBy="club")
 
+     */
+    private $workshops;
 
+    public function __construct()
+    {
 
+        $this->workshops = new ArrayCollection();
+    }
 
 
 

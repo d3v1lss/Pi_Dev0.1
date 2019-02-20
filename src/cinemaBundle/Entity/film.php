@@ -187,5 +187,14 @@ class film
      */
 
     private $datefin;
-
+    /**
+     * @ORM\ManyToOne(targetEntity="cinemaBundle\Entity\salle" ,inversedBy="films")
+     * @ORM\JoinColumn(name="salle_id",referencedColumnName="id")
+     */
+    private $film;
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="films")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     */
+    private $user;
 }

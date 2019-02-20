@@ -7,7 +7,7 @@
  */
 
 namespace bibliothequeBundle\Entity;
-
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -140,5 +140,15 @@ class livre
     {
         $this->caution = $caution;
     }
+    /**
+     * @ORM\OneToMany(targetEntity="bibliothequeBundle\Entity\emprunt" ,mappedBy="emprunt")
 
+     */
+    private $emprunts;
+
+    public function __construct()
+    {
+
+        $this->emprunts = new ArrayCollection();
+    }
 }

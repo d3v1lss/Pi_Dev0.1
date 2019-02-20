@@ -8,7 +8,7 @@
 
 namespace cinemaBundle\Entity;
 
-
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 /**
  * Conseil
@@ -80,5 +80,14 @@ class salle
     {
         $this->capacite = $capacite;
     }
+    /**
+     * @ORM\OneToMany(targetEntity="cinemaBundle\Entity\film" ,mappedBy="film")
 
+     */
+    private $films;
+    public function __construct()
+    {
+        $this->films = new ArrayCollection();
+
+    }
 }

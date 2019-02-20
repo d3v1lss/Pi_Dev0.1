@@ -9,6 +9,9 @@
 namespace evenementBundle\Entity;
 
 
+namespace evenementBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -30,11 +33,31 @@ class evenement
     /**
      * @ORM\Column(type="string")
      */
+    private  $photo;
+    /**
+     * @ORM\Column(type="string")
+     */
     private $discription;
     /**
      * @ORM\Column(type="integer")
      */
     private $nombreplaces;
+
+    /**
+     * @return mixed
+     */
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    /**
+     * @param mixed $photo
+     */
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+    }
     /**
 
     @ORM\Column(type="date")
@@ -47,6 +70,74 @@ class evenement
      */
 
     private $datefin;
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="evenements")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     */
+    private $user;
+    /**
+     * @ORM\OneToMany(targetEntity="evenementBundle\Entity\reservation" ,mappedBy="evenement")
+
+     */
+    private $reservations;
+    /**
+     * @ORM\ManyToOne(targetEntity="evenementBundle\Entity\theme" ,inversedBy="evenements")
+     * @ORM\JoinColumn(name="theme_id",referencedColumnName="id")
+     */
+    private $theme;
+
+    /**
+     * @return mixed
+     */
+    public function getReservations()
+    {
+        return $this->reservations;
+    }
+
+    /**
+     * @param mixed $reservations
+     */
+    public function setReservations($reservations)
+    {
+        $this->reservations = $reservations;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTheme()
+    {
+        return $this->theme;
+    }
+
+    /**
+     * @param mixed $theme
+     */
+    public function setTheme($theme)
+    {
+        $this->theme = $theme;
+    }
+
+    public function __construct()
+    {
+
+        $this->reservations = new ArrayCollection();
+    }
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
 
     /**
      * @return mixed

@@ -9,6 +9,10 @@
 namespace forumBundle\Entity;
 
 
+
+namespace forumBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -81,4 +85,15 @@ class forum
      * @ORM\Column(type="string")
      */
     private $discription;
+
+    /**
+     * @ORM\OneToMany(targetEntity="forumBundle\Entity\publication" ,mappedBy="forum")
+
+     */
+    private $publications;
+    public function __construct()
+    {
+
+        $this->publications = new ArrayCollection();
+    }
 }

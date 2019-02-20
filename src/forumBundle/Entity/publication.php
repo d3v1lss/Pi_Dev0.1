@@ -9,6 +9,9 @@
 namespace forumBundle\Entity;
 
 
+namespace forumBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
 
 use Doctrine\ORM\Mapping as ORM;
 /**
@@ -30,6 +33,75 @@ class publication
      * @ORM\Column(type="string")
      */
     private $contenu;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $titre;
+    /**
+     * @ORM\ManyToOne(targetEntity="forumBundle\Entity\forum" ,inversedBy="publications")
+     * @ORM\JoinColumn(name="forum_id",referencedColumnName="id")
+     */
+    private $forum;
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="publications")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     */
+    private $user;
+    /**
+     * @ORM\OneToMany(targetEntity="forumBundle\Entity\commentaire" ,mappedBy="publication")
+
+     */
+    private $commentaires;
+    public function __construct()
+    {
+        $this->commentaires = new ArrayCollection();
+    }
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+    /**
+     * @return mixed
+     */
+    public function getTitre()
+    {
+        return $this->titre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getForum()
+    {
+        return $this->forum;
+    }
+
+    /**
+     * @param mixed $forum
+     */
+    public function setForum($forum)
+    {
+        $this->forum = $forum;
+    }
+
+    /**
+     * @param mixed $titre
+     */
+    public function setTitre($titre)
+    {
+        $this->titre = $titre;
+    }
 
     /**
      * @return mixed

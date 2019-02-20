@@ -8,6 +8,8 @@
 
 namespace evenementBundle\Entity;
 
+namespace evenementBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 /**
  * Conseil
@@ -27,6 +29,20 @@ class theme
      * @ORM\Column(type="string")
      */
     private $nom;
+    /**
+     * @ORM\OneToMany(targetEntity="evenementBundle\Entity\theme" ,mappedBy="theme")
+
+     */
+    private $evenements;
+
+    /**
+     * theme constructor.
+     * @param $themes
+     */
+    public function __construct()
+    {
+        $this->evenements = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -34,6 +50,22 @@ class theme
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getThemes()
+    {
+        return $this->themes;
+    }
+
+    /**
+     * @param mixed $themes
+     */
+    public function setThemes($themes)
+    {
+        $this->themes = $themes;
     }
 
     /**

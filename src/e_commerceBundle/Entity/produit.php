@@ -7,7 +7,7 @@
  */
 
 namespace e_commerceBundle\Entity;
-
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -36,9 +36,64 @@ class produit
      */
     private $discription;
     /**
+     * @ORM\Column(type="string")
+     */
+    private $photo;
+    /**
      * @ORM\Column(type="integer")
      */
     private $stockprosuit;
+    /**
+     * @ORM\ManyToOne(targetEntity="e_commerceBundle\Entity\tva" ,inversedBy="produits")
+     * @ORM\JoinColumn(name="tva_id",referencedColumnName="id")
+     */
+    private $tva;
+    /**
+     * @ORM\OneToMany(targetEntity="e_commerceBundle\Entity\commande" ,mappedBy="produit")
+
+     */
+    private $commandes;
+
+
+    public function __construct()
+    {
+        $this->commandes = new ArrayCollection();
+    }
+    /**
+     * @return mixed
+     */
+    public function getTva()
+    {
+        return $this->tva;
+    }
+
+    /**
+     * @param mixed $tva
+     */
+    public function setTva($tva)
+    {
+        $this->tva = $tva;
+    }
+
+    /**
+     * @return mixed
+     */
+
+    /**
+     * @return mixed
+     */
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    /**
+     * @param mixed $photo
+     */
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+    }
 
     /**
      * @return mixed
