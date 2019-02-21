@@ -78,4 +78,26 @@ class filmController extends Controller
 
         return $this->redirectToRoute('readfilm');
     }
+
+
+    public function findNomDQLAction(){
+        $em=$this->getDoctrine()->getManager();
+        $nom=$em->getRepository("cinemaBundle:film")->findNomDQL();
+        return $this->render('@cinema/Default/AfficheDQL.html.twig',array('nom'=>$nom));
+
+
+    }
+
+    public function findNomDQL2Action($nom){
+        $em=$this->getDoctrine()->getManager();
+        $nom=$em->getRepository("cinemaBundle:film")->findNomPara($nom);
+        return $this->render('@cinema/Default/AfficheDQL.html.twig',array('film'=>$nom));
+
+
+    }
+
+
+
+
+
 }

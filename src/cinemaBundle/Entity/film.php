@@ -11,10 +11,7 @@ namespace cinemaBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 /**
- * Conseil
- *
- * @ORM\Table(name="film")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="cinemaBundle\Repository\filmRepository")
  */
 class film
 {

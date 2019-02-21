@@ -42,3 +42,15 @@ updatesalle:
 deletesalle:
     path:     /deletesalle/{id}
     defaults: { _controller: cinemaBundle:salle:delete}
+
+
+
+
+esprit_parc_find1:
+    path:     /find1
+    defaults: { _controller: cinemaBundle:film:findNomDQL}
+
+
+esprit_parc_find2:
+    path:     /find2/{nom}
+    defaults: { _controller: cinemaBundle:film:findNomDQL2}
