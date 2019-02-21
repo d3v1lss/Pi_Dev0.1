@@ -2,16 +2,19 @@
 
 namespace cinemaBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
+use cinemaBundle\Entity\salle;
+use cinemaBundle\Form\salleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class salleController extends Controller
 {
     public function readAction()
 
     {
 
-        $model = $this->getDoctrine()->getRepository(Modele::class)->findAll();
-        return $this->render('@EspritParc/Modele/read.html.twig', array('mod' => $model));
+        $salle = $this->getDoctrine()->getRepository(salle::class)->findAll();
+        return $this->render('@cinema/Default/readsalle.html.twig', array('salle' => $salle));
 
     }
 }

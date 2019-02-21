@@ -5,6 +5,10 @@ cinema_homepage:
 
 
 
-read:
-    path:     /read
+readfilm:
+    path:     /readfilm
     defaults: { _controller: cinemaBundle:film:read}
+
+readsalle:
+    path:     /readsalle
+    defaults: { _controller: cinemaBundle:salle:read}

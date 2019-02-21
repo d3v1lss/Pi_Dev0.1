@@ -2,6 +2,9 @@
 
 namespace cinemaBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
+use cinemaBundle\Entity\film;
+use cinemaBundle\Form\filmType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class filmController extends Controller

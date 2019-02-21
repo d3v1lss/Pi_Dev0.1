@@ -1,0 +1,29 @@
+h1 style="color: #C82829" align="41">LA LISTE DES Salles</h1>
+
+
+
+
+<table style="width:40%" BGCOLOR=#00ffff border="5">
+
+
+
+    <tr >
+        <td>id </td>
+        <td>nom</td>
+        <td>capacite</td>
+
+
+    </tr>
+    {% for m in salle %}
+
+        <tr>
+            <td>{{ m.id }}</td>
+            <td>{{ m.nom }}</td>
+            <td>{{ m.capacite }}</td>
+
+
+
+        </tr>
+    {% endfor %}
+</table>
+
