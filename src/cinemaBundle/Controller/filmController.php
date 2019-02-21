@@ -57,7 +57,7 @@ class filmController extends Controller
         if ($form->isValid()) {
 
             $em->flush();
-            return $this->redirectToRoute('read');
+            return $this->redirectToRoute('readfilm');
         }
         return $this->render('@cinema/Default/ajout.html.twig', array('formulaire' => $form->createView()));
     }
