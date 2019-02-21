@@ -1,3 +1,43 @@
 evenement_homepage:
     path:     /
     defaults: { _controller: evenementBundle:Default:index }
+evenement_theme_ajouter:
+    path:     /ajoutertheme
+    defaults: { _controller: evenementBundle:theme:ajoutertheme }
+evenement_theme_afficher:
+    path:     /affichertheme
+    defaults: { _controller: evenementBundle:theme:affichertheme }
+evenement_theme_modifier:
+    path:     /modifiertheme
+    defaults: { _controller: evenementBundle:theme:modifiertheme }
+evenement_theme_supprimer:
+    path:     /supprimertheme
+    defaults: { _controller: evenementBundle:theme:supprimertheme }
+evenement_evenement_ajouter:
+    path:     /ajouterevenement
+    defaults: { _controller: evenementBundle:evenement:ajouterevenement }
+evenement_evenement_afficher:
+    path:     /afficherevenement
+    defaults: { _controller: evenementBundle:evenement:afficherevenement }
+evenement_evenement_modifier:
+    path:     /modifierevenement
+    defaults: { _controller: evenementBundle:evenement:modifierevenement }
+evenement_evenement_supprimer:
+    path:     /supprimerevenement
+    defaults: { _controller: evenementBundle:evenement:supprimerevenement }
+evenement_reservation_ajouter:
+    path:     /ajouterreservation
+    defaults: { _controller: evenementBundle:reservation:ajouterreservation }
+evenement_reservation_afficher:
+    path:     /afficherreservation
+    defaults: { _controller: evenementBundle:reservation:afficherreservation }
+evenement_reservation_modifier:
+    path:     /modifierreservation
+    defaults: { _controller: evenementBundle:reservation:modifierreservation }
+evenement_reservation_supprimer:
+    path:     /supprimerreservation
+    defaults: { _controller: evenementBundle:reservation:supprimerreservation }
+
+
+
+
