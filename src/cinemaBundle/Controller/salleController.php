@@ -22,16 +22,16 @@ class salleController extends Controller
 
     {
 
-        $film = new film();
+        $salle = new salle();
 
-        $form = $this->createForm(filmType::class, $film);
+        $form = $this->createForm(salleType::class, $salle);
 
         $form = $form->handleRequest($request);
 
         $em = $this->getDoctrine()->getManager();
 
         if ($form->isValid()) {
-            $em->persist($film);
+            $em->persist($salle);
             $em->flush();
 
 

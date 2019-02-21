@@ -43,7 +43,7 @@ class film
     private $categorie;
     /**
 
-    @ORM\Column(type="date")
+    @ORM\Column(type="string")
      */
 
     private $datesotie;
@@ -147,86 +147,5 @@ class film
     /**
      * @return mixed
      */
-    public function getDatedebut()
-    {
-        return $this->datedebut;
-    }
 
-    /**
-     * @param mixed $datedebut
-     */
-    public function setDatedebut($datedebut)
-    {
-        $this->datedebut = $datedebut;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDatefin()
-    {
-        return $this->datefin;
-    }
-
-    /**
-     * @param mixed $datefin
-     */
-    public function setDatefin($datefin)
-    {
-        $this->datefin = $datefin;
-    }
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datedebut;
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datefin;
-    /**
-     * @ORM\ManyToOne(targetEntity="cinemaBundle\Entity\salle" ,inversedBy="films")
-     * @ORM\JoinColumn(name="salle_id",referencedColumnName="id")
-     */
-    private $film;
-
-    /**
-     * @return mixed
-     */
-    public function getFilm()
-    {
-        return $this->film;
-    }
-
-    /**
-     * @param mixed $film
-     */
-    public function setFilm($film)
-    {
-        $this->film = $film;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param mixed $user
-     */
-    public function setUser($user)
-    {
-        $this->user = $user;
-    }
-    /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="films")
-     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
-     */
-    private $user;
 }

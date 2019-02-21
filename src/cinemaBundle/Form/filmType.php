@@ -5,6 +5,8 @@ namespace cinemaBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+
 
 class filmType extends AbstractType
 {
@@ -13,7 +15,12 @@ class filmType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')->add('discription')->add('duree')->add('categorie')->add('datesotie')->add('datedebut')->add('datefin')->add('film')->add('user');
+        $builder->add('nom')
+            ->add('discription')
+            ->add('duree')
+            ->add('categorie')
+            ->add('datesotie')
+            ->add('save',SubmitType::class);
     }/**
      * {@inheritdoc}
      */
