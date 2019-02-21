@@ -1,0 +1,32 @@
+h1 style="color: #C82829" align="41">LA LISTE DES FILMS</h1>
+
+
+
+
+<table style="width:40%" BGCOLOR=#00ffff border="5">
+
+
+
+    <tr >
+        <td>id </td>
+        <td>nom</td>
+        <td>discription</td>
+        <td>duree</td>
+        <td>categorie</td>
+        <td>datesotie</td>
+
+    </tr>
+    {% for m in film %}
+
+        <tr>
+            <td>{{ m.id }}</td>
+            <td>{{ m.nom }}</td>
+            <td>{{ m.discription }}</td>
+            <td>{{ m.duree }}</td>
+            <td>{{ m.categorie }}</td>
+            <td>{{ m.datesotie }}</td>
+
+        </tr>
+    {% endfor %}
+</table>
+

@@ -1,3 +1,10 @@
 cinema_homepage:
     path:     /
     defaults: { _controller: cinemaBundle:Default:index }
+
+
+
+
+read:
+    path:     /read
+    defaults: { _controller: cinemaBundle:film:read}
