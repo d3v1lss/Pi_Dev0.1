@@ -36,3 +36,9 @@ createsalle:
 updatesalle:
     path:     /updatesalle/{id}
     defaults: { _controller: cinemaBundle:salle:update}
+
+
+
+deletesalle:
+    path:     /deletesalle/{id}
+    defaults: { _controller: cinemaBundle:salle:delete}

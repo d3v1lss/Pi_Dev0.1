@@ -61,4 +61,19 @@ class salleController extends Controller
         return $this->render('@cinema/Default/ajout.html.twig', array('formulaire' => $form->createView()));
     }
 
+
+    public function deleteAction($id)
+    {
+
+        $em=$this->getDoctrine()->getManager();
+
+        $salle =$em->getRepository(salle::class)->find($id);
+
+        $em->remove($salle);
+
+        $em->flush();
+
+        return $this->redirectToRoute('readsalle');
+    }
+
 }

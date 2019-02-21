@@ -11,6 +11,8 @@
         <td>id </td>
         <td>nom</td>
         <td>capacite</td>
+        <td>update</td>
+        <td>delete</td>
 
 
     </tr>
@@ -20,6 +22,8 @@
             <td>{{ m.id }}</td>
             <td>{{ m.nom }}</td>
             <td>{{ m.capacite }}</td>
+            <td><a href="{{ path('updatesalle',{'id':m.id}) }}">modif</a> </td>
+            <td><a href="{{ path('deletesalle',{'id':m.id}) }}">supp</a> </td>
 
 
 
