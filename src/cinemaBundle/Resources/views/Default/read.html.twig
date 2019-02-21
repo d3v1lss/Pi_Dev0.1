@@ -1,4 +1,4 @@
-h1 style="color: #C82829" align="41">LA LISTE DES FILMS</h1>
+<h1 style="color: #C82829" align="41">LA LISTE DES FILMS</h1>
 
 
 
@@ -14,7 +14,7 @@ h1 style="color: #C82829" align="41">LA LISTE DES FILMS</h1>
         <td>duree</td>
         <td>categorie</td>
         <td>datesotie</td>
-
+        <td>operation</td>
     </tr>
     {% for m in film %}
 
@@ -25,6 +25,8 @@ h1 style="color: #C82829" align="41">LA LISTE DES FILMS</h1>
             <td>{{ m.duree }}</td>
             <td>{{ m.categorie }}</td>
             <td>{{ m.datesotie }}</td>
+            <td><a href="{{ path('updatefilm',{'id':m.id}) }}">modif</a> </td>
+
 
         </tr>
     {% endfor %}
