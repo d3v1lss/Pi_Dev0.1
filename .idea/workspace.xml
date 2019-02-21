@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readsalle.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readsalle.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,14 +82,14 @@
           <entry key="dummy" value="14" />
           <entry key="php" value="262" />
           <entry key="twig" value="107" />
-          <entry key="txt" value="62" />
+          <entry key="txt" value="68" />
           <entry key="yml" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="262" />
-          <entry key="PLAIN_TEXT" value="76" />
+          <entry key="PLAIN_TEXT" value="82" />
           <entry key="Twig" value="107" />
           <entry key="YAML" value="114" />
         </counts>
@@ -123,20 +119,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="243">
+              <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readsalle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="322">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -144,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="339">
               <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="29" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
@@ -156,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="203">
               <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="26" />
               <folding>
                 <element signature="e#43#88#0#PHP" expanded="true" />
@@ -174,8 +170,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:schema:update --force " />
-      <command text="c clear-cache" />
       <command text="c dump-autoload" />
       <command text="c clear-cache" />
       <command text="c dump-autoload" />
@@ -198,6 +192,8 @@
       <command text="s doctrine:generate:form cinemaBundle:film" />
       <command text="s doctrine:schema:update --force " />
       <command text="s cache:clear" />
+      <command text="c dump-autoload" />
+      <command text="c clear-cache" />
       <command text="c dump-autoload" />
     </commandsHistory>
   </component>
@@ -467,12 +463,12 @@
       <workItem from="1550634538062" duration="353000" />
       <workItem from="1550634920982" duration="2871000" />
       <workItem from="1550652835822" duration="1659000" />
-      <workItem from="1550741773127" duration="6480000" />
+      <workItem from="1550741773127" duration="6771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30105000" />
+    <option name="totallyTimeSpent" value="30396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -740,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="29" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -760,9 +746,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="29" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="203">
           <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="26" />
           <folding>
             <element signature="e#43#88#0#PHP" expanded="true" />
@@ -770,17 +766,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readsalle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        <state relative-caret-position="322">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readsalle.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="45" />
+        <state relative-caret-position="243">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="31" />
         </state>
       </provider>
     </entry>
