@@ -14,7 +14,8 @@
         <td>duree</td>
         <td>categorie</td>
         <td>datesotie</td>
-        <td>operation</td>
+        <td>update</td>
+        <td>delete</td>
     </tr>
     {% for m in film %}
 
@@ -26,7 +27,7 @@
             <td>{{ m.categorie }}</td>
             <td>{{ m.datesotie }}</td>
             <td><a href="{{ path('updatefilm',{'id':m.id}) }}">modif</a> </td>
-
+            <td><a href="{{ path('deletefilm',{'id':m.id}) }}">supp</a> </td>
 
         </tr>
     {% endfor %}

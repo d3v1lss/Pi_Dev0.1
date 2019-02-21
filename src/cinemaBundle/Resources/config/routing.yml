@@ -22,6 +22,13 @@ updatefilm:
     defaults: { _controller: cinemaBundle:film:update}
 
 
+
+deletefilm:
+    path:     /delete/{id}
+    defaults: { _controller: cinemaBundle:film:delete}
+
+
+
 createsalle:
     path:     /createsalle
     defaults: { _controller: cinemaBundle:salle:create}

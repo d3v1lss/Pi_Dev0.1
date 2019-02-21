@@ -62,4 +62,20 @@ class filmController extends Controller
         return $this->render('@cinema/Default/ajout.html.twig', array('formulaire' => $form->createView()));
     }
 
+
+
+
+    public function deleteAction($id)
+    {
+
+        $em=$this->getDoctrine()->getManager();
+
+        $film =$em->getRepository(film::class)->find($id);
+
+        $em->remove($film);
+
+        $em->flush();
+
+        return $this->redirectToRoute('readfilm');
+    }
 }
