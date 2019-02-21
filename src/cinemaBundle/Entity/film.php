@@ -192,6 +192,38 @@ class film
      * @ORM\JoinColumn(name="salle_id",referencedColumnName="id")
      */
     private $film;
+
+    /**
+     * @return mixed
+     */
+    public function getFilm()
+    {
+        return $this->film;
+    }
+
+    /**
+     * @param mixed $film
+     */
+    public function setFilm($film)
+    {
+        $this->film = $film;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="films")
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
