@@ -42,13 +42,12 @@
             <nav class="navbar-sidebar2">
                 <ul class="list-unstyled navbar__list">
                     <li class="active has-sub">
-                        <a class="js-arrow" href="index2.html">
+                        <a class="js-arrow" href="#">
                             <i class="fas fa-home"></i></i>Dashboard
 
                         </a>
 
                     </li>
-
                     <li class="has-sub">
                         <a class="js-arrow" href="#">
                             <i class="fas fa-comment-alt"></i>Club
@@ -149,12 +148,12 @@
                                     <span class="au-breadcrumb-span">You are here:</span>
                                     <ul class="list-unstyled list-inline au-breadcrumb__list">
                                         <li class="list-inline-item active">
-                                            <a href="#">Home</a>
+                                            <a href="#">Club</a>
                                         </li>
                                         <li class="list-inline-item seprate">
                                             <span>/</span>
                                         </li>
-                                        <li class="list-inline-item">Dashboard</li>
+                                        <li class="list-inline-item">liste workshop</li>
                                     </ul>
                                 </div>
 
@@ -167,7 +166,57 @@
         </section>
         {% block content %}
 
+        <div class="row">
+            <div class="col-md-12">
+                <!-- DATA TABLE -->
 
+                <div class="table-responsive table-responsive-data2">
+                    <table class="table table-data2">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>club</th>
+                            <th>nom</th>
+                            <th>nbrplaces</th>
+                            <th>datedebut</th>
+                            <th>datefin</th>
+                            <th>discriptio</th>
+
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for w in workshop %}
+                        <tr class="tr-shadow">
+
+                            <td>{{ w.Id}}</td>
+                            <td class="desc">{{ w.club.nom }}</td>
+                            <td>
+                                <span class="block-email">{{w.nom}}</span>
+                            </td>
+                            <td>
+                                <span class="status--process">{{ w.nombreplaces}}<</span>
+                            </td>
+                            <td>{{ w.datedebut|date }}</td>
+                            <td>{{ w.datefin|date}}</td>
+                            <td>{{ w.discription }}</td>
+
+                            <td>
+                                <a class="table-data-feature">
+
+
+                                </a>
+
+                            </td>
+                        </tr>
+
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <!-- END DATA TABLE -->
+            </div>
+        </div>
 
 </div>
     {% endblock %}

@@ -42,13 +42,12 @@
             <nav class="navbar-sidebar2">
                 <ul class="list-unstyled navbar__list">
                     <li class="active has-sub">
-                        <a class="js-arrow" href="index2.html">
+                        <a class="js-arrow" href="#">
                             <i class="fas fa-home"></i></i>Dashboard
 
                         </a>
 
                     </li>
-
                     <li class="has-sub">
                         <a class="js-arrow" href="#">
                             <i class="fas fa-comment-alt"></i>Club
@@ -149,12 +148,12 @@
                                     <span class="au-breadcrumb-span">You are here:</span>
                                     <ul class="list-unstyled list-inline au-breadcrumb__list">
                                         <li class="list-inline-item active">
-                                            <a href="#">Home</a>
+                                            <a href="#">Club</a>
                                         </li>
                                         <li class="list-inline-item seprate">
                                             <span>/</span>
                                         </li>
-                                        <li class="list-inline-item">Dashboard</li>
+                                        <li class="list-inline-item">liste clubs</li>
                                     </ul>
                                 </div>
 
@@ -167,7 +166,64 @@
         </section>
         {% block content %}
 
+        <div class="row">
+            <div class="col-md-12">
+                <!-- DATA TABLE -->
 
+                <div class="table-responsive table-responsive-data2">
+                    <table class="table table-data2">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>description</th>
+                            <th>nbrparticipant</th>
+                            <th>activité</th>
+                            <th>president</th>
+                            <th>status</th>
+
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for c in club %}
+                        <tr class="tr-shadow">
+
+                            <td>{{ c.Id}}</td>
+                            <td class="desc">{{c.nom}}</td>
+                            <td>
+                                <span class="block-email">{{ c.mail}}</span>
+                            </td>
+                            <td>
+                                <span class="status--process">{{ c.discription }}</span>
+                            </td>
+                            <td>{{c.nbrparticipant}}</td>
+                            <td>{{ c.activite }}</td>
+                            <td>{{ c.president }}</td>
+                            <td>{{ c.statut }}</td>
+                            <td>
+                                <a class="table-data-feature">
+                                    <a href="{{ path('update_club_admin',{'id':c.id}) }}">
+                                    <button class="item" data-toggle="tooltip" data-original-title="valider" data-placement="top" >
+
+                                        <i class="zmdi zmdi-mail-send"></i>
+                                    </button></a>
+                                    <a href="{{ path('supp_club_admin',{'id':c.id}) }}">
+                                    <button class="item" data-toggle="tooltip" data-placement="top"  data-original-title="Delete">
+                                        <i class="zmdi zmdi-delete"></i>
+                                    </button>
+                                    </a>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <!-- END DATA TABLE -->
+            </div>
+        </div>
 
 </div>
     {% endblock %}

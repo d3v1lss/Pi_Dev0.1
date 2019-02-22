@@ -1,3 +1,70 @@
+
+
+afficher_workshop_president:
+    path:     /afficherw1
+    defaults: { _controller: clubBundle:workshop:afficher1}
+
+afficher_workshop_admin:
+    path:     /afficherw2
+    defaults: { _controller: clubBundle:workshop:afficher2}
+
+ajouter_workshop:
+    path:     /ajouterw
+    defaults: { _controller: clubBundle:workshop:add}
+
+supp_workshop:
+    path:     /suppw/{id}
+    defaults: { _controller: clubBundle:workshop:supp}
+
+update_workshop:
+    path:     /updatew/{id}
+    defaults: { _controller: clubBundle:workshop:update}
+
+rechercher_workshop:
+    path:     /rechercherw
+    defaults: { _controller: clubBundle:workshop:rechercher}
+
+
+
+afficher_club_president:
+    path:     /Monclub
+    defaults: { _controller: clubBundle:club:Monclub}
+
+afficher_club_user:
+    path:     /afficherc1
+    defaults: { _controller: clubBundle:club:afficher1}
+
+afficher_club_admin:
+    path:     /afficherc2
+    defaults: { _controller: clubBundle:club:afficher2}
+
+ajouter_club:
+    path:     /ajouterc
+    defaults: { _controller: clubBundle:club:add}
+
+supp_club_president:
+    path:     /suppc1/{id}
+    defaults: { _controller: clubBundle:club:supp1}
+
+supp_club_admin:
+    path:     /suppc2/{id}
+    defaults: { _controller: clubBundle:club:supp2}
+
+update_club_president:
+    path:     /updatec1/{id}
+    defaults: { _controller: clubBundle:club:update1}
+
+update_club_admin:
+    path:     /updatec2/{id}
+    defaults: { _controller: clubBundle:club:update2}
+
+
+rechercher_club:
+    path:     /rechercherc
+    defaults: { _controller: clubBundle:club:rechercher}
+
+
+
 club_homepage:
     path:     /
     defaults: { _controller: clubBundle:Default:index }

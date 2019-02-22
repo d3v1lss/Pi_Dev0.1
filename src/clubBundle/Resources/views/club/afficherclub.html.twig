@@ -1,0 +1,86 @@
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row my-4 my-lg-5">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
+
+                <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">Liste clubs</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- DATA TABLE -->
+
+            <div class="table-responsive table-responsive-data2">
+                <table class="table table-data2">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>description</th>
+                        <th>nbrparticipant</th>
+                        <th>activité</th>
+                        <th>president</th>
+                        <th>status</th>
+
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for c in club %}
+                        <tr class="tr-shadow">
+
+                            <td>{{ c.Id}}</td>
+                            <td class="desc">{{c.nom}}</td>
+                            <td>
+                                <span class="block-email">{{ c.mail}}</span>
+                            </td>
+                            <td>
+                                <span class="status--process">{{ c.discription }}</span>
+                            </td>
+                            <td>{{c.nbrparticipant}}</td>
+                            <td>{{ c.activite }}</td>
+                            <td>{{ c.president }}</td>
+                            <td>{{ c.statut }}</td>
+                            <td>
+
+
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- END DATA TABLE -->
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="row my-4 my-lg-5">
+
+    <div class="input-icon">
+        <a href="{{  path('rechercher_club')}}"
+           class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-2">Rechercher </a></p>
+    </div>
+            <div class="input-icon">
+                <a href="{{  path('ajouter_club')}}"
+                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-2">Ajouter </a></p>
+            </div>
+    </div>
+        </div>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br>
+{% endblock %}

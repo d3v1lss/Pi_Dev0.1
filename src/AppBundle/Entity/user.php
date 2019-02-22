@@ -16,7 +16,7 @@ class user extends BaseUser
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
+
      */
     protected $id;
 
@@ -28,12 +28,13 @@ class user extends BaseUser
     /**
      * @return mixed
      * @ORM\Column(type="string")
+     * @ORM\GeneratedValue
      */
     private $prenom;
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="datetime")
+     * @ORM\Column(name="date", type="date")
      */
 
 

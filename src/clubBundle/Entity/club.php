@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Conseil
  *
  * @ORM\Table(name="club")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="clubBundle\Repository\clubRepository")
  */
 
 class club
@@ -44,11 +44,45 @@ class club
      * @ORM\Column(type="string")
      */
     private $activite;
+
+
+    /**
+     * @return mixed
+     */
+    public function getStatut()
+    {
+        return $this->statut;
+    }
+
+    /**
+     * @param mixed $statut
+     */
+    public function setStatut($statut)
+    {
+        $this->statut = $statut;
+    }
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getWorkshops()
+    {
+        return $this->workshops;
+    }
+
+    /**
+     * @param mixed $workshops
+     */
+    public function setWorkshops($workshops)
+    {
+        $this->workshops = $workshops;
+    }
     /**
      * @ORM\Column(type="string")
      */
-    private $president;
-
+    private $statut;
     /**
      * @return mixed
      */
@@ -166,9 +200,9 @@ class club
 
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="clubs")
-     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     * @ORM\JoinColumn(name="president",referencedColumnName="id")
      */
-    private $user;
+    private $president;
     /**
      * @ORM\OneToMany(targetEntity="clubBundle\Entity\workshop" ,mappedBy="club")
 

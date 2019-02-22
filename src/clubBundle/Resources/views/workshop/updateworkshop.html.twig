@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+
+    <html>
+    <body>
+
+
+
+    <div class="container">
+        <div class="row my-4 my-lg-5">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+
+
+
+                <div class="container">
+                    <div class="row my-4 my-lg-5">
+                        <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
+
+                            <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">update  workshop</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+
+                    {{ form_start(form, {'method': 'post', 'action': path('update_workshop',{id:10}),
+                        'attr': {'class': 'fos_user_registration_register'}}) }}
+                    <div class="input-icon">
+
+                        {{ form_widget(form.nom, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'nom'} }) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-icon">
+
+                        {{ form_widget(form.nombreplaces, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'nombreplaces'} }) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-icon">
+
+                        {{ form_widget(form.datedebut, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'datedebut'} }) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-icon">
+
+                        {{ form_widget(form.datefin, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'datefin'} }) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-icon">
+
+                        {{ form_widget(form.discription, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'discription'} }) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-icon">
+
+                        {{ form_widget(form.club, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'club'} }) }}
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-icon">
+                        <input type="submit" class="btn btn-primary block full-width m-b" value="AJOUTER" />
+                    </div>
+
+                    {{ form_end(form) }}
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </body>
+    </html>
+
+
+
+{% endblock %}
