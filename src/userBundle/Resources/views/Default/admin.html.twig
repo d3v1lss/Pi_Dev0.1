@@ -58,7 +58,21 @@
                     </li>
                     <li>
                         <a class="js-arrow" href="#">
-                            <i class="fas fa-film"></i> Cinema</a>
+                            <i class="fas fa-film"></i> Cinema
+                            <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                        </a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="{{  path('readfilm')}}">
+                                    <i class="fas fa-table"></i>liste  des films </a>
+                            </li>
+                            <li>
+                                <a href="{{  path('readsalle')}}">
+                                    <i class="far fa-check-square"></i>liste des salles </a>
+                            </li>
+                        </ul>
 
                     </li>
                     <li>
