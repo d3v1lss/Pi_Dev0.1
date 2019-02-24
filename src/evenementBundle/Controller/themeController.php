@@ -2,25 +2,39 @@
 
 namespace evenementBundle\Controller;
 
+use evenementBundle\Entity\theme;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class themeController extends Controller
 {
 
-    public function ajouterthemeAction()
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function ajouterthemeAction(Request $request)
     {
-        return $this->render('@evenement/theme/ajoutertheme.html.twig', array(
-            // ...
+        if($request->isMethod('POST')) {
+            $theme = new theme();
+            $theme->setNom($request->get('nom'));
+            $em=$this->getDoctrine()->getManager();
+            $em->persist($theme);
+            $em->flush();
+        }
+        $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
+        return $this->render('@evenement/theme/affichertheme.html.twig',array(
+            'theme'=>$theme
         ));
     }
 
 
     public function afficherthemeAction()
     {
-        return $this->render('@evenement/theme/affichertheme.html.twig', array(
-            // ...
-        ));
+
+        $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
+        return $this->render('@evenement/theme/affichertheme.html.twig', array('theme'=>$theme));
+
     }
 
 
