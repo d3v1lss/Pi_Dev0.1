@@ -23,7 +23,7 @@ class themeController extends Controller
             $em->flush();
         }
         $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
-        return $this->render('@evenement/theme/affichertheme.html.twig',array(
+        return $this->render('@evenement/theme/ajoutertheme.html.twig',array(
             'theme'=>$theme
         ));
     }
@@ -33,24 +33,43 @@ class themeController extends Controller
     {
 
         $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
-        return $this->render('@evenement/theme/affichertheme.html.twig', array('theme'=>$theme));
+        return $this->render('@evenement/theme/ajoutertheme.html.twig', array('theme'=>$theme));
 
     }
 
 
-    public function modifierthemeAction()
+    public function modifierthemeAction(Request $request,$id)
     {
-        return $this->render('@evenement/theme/modifiertheme.html.twig', array(
-            // ...
-        ));
-    }
+        $em =$this->getDoctrine()->getManager();
+        $theme = $em->getRepository(theme::class)->find($id);
+        if ($request->isMethod('POST')) {
+            $theme->setNom($request->get('nom'));
+            $em->flush();
+
+            return $this->redirectToRoute("evenement_theme_ajouter");
+
+        }
+
+            return $this->render('@evenement/theme/modifiertheme.html.twig', array(
+                'theme' => $theme
+            ));
+        }
 
 
-    public function supprimerthemeAction()
+
+
+    public function supprimerthemeAction($id)
     {
-        return $this->render('@evenement/theme/supprimertheme.html.twig', array(
-            // ...
-        ));
+        $em = $this->getDoctrine()->getManager();
+        $theme_del=$em->getRepository(theme::class)->find($id);
+       {
+            $em->remove($theme_del);
+            $em->flush();
+            return $this->redirectToRoute("evenement_theme_ajouter");
+
+        }
+
+
     }
 
 }

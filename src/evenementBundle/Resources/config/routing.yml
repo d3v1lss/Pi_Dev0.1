@@ -8,10 +8,10 @@ evenement_theme_afficher:
     path:     /affichertheme
     defaults: { _controller: evenementBundle:theme:affichertheme }
 evenement_theme_modifier:
-    path:     /modifiertheme
+    path:     /modifiertheme/{id}
     defaults: { _controller: evenementBundle:theme:modifiertheme }
 evenement_theme_supprimer:
-    path:     /supprimertheme
+    path:     /supprimertheme/{id}
     defaults: { _controller: evenementBundle:theme:supprimertheme }
 evenement_evenement_ajouter:
     path:     /ajouterevenement
