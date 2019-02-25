@@ -1,3 +1,20 @@
 forum_homepage:
     path:     /
     defaults: { _controller: forumBundle:Default:index }
+forum_ajout:
+    path:     /ajoutforum
+    defaults: { _controller: forumBundle:Gforum:Ajouterforum }
+forum_modifier:
+    path:     /modifierforum/{id}
+    defaults: { _controller: forumBundle:Gforum:modifforum }
+forum_del:
+  path:     /forumdel/{id}
+  defaults: { _controller: forumBundle:Gforum:delete }
+forum_affich_user:
+    path:     /affichforumuser
+    defaults: { _controller: forumBundle:Gforum:Affichforumuser }
+
+pub_ajout:
+    path:     /ajoutpub
+    defaults: { _controller: forumBundle:Gpublication:Ajoutpublication }
+

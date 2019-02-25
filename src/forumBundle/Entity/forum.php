@@ -96,4 +96,5 @@ class forum
 
         $this->publications = new ArrayCollection();
     }
+
 }

@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block content %}
+
+    <div class="fables-blog-form">
+        <div class="container">
+            <div class="mt-4">
+                <h2 class="position-relative font-23 semi-font fables-blog-category-head fables-main-text-color fables-second-before pl-3 mb-4">Ajouter Publication</h2>
+                <ul class="nav fables-blog-cat-list fables-forth-text-color fables-second-hover-color-link">
+
+                </ul>
+                <hr>
+            </div>
+            <h2 class="fables-main-text-color fables-light-background-color my-3 my-lg-4 font-15 bold-font py-3 px-4">Nouvelle Publication</h2>
+            <form class="fables-contact-form mb-0" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control form-control rounded-0 p-3"  name="titre" placeholder="Titre">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control form-control rounded-0 p-3" placeholder="Contenu" name="contenu" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn fables-second-background-color rounded-0 text-white font-15 px-4 py-2">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
