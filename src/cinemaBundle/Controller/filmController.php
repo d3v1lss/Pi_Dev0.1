@@ -2,6 +2,7 @@
 
 namespace cinemaBundle\Controller;
 
+use cinemaBundle\Entity\favoris;
 use Symfony\Component\HttpFoundation\Request;
 use cinemaBundle\Entity\film;
 use cinemaBundle\Form\filmType;
@@ -15,6 +16,15 @@ class filmController extends Controller
 
         $film = $this->getDoctrine()->getRepository(film::class)->findAll();
         return $this->render('@cinema/Default/read.html.twig', array('film' => $film));
+
+    }
+
+    public function readFilmGuestAction()
+
+    {
+
+        $film = $this->getDoctrine()->getRepository(film::class)->findAll();
+        return $this->render('@cinema/Default/readFilmGuest.html.twig', array('film' => $film));
 
     }
 
@@ -96,7 +106,19 @@ class filmController extends Controller
 
     }
 
+    public function favorisFilmAction(){
+        $favoris = new favoris();
+        $form_favoris  = $this->createForm(new favorisType(), $favoris);
+        $em=  $this->getDoctrine()->getEntityManager();
+        $idfilm=$em->getRepository('cinemaBundle:film')->find(id);
+        $iduser=$em->getRepository('AppBundle:user  ')->find(id);
+        return array(
+            'idfilm'=>$idfilm,
+            'id user' => $ifuser,
+            'form_personne'   => $form_personne->createView()
+        );
 
+    }
 
 
 

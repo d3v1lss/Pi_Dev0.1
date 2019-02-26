@@ -10,8 +10,11 @@ namespace cinemaBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
  * @ORM\Entity(repositoryClass="cinemaBundle\Repository\filmRepository")
+ * @Vich\Uploadable
  */
 class film
 {
@@ -44,6 +47,57 @@ class film
      */
 
     private $datesotie;
+
+
+
+
+
+
+
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $like;
+
+
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $dislike;
+
+    /**
+     * @return mixed
+     */
+    public function getLike()
+    {
+        return $this->like;
+    }
+
+    /**
+     * @param mixed $like
+     */
+    public function setLike($like)
+    {
+        $this->like = $like;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDislike()
+    {
+        return $this->dislike;
+    }
+
+    /**
+     * @param mixed $dislike
+     */
+    public function setDislike($dislike)
+    {
+        $this->dislike = $dislike;
+    }
 
     /**
      * @return mixed
@@ -140,6 +194,12 @@ class film
     {
         $this->datesotie = $datesotie;
     }
+
+
+
+
+
+
 
     /**
      * @return mixed

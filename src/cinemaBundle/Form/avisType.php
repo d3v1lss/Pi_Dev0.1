@@ -5,32 +5,25 @@ namespace cinemaBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Vich\UploaderBundle\Form\Type\VichImageType;
 
-
-class filmType extends AbstractType
+class avisType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')
-            ->add('discription')
-            ->add('duree')
-            ->add('categorie')
-            ->add('datesotie')
-            ->add('save',SubmitType::class)
-
-        ;
+        $builder->add('avischoix',ChoiceType::class,array('choices'=>array('Mauvais'=>'Mauvais','Passable'=>'Passable','Assez Bien'=>'Assez Bien','Bien'=>'Bien','TrésBien'=>'TrésBien'),'data'=> false , 'expanded' => true,))
+            ->add('save',SubmitType::class);
     }/**
-     * {@inheritdoc}
-     */
+ * {@inheritdoc}
+ */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'cinemaBundle\Entity\film'
+            'data_class' => 'cinemaBundle\Entity\avis'
         ));
     }
 
@@ -39,7 +32,7 @@ class filmType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'cinemabundle_film';
+        return 'cinemaBundle_avis';
     }
 
 

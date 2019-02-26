@@ -25,6 +25,8 @@ class AppKernel extends Kernel
             new bibliothequeBundle\bibliothequeBundle(),
             new e_commerceBundle\e_commerceBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
         );
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

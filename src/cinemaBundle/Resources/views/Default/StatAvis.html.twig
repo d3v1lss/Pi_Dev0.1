@@ -1,0 +1,34 @@
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+
+    <html>
+
+
+    <br><br>
+
+    <body>
+
+    <div class="widget-title"><span class="icon"> <i class="icon-th"></i> </span>
+        <h5>Statistique Avis</h5>
+    </div>
+    <div class="widget-content nopadding">
+
+        <div id="div_chart"></div>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            {{ gc_draw(piechart, 'div_chart') }}
+        </script>
+    </div>
+
+
+    </body>
+    </html>
+
+    </br></br>
+
+
+{% endblock %}

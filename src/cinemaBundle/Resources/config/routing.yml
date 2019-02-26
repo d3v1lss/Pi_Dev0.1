@@ -9,9 +9,11 @@ readfilm:
     path:     /readfilm
     defaults: { _controller: cinemaBundle:film:read}
 
-readsalle:
-    path:     /readsalle
-    defaults: { _controller: cinemaBundle:salle:read}
+readFilmGuest:
+    path:     /readFilmGuest
+    defaults: { _controller: cinemaBundle:film:readFilmGuest}
+
+
 
 createfilm:
     path:     /create
@@ -22,12 +24,44 @@ updatefilm:
     defaults: { _controller: cinemaBundle:film:update}
 
 
+esprit_parc_find1:
+    path:     /find1
+    defaults: { _controller: cinemaBundle:film:findNomDQL}
+
+
+esprit_parc_find2:
+    path:     /find2/{nom}
+    defaults: { _controller: cinemaBundle:film:findNomDQL2}
+
+
+
 
 deletefilm:
     path:     /delete/{id}
     defaults: { _controller: cinemaBundle:film:delete}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+readsalle:
+    path:     /readsalle
+    defaults: { _controller: cinemaBundle:salle:read}
+
+readSalleGuest:
+    path:     /readSalleGuest
+    defaults: { _controller: cinemaBundle:salle:readSalleGuest}
 
 createsalle:
     path:     /createsalle
@@ -44,13 +78,11 @@ deletesalle:
     defaults: { _controller: cinemaBundle:salle:delete}
 
 
+Ajout:
+    path: /Ajout
+    defaults: { _controller: cinemaBundle:Avis:Ajout }
 
+StatAvis:
+    path:     /StatAvis
+    defaults: { _controller: cinemaBundle:Avis:index }
 
-esprit_parc_find1:
-    path:     /find1
-    defaults: { _controller: cinemaBundle:film:findNomDQL}
-
-
-esprit_parc_find2:
-    path:     /find2/{nom}
-    defaults: { _controller: cinemaBundle:film:findNomDQL2}
