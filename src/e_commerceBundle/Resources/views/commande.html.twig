@@ -1,0 +1,36 @@
+{% extends 'admin.html.twig' %}
+
+{% block container %}
+    <br>
+    <br>
+    <br>
+   <center><h1>Liste des commandes</h1></center>
+<br>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Id </th>
+                <th>Valider</th>
+                <th>Reference</th>
+                <th>Utilisateur</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for commande in commandes %}
+            <tr>
+                <td>{{ commande.id }} </td>
+                <td>{% if commande.valider %}Yes{% else %}No{% endif %}</td>
+                <td>{{ commande.reference }}</td>
+                <td>{{ commande.user.id }}</td>
+                <td>
+                    <a href="{{ path('facture', { 'id' : commande.id }) }}" target="_blank"><i class="fas fa-file"></i></a>
+                </td>
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

@@ -25,6 +25,10 @@ class AppKernel extends Kernel
             new bibliothequeBundle\bibliothequeBundle(),
             new e_commerceBundle\e_commerceBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
+
         );
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
@@ -66,4 +70,5 @@ class AppKernel extends Kernel
         });
         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
+
 }

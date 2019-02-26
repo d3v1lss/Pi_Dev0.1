@@ -1,0 +1,54 @@
+{% extends 'admin.html.twig' %}
+
+{% block container %}
+    <br>
+    <br>
+    <br>
+
+    <center><h1>Nouveau Produit </h1></center>
+<br>
+    <div class="offset1">
+
+    <form method="post" action="{{ path('produitNew') }}" enctype="multipart/form-data">
+    <td> Nom   </td>
+    <input type="text" name="nom" id="nom"/>
+        <br>
+        <br>
+    <td> Description   </td>
+     <input type="text" name="description" id="description"/>
+        <br>
+<br>
+        <td> Prix  </td>
+        <input type="number" name="prix" id="prix"/>
+        <br>
+        <br>
+    <td> Disponibilité </td>
+        <input type="number" name="stock" id="stock"/>
+        <br>
+        <br>
+        <td> TVA  </td>
+
+        {{ form_start(form, {'method': 'POST'}) }}
+        {{ form_row(form.tva) }}
+
+        <br>
+        <br>
+    <td> Photo du produit</td>
+        <input type='file' name="imageUpload" id="imageUpload" accept=".png, .jpg, .jpeg" />
+        <br>
+        <br>
+        <input class="btn btn-success" type="submit" value="Ajouter " />
+
+        <a class="btn btn-success" href="{{ path('produitIndex') }}">Annuler</a>
+    </form>
+
+
+
+        {{ form_end(form) }}
+    </div>
+
+
+
+
+
+{% endblock %}

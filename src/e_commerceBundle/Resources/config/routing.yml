@@ -1,3 +1,48 @@
 e.commerce_homepage:
     path:     /
     defaults: { _controller: e_commerceBundle:Default:index }
+store:
+    path:     /store
+    defaults: { _controller: e_commerceBundle:Store:AfficherProduits }
+supprimerPanier:
+    path:     /supprimerPanier
+    defaults: { _controller: e_commerceBundle:Panier:supprimer }
+afficherPanier:
+    path:     /afficherPanier
+    defaults: { _controller: e_commerceBundle:Panier:afficherPanier }
+ajouterAuPanier:
+    path:     /ajouter/{id}
+    defaults: { _controller: e_commerceBundle:Panier:ajouterAuPanier }
+supprimer:
+    path:     /supprimer/{id}
+    defaults: { _controller: e_commerceBundle:Panier:supprimer }
+produit:
+    path:     /produit/{id}
+    defaults: { _controller: e_commerceBundle:Store:produit }
+menu:
+    path:     /menu
+    defaults: { _controller: e_commerceBundle:Panier:menu}
+produitIndex:
+    path:     /produitIndex
+    defaults: { _controller: e_commerceBundle:produitAdmin:index}
+produitsShow:
+    path:     /{id}/show
+    defaults: { _controller: e_commerceBundle:produitAdmin:Show}
+produitNew:
+    path:     /new
+    defaults: { _controller: e_commerceBundle:produitAdmin:new}
+produitEdit:
+    path:     /edit/{id}
+    defaults: { _controller: e_commerceBundle:produitAdmin:edit}
+produitDelete:
+    path:     /delete/{id}
+    defaults: { _controller: e_commerceBundle:produitAdmin:delete}
+validation:
+    path:     /validation
+    defaults: { _controller: e_commerceBundle:Panier:validation }
+facture:
+    path:     /facture
+    defaults: { _controller: e_commerceBundle:Panier:facture}
+AfficherCommande:
+    path:     /AfficherCommande
+    defaults: { _controller: e_commerceBundle:CommandeAdmin:AfficherCommande}

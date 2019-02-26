@@ -1,0 +1,22 @@
+{% extends 'admin.html.twig' %}
+
+{% block container %}
+
+    <br>
+    <br>
+    <br>
+    <center> <h1>Modifier</h1></center>
+
+<table>
+    {{ form_start(form) }}
+    <div class="offset1">
+        {{ form_widget(form) }}
+        <br>
+        <input class="btn btn-success" type="submit" value=" Modifier  "/>
+        <a class="btn btn-success" href="{{ path('produitIndex') }}">Annuler </a>
+    </div>
+    {{ form_end(form) }}
+</table>
+
+{% endblock %}
+

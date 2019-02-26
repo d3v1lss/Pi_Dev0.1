@@ -1,0 +1,178 @@
+{% extends 'base.html.twig' %}
+
+{% block barre %}
+
+{% endblock %}
+
+{% block content %}
+    <body>
+    <div class="search-section">
+        <a class="close-search" href="#"></a>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <form method="post" action="#" class="w-50">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="search" value="" class="form-control palce bg-transparent border-0 search-input"
+                               placeholder="Search Here ..."/>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <button type="submit" class="btn bg-transparent text-white"><i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Start page content -->
+    <div class="container">
+        <div class="row my-4 my-md-5">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="fables-store-search mb-4">
+                    <form>
+                        <div class="input-icon">
+                            <span class="fables-iconsearch-icon fables-input-icon"></span>
+                            <input type="text"
+                                   class="form-control rounded-0 form-control rounded-0 font-14 fables-store-input pl-5 py-2"
+                                   placeholder="Search Product">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rage-slider">
+                    <h2 class="font-16 semi-font fables-forth-text-color fables-light-gary-background  p-3 mb-4">Filter
+                        by price</h2>
+                    <form>
+                        <div class="range-slider fables-forth-text-color" id="facet-price-range-slider"
+                             data-options='{"output":{"prefix":""},"maxSymbol":"+"}'>
+                            <input name="range-1" value="0" min="0" max="10000" step="1" type="range">
+                            <input name="range-2" value="10000" min="0" max="10000" step="1" type="range">
+                        </div>
+                        <button type="submit"
+                                class="btn btn-block fables-second-background-color rounded-0 white-color white-color-hover p-2 font-15 mb-4">
+                            Filter
+                        </button>
+                    </form>
+                </div>
+                <h2 class="font-16 semi-font fables-forth-text-color fables-light-gary-background  p-3 mb-4">Product
+                    Categories</h2>
+                <h2 class="font-16 semi-font fables-forth-text-color fables-light-gary-background  p-3 my-4">Top Rated
+                    Products</h2>
+                <div class="row mb-3">
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0"></div>
+                    <div class="col-8">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                    </div>
+                    <div class="col-8"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0"></div>
+                    <div class="col-8"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0"></div>
+                    <div class="col-8"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0"></div>
+                    <div class="col-8"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0">
+                    </div>
+                    <div class="col-8"></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 pr-0"></div>
+                    <div class="col-8"></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="row mb-4">
+                    <div class="col-12 col-lg-4">
+                        <form>
+                            <div class="form-group mb-0">
+                                <select class="form-control rounded-0">
+                                    <option value="" selected>default sorting</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-4 col-md-6 col-lg-2 offset-lg-6 text-center pl-0 d-none d-lg-block">
+                        <span class="fas fa-th-list fa-fw fables-view-btn fables-list-btn fables-third-border-color fables-third-text-color"></span>
+                        <span class="fas fa-th-large active fa-fw fables-view-btn fables-grid-btn fables-third-border-color fables-third-text-color"></span>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 fables-product-block">
+                        <ul class="thumbnails">
+                            <div class="thumbnail">
+
+                                <table>
+                                    {% for prods in produits %}
+                                        <!--    <li class="span3">-->
+                                        <tr>
+                                            {% for produit in prods %}
+
+                                                <td>
+                                                    <br>
+                                                    <img width="300" height="200" src="{{ asset(produit.getPhoto()) }}">
+                                                    <br>
+                                                        <div class="caption">
+                                                        <h4>{{ produit.nom }}</h4>
+                                                            <br>
+                                                        <a class="btn btn-primary"
+                                                           href="{{ path('produit',{'id': produit.id } ) }}"> Plus
+                                                            d'infos </a>
+                                                        {% if panier[produit.id] is not defined %}
+                                                            <a class="btn btn-primary"
+                                                               href="{{ path('ajouterAuPanier',{'id':produit.id} ) }}">Ajouter au panier</a>
+                                                        {% else %}
+                                                            <a class="btn btn-primary" href="{{ path('afficherPanier') }}">Déja au panier</a>
+                                                        {% endif %}
+                                                    </div>
+                                                </td>
+
+                                            {% endfor %}
+                                            <!--   </li> -->
+                                        </tr>
+                                    {% endfor %}
+                                </table>
+
+
+                            </div>
+                        </ul>
+                    </div>
+                </div><br>
+                <br>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link rounded-circle fables-forth-text-color fables-page-link fables-second-hover-background-color" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle fables-forth-text-color fables-page-link fables-second-hover-background-color" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle fables-forth-text-color fables-page-link fables-page-link fables-second-hover-background-color" href="#">3</a></li>
+                        <li><span class="fables-pagi-dots fables-forth-text-color"> .... </span></li>
+                        <li class="page-item"><a class="page-link rounded-circle fables-forth-text-color fables-page-link fables-second-hover-background-color" href="#">20</a></li>
+                    </ul>
+                </nav>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /End page content -->
+
+    </body>
+{% endblock %}

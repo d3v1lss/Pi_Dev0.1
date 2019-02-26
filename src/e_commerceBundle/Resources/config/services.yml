@@ -1,4 +1,26 @@
+
 services:
-#    e.commerce.example:
-#        class: e_commerceBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+  tva.twig_extension:
+    class: e_commerceBundle\Twig\Extension\TvaExtension
+    public: false
+    tags:
+    - { name: twig.extension }
+  montantTva.twig_extension:
+    class: e_commerceBundle\Twig\Extension\montantTvaExtension
+    tags:
+      - { name: twig.extension }
+  redirectionListener:
+    class: e_commerceBundle\Listener\RedirectionListener
+    arguments:
+        - '@service_container'
+        - '@session'
+        - '@security.token_storage'
+    tags:
+        - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+  setNewReference:
+    class: e_commerceBundle\Services\GetReference
+    arguments: ['@security.authorization_checker','@doctrine.orm.entity_manager']
+
+  setNewFacture:
+    class: e_commerceBundle\Services\GetFacture
+    arguments: ['@service_container']

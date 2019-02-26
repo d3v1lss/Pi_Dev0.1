@@ -85,3 +85,13 @@ fos_user:
     from_email:
         address: "houssem.bouzid@esprit.tn"
         sender_name: "houssem"
+knp_snappy:
+    pdf:
+        enabled:    true
+        binary:     "\"D:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe\""
+        options:    []
+    image:
+        enabled:    true
+        binary:     "\"D:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\""
+        options:    []
+    temporary_folder: %kernel.cache_dir%/snappy
