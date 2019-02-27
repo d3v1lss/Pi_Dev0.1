@@ -1,7 +1,30 @@
-{% extends "::base.html.twig" %}
+{% extends "base.html.twig." %}
 
-{% block title %}evenementBundle:reservation:ajouterreservation{% endblock %}
+{% block content %}
 
-{% block body %}
-<h1>Welcome to the reservation:ajouterreservation page</h1>
+<h3 class="pb-3 mb-4 font-italic border-bottom">
+voulez vous reserver une place? </h3>
+
+    <tr>
+
+
+
+
+
+    <td><a href=" {{  path('evenement_reservation_supprimer'        )  }}"><small>
+
+                <button type="button" class="btn btn-sm btn-primary">Supprimer</button>
+
+            </small></a>
+
+        <a href=" {{  path('evenement_reservation_ajouter'      )  }}"><small>
+                <button type="button" class="btn btn-sm btn-primary">Confirmer</button>
+            </small></a>
+    </td>
+
+    </tr>
+
+
+
+
 {% endblock %}

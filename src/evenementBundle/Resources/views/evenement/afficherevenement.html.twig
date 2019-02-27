@@ -1,4 +1,4 @@
-{% extends "base.html.twig" %}
+{% extends "base.html.twig." %}
 
 {% block content %}
 <head>
@@ -36,17 +36,30 @@
                     <div class="mb-1 text-muted small"> {{ evenement.datefin  | date}}</div>
                     <p >{{ evenement.nombreplaces }} </p>
                     <p >{{ evenement.discription }} </p>
+                    <p >{{ evenement.theme.nom }} </p>
 
-                    <a class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">modifier</a>
-                    <a class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">supprimer</a>
+
+
+
+
+
+
+
+                    <a  href=" {{  path('evenement_evenement_modifier',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">modifier</a>
+
+
+                    <a  href=" {{  path('evenement_evenement_supprimer',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">supprimer</a>
+
+                    <a  href=" {{  path('evenement_reservation_ajouter',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">reserver une place</a>
+
                 </div>
 
                 <img class="card-img-right flex-auto d-none d-lg-block" alt="Image" src =" {{ asset('img/uploads/'~evenement.photo) }}" style="width: 200px; height: 250px;">
             </div>
         </div>
-        {% endfor %}
-    </div>
 
+    </div>
+    {% endfor %}
 
 </div>
 </div>

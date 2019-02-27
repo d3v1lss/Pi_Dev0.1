@@ -35,7 +35,7 @@ class evenementController extends Controller
             $em->persist($evenement);
             $em->flush();
 
-          /*  return $this->redirectToRoute("evenement_evenement_ajouter");*/
+            return $this->redirectToRoute("evenement_evenement_afficher");
 
             }
         $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
@@ -91,6 +91,7 @@ class evenementController extends Controller
             'evenement' => $evenement
         ));
     }
+
 
 
 
