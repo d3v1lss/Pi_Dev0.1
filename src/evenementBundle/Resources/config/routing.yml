@@ -8,7 +8,7 @@ evenement_theme_afficher:
     path:     /affichertheme
     defaults: { _controller: evenementBundle:theme:affichertheme }
 evenement_theme_modifier:
-    path:     /modifiertheme
+    path:     /modifiertheme/{id}
     defaults: { _controller: evenementBundle:theme:modifiertheme }
 evenement_theme_supprimer:
     path:     /supprimertheme/{id}
@@ -16,14 +16,11 @@ evenement_theme_supprimer:
 evenement_evenement_ajouter:
     path:     /ajouterevenement
     defaults: { _controller: evenementBundle:evenement:ajouterevenement }
-evenement_ajouter:
-    path:     /ajouterev
-    defaults: { _controller: evenementBundle:evenement:Ajouter }
 evenement_evenement_afficher:
     path:     /afficherevenement
     defaults: { _controller: evenementBundle:evenement:afficherevenement }
 evenement_evenement_modifier:
-    path:     /modifierevenement
+    path:     /modifierevenement/{id}
     defaults: { _controller: evenementBundle:evenement:modifierevenement }
 evenement_evenement_supprimer:
     path:     /supprimerevenement/{id}

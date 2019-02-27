@@ -57,6 +57,7 @@ class evenementController extends Controller
 
     }
 
+
     public function supprimerevenementAction($id)
     {
         $em = $this->getDoctrine()->getManager();
@@ -77,8 +78,8 @@ class evenementController extends Controller
         if ($request->isMethod('POST')) {
             $evenement->setNom($request->get('nom'));
             $evenement->setNombreplaces($request->get('nombreplaces'));
-            $evenement->setDatedebut(new \DateTime( $request->get('datedebut')));
-            $evenement->setDatefin(new \DateTime( $request->get('datefin')));
+        //    $evenement->setDatedebut(new \DateTime( $request->get('datedebut')));
+         //   $evenement->setDatefin(new \DateTime( $request->get('datefin')));
             $evenement->setDiscription($request->get('discription'));
          //   $evenement->setTheme($request->get('theme'));
             $em->flush();
