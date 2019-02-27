@@ -17,4 +17,5 @@ use Doctrine\ORM\EntityRepository;
  */
 class avisRepository extends EntityRepository
 {
+    
 }

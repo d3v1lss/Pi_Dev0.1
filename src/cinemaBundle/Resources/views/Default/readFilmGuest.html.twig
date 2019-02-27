@@ -34,7 +34,7 @@
             <td>{{ m.duree }}</td>
             <td>{{ m.categorie }}</td>
             <td>{{ m.datesotie |date('Y-m-d') }}</td>
-            <td><a href="{{ path('favorisfilm',{'id': m.nom ,'user':app.user.id}) }}">favoris</a> </td>
+            <td> <a href="{{ path('favorisfilm',{'id': m.nom ,'user':app.user.id}) }}"> favoris </a> </td>
             
 
         </tr>

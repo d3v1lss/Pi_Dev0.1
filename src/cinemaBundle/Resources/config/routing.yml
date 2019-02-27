@@ -50,7 +50,9 @@ favorisfilm:
 deletefavorisfilm:
     path:     /delete1/{id}
     defaults: { _controller: cinemaBundle:favoris:delete}
-
+favoris:
+    path:     /favoris
+    defaults: { _controller: cinemaBundle:favoris:read}
 
 
 

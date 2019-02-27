@@ -30,7 +30,7 @@ class favorisController extends Controller
         $favoris->setIduser($user);
         $em->persist($favoris);
         $em->flush();
-
+        return $this->redirectToRoute('favoris', array('user'=>$user,'id'=>$id));
     }
 
 
