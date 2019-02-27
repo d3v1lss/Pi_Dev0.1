@@ -121,11 +121,11 @@ class PanierController extends Controller
         $liste['prixTTC'] = round($totalHT + $totalTVA,2);
         $liste['token'] = bin2hex($generator);
 
-        //if($session->has('commande')){
+       // if($session->has('commande')){
             $commande = new commande();
         //}
         //else $commande = $em->getRepository('e_commerceBundle:commande')->find($session->get('commande'));
-
+//session_destroy();
         $commande->setUser($this->container->get('security.token_storage')->getToken()->getUser());
         $commande->setValider(0);
         $commande->setReference(0);

@@ -9,18 +9,20 @@
 namespace e_commerceBundle\Twig\Extension;
 
 
-class TvaExtension extends \Twig_Extension
+class montantTvaExtension extends \Twig_Extension
 {
     public function getFilters()
     {
-        return array(new \Twig_SimpleFilter('tva',array($this,'calculTva')));
+        return array(new \Twig_SimpleFilter('montantTva', array($this,'montantTvaFilter')));
     }
-    function calculTva($prixHT,$tva){
 
-        return round($prixHT / $tva,2);
+    function montantTvaFilter($prixHT,$tva)
+    {
+        return round((($prixHT / $tva) - $prixHT),2);
     }
+
     public function getName()
     {
-        return 'tva_extension';
+        return 'montant_tva_extension';
     }
 }

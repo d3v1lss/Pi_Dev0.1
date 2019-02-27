@@ -4,6 +4,8 @@ namespace e_commerceBundle\Controller;
 
 use e_commerceBundle\Entity\Produit;
 use e_commerceBundle\Form\ProduitsType;
+use Proxies\__CG__\e_commerceBundle\Entity\tva;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -21,27 +23,35 @@ class produitAdminController extends Controller
     }
     public function newAction(Request $request)
     {
+        $p= new Produit();
         $produit = new Produit();
+       $form=$this->createFormBuilder($p)->add('tva', EntityType::class,array(
+           'class'=>'e_commerceBundle:tva',
+           'choice_label'=>'valeur',
+           'multiple'=>false,
+       ))->getForm();
 
-        $produit->setPhoto($request->get("imageUpload"));
 
         $em = $this->getDoctrine()->getManager();
-
+        $form->handleRequest($request);
         if($request->isMethod('POST')){
+
             $produit->setNom($request->get("nom"));
-            $produit->setStockprosuit($request->get("stock"));
+            $produit->setDisponible($request->get("stock"));
             $produit->setPrix($request->get("prix"));
             $produit->setDiscription($request->get("description"));
-            $produit->setTva($request->get("tva"));
+
+           $produit->setTva($p->getTva());
 
         if ($request->files->get('imageUpload')!=NULL) {
             $file=$request->files->get("imageUpload");
             $nomfichier=$this->generateUniqueFileName().'.'.$file->guessExtension();
             $file->move(
-                "assets/img/produits/",
+                "img",
                 $nomfichier
             );
         }
+            $produit->setPhoto('img/'.$nomfichier);
 
 
 
@@ -51,7 +61,7 @@ class produitAdminController extends Controller
             return $this->redirectToRoute('produitIndex');
         }
 
-        return $this->render('@e_commerce/new.html.twig');
+        return $this->render('@e_commerce/new.html.twig',array('form'=>$form->createView()));
     }
 
 
