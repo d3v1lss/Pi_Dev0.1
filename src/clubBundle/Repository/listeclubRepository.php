@@ -9,27 +9,24 @@
 namespace clubBundle\Repository;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\QueryBuilder;
-class clubRepository  extends EntityRepository
+class listeclubRepository  extends EntityRepository
 {
-    public function monclubDQL($id){
+    public function mesmembres1DQL($id){
 
         $query=$this->getEntityManager()
-            ->createQuery("Select c from clubBundle:club c WHERE c.president= :id")
-        ->setParameter('id',$id);
-        return $query->getResult();
-
-
-    }
-
-    public function workshopDQL($id){
-
-        $query=$this->getEntityManager()
-            ->createQuery("Select w from clubBundle:workshop w WHERE w.user= :id")
+            ->createQuery("Select c from clubBundle:listeclub c WHERE c.club= :id")
             ->setParameter('id',$id);
         return $query->getResult();
 
 
     }
+    public function mesmembres2DQL($id){
+
+        $query=$this->getEntityManager()
+            ->createQuery("Select w from clubBundle:listeworkshop w WHERE w.workshop= :id")
+            ->setParameter('id',$id);
+        return $query->getResult();
 
 
+    }
 }

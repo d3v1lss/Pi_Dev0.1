@@ -6,6 +6,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
+
 class workshopType extends AbstractType
 {
     /**
@@ -26,6 +28,8 @@ class workshopType extends AbstractType
                 array('label' => 'form.datedebut', 'translation_domain' => 'clubBundle'))
 
 
+
+
             ->add('datefin', null,
                 array('label' => 'form.datefin', 'translation_domain' => 'clubBundle'))
 
@@ -33,7 +37,9 @@ class workshopType extends AbstractType
             ->add('discription', null,
                 array('label' => 'form.discription', 'translation_domain' => 'clubBundle'))
 
-
+            ->add('user',EntityType::class
+                ,array('class'=>'AppBundle:user','choice_label'=>'username','multiple'=>false),
+                array('label' => 'form.user', 'translation_domain' => 'clubBundle'))
 
             ->add('club',EntityType::class
                 ,array('class'=>'clubBundle:club','choice_label'=>'nom','multiple'=>false),

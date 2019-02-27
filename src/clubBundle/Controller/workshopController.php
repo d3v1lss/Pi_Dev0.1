@@ -12,15 +12,10 @@ class workshopController extends Controller
 {
     public function indexAction()
     {
+
         return $this->render('@club/Default/afficherclub.html.twig');
     }
-    public function afficher1Action()
-    {
 
-        $workshop = $this->getDoctrine()->getRepository(workshop::class)->findALL();
-        return $this->render('@club/workshop/afficherworkshop.html.twig',
-            array("workshop" => $workshop));
-    }
 
 
     public function afficher2Action()
@@ -31,6 +26,13 @@ class workshopController extends Controller
             array("workshop" => $workshop));
     }
 
+    public function afficher1Action()
+    {
+
+        $workshop = $this->getDoctrine()->getRepository(workshop::class)->findALL();
+        return $this->render('@club/workshop/afficherworkshop.html.twig',
+            array("workshop" => $workshop));
+    }
     public function addAction(Request $request)
     {
 
@@ -45,9 +47,10 @@ class workshopController extends Controller
             $em->flush();
 
 
-            return $this->redirectToRoute('afficher_workshop');
+            return $this->redirectToRoute('afficher_workshop_president');
         }
-        return $this->render('@club/workshop/ajouterworkshop.html.twig', array('form' => $form->createView()));
+        return $this->render('@club/workshop/ajouterworkshop.html.twig',
+            array('form' => $form->createView()));
     }
     public function suppAction($id)
     {
@@ -91,5 +94,22 @@ class workshopController extends Controller
         }
         return $this->render('@club/workshop/rechercherworkshop.html.twig', array('form' =>
             $form->createView(),'workshop'=>$workshop));
+    }
+
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function workshopAction($id){
+        $em=$this->getDoctrine()->getManager();
+
+
+
+        $workshop=$em->getRepository("clubBundle:club")->workshopDQL($id);
+
+        return $this->render('@club/president/afficherworkshoppresident.html.twig'
+            ,array('workshop'=>$workshop));
+
+
     }
 }

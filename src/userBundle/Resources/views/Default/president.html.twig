@@ -72,9 +72,9 @@
                                         CLUB
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="sub-nav3">
-                                        <li><a class="dropdown-item" href="{{  path('afficher_club_president')}}">Mon Club</a></li>
+                                        <li><a class="dropdown-item" href="{{  path('afficher_club_president',{'id':app.user.id})}}">Mon Club</a></li>
 
-                                        <li><a class="dropdown-item" href="{{ path('afficher_workshop_president')}}">Liste des workshops</a></li>
+                                        <li><a class="dropdown-item" href="{{ path('afficher_workshop_president',{'id':app.user.id})}}">mes workshops</a></li>
 
                                     </ul>
                                 </li>

@@ -46,6 +46,8 @@ class club
     private $activite;
 
 
+
+
     /**
      * @return mixed
      */

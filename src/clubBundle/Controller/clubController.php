@@ -2,11 +2,14 @@
 
 namespace clubBundle\Controller;
 
+use AppBundle\Entity\user;
 use clubBundle\Entity\club;
 use clubBundle\Form\clubType;
 use clubBundle\Form\rechercherclubType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
+
 class clubController extends Controller
 {
 
@@ -24,12 +27,8 @@ class clubController extends Controller
         return $this->render('@club/back/club.html.twig', array("club" => $club));
     }
 
-    public function afficher3Action()
-    {
 
-        $club = $this->getDoctrine()->getRepository(club::class)->findALL();
-        return $this->render('@club/club/afficherclub.html.twig', array("club" => $club));
-    }
+
 
     public function addAction(Request $request)
     {
@@ -79,7 +78,7 @@ class clubController extends Controller
         if ($form->isValid()) {
 
             $em = $this->getDoctrine()->getManager()->flush();
-            return $this->redirectToRoute('afficher_club_president');
+            return $this->redirectToRoute('afficher_club_president2');
         }
         return $this->render('@club/president/updateclubpresident.html.twig',
             array('form' => $form->createView()));
@@ -92,6 +91,10 @@ class clubController extends Controller
         $form = $this->createForm(clubType::class, $club);
         $form = $form->handleRequest($request);
         if ($form->isValid()) {
+            $idpre=$club->getPresident();
+            $pre = $this->getDoctrine()->getRepository(user::class)->find($idpre);
+            $pre->setRoles(array(
+                'ROLE_PRESIDENT' => 'ROLE_PRESIDENT'));
             $club->setStatut('oui');
             $em = $this->getDoctrine()->getManager()->flush();
             return $this->redirectToRoute('afficher_club_admin');
@@ -100,6 +103,7 @@ class clubController extends Controller
             array('form' => $form->createView()));
 
     }
+
     public function rechercherAction(Request $request)
     {
 
@@ -121,11 +125,24 @@ class clubController extends Controller
             $form->createView(),'club'=>$club));
     }
 
-    public function MonclubAction(){
+    /**
+     * @param Session $session
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+
+    public function clubAction($id){
         $em=$this->getDoctrine()->getManager();
-        $club=$em->getRepository("clubBundle:club")->monclubDQL();
-        return $this->render('@club/president/afficherclubpresident.html.twig',array('club'=>$club));
+
+
+        $club=$em->getRepository("clubBundle:club")->monclubDQL($id);
+
+        return $this->render('@club/president/afficherclubpresident.html.twig'
+            ,array('club'=>$club));
 
 
     }
+
+
+
+
 }

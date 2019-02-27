@@ -1,5 +1,5 @@
 
-{% extends 'base.html.twig' %}
+{% extends 'president2.html.twig' %}
 
 {% block content %}
     <div class="container">
@@ -58,11 +58,29 @@
                                         </button></a>
 
                                 </a>
+                                <a class="table-data-feature">
+                                    <a href="{{ path('membres_club',{'id':c.id}) }}">
+                                        <button class="item" data-toggle="tooltip" data-placement="top" >
+
+                                            <i class="zmdi zmdi-mail-send"></i>
+                                        </button></a>
+
+                                </a>
                             </td>
+
                         </tr>
+                        <tr>  <td>
+                                <a href="{{  path('ajouter_workshop')}}"
+                                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-2">Ajouter workshop </a></p>
+
+
+                            </td></tr>
                     {% endfor %}
                     </tbody>
                 </table>
+
+
             </div>
             <!-- END DATA TABLE -->
         </div>

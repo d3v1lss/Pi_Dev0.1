@@ -28,8 +28,11 @@
             <br>
             <div class="form-group">
 
-                {{ form_start(form, {'method': 'post', 'action': path('update_club_president',{'id':2}),
+                {{ form_start(form, {'method': 'post' ,
                     'attr': {'class': 'fos_user_registration_register'}}) }}
+
+
+
                 <div class="input-icon">
 
                     {{ form_widget(form.nom, { 'attr': {'class': 'form-control rounded-0

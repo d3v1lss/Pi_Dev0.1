@@ -35,14 +35,14 @@ class workshop
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="datedebut", type="datetime")
+     * @ORM\Column(name="datedebut", type="date")
      */
 
     private $datedebut;
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="datefin", type="datetime")
+     * @ORM\Column(name="datefin", type="date")
      */
 
     private $datefin;

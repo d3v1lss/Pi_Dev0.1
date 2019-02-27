@@ -14,8 +14,12 @@ class clubType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+
+
+
             ->add('nom', null,
                 array('label' => 'form.nom', 'translation_domain' => 'clubBundle'))
+
             ->add('mail',null,
                 array('label' => 'form.mail', 'translation_domain' => 'clubBundle'))
 

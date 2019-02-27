@@ -1,0 +1,61 @@
+
+{% extends 'president2.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row my-4 my-lg-5">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
+
+                <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">Liste participants</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- DATA TABLE -->
+
+            <div class="table-responsive table-responsive-data2">
+                <table class="table table-data2">
+                    <thead>
+                    <tr>
+
+                        <th>username</th>
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for c in club %}
+                        <tr class="tr-shadow">
+
+
+                            <td>
+                                {{c.membres}}
+                            </td>
+
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <!-- END DATA TABLE -->
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <div class="row my-4 my-lg-5">
+
+
+
+    </div>
+        </div>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br>
+{% endblock %}

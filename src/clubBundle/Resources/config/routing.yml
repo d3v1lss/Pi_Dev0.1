@@ -1,9 +1,12 @@
 
 
 afficher_workshop_president:
+    path:     /workshop/{id}
+    defaults: { _controller: clubBundle:workshop:workshop}
+
+afficher_workshop_user:
     path:     /afficherw1
     defaults: { _controller: clubBundle:workshop:afficher1}
-
 afficher_workshop_admin:
     path:     /afficherw2
     defaults: { _controller: clubBundle:workshop:afficher2}
@@ -20,6 +23,14 @@ update_workshop:
     path:     /updatew/{id}
     defaults: { _controller: clubBundle:workshop:update}
 
+inscrit_workshop:
+    path:     /inscritw/{user},{id}
+    defaults: { _controller: clubBundle:listeworkshop:inscrit}
+
+membres_workshop:
+    path:      /membresw/{id}
+    defaults: { _controller: clubBundle:listeworkshop:membres}
+
 rechercher_workshop:
     path:     /rechercherw
     defaults: { _controller: clubBundle:workshop:rechercher}
@@ -27,8 +38,9 @@ rechercher_workshop:
 
 
 afficher_club_president:
-    path:     /Monclub
-    defaults: { _controller: clubBundle:club:Monclub}
+    path:     /club/{id}
+    defaults: { _controller: clubBundle:club:club}
+
 
 afficher_club_user:
     path:     /afficherc1
@@ -41,6 +53,19 @@ afficher_club_admin:
 ajouter_club:
     path:     /ajouterc
     defaults: { _controller: clubBundle:club:add}
+
+inscrit_club:
+    path:     /inscritc/{user},{id}
+    defaults: { _controller: clubBundle:listeclub:inscrit}
+
+membres_club:
+    path:     /membresc/{id}
+    defaults: { _controller: clubBundle:listeclub:membres}
+
+supp_membres_club:
+    path:     /suppc/{id}
+    defaults: { _controller: clubBundle:listeclub:supp}
+
 
 supp_club_president:
     path:     /suppc1/{id}
