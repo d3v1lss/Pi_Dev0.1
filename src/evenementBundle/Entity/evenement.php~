@@ -15,8 +15,10 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * evenement
+ *
  * @ORM\Table(name="evenement")
+ * @ORM\Entity(repositoryClass="evenementBundle\Repository\evenementRepository")
  */
 class evenement
 {
@@ -60,13 +62,13 @@ class evenement
     }
     /**
 
-    @ORM\Column(type="date")
+     * @ORM\Column(type="date")
      */
 
     private $datedebut;
     /**
 
-    @ORM\Column(type="date")
+     * @ORM\Column(type="date")
      */
 
     private $datefin;

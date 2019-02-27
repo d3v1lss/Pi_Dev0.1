@@ -62,13 +62,13 @@ class evenement
     }
     /**
 
-    @ORM\Column(type="date")
+     * @ORM\Column(type="date")
      */
 
     private $datedebut;
     /**
 
-    @ORM\Column(type="date")
+     * @ORM\Column(type="date")
      */
 
     private $datefin;

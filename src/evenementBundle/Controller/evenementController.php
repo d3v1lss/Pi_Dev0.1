@@ -19,21 +19,31 @@ class evenementController extends Controller
             $evenement = new evenement();
             $evenement->setNom($request->get('nom'));
             $evenement->setNombreplaces($request->get('nombreplaces'));
-            $evenement->setDatedebut($request->get('datedebut'));
-            $evenement->setDatefin($request->get('datefin'));
+            $evenement->setDatedebut(new \DateTime( $request->get('datedebut')));
+            $evenement->setDatefin(new \DateTime( $request->get('datefin')));
             $evenement->setDiscription($request->get('discription'));
             $evenement->setTheme($this->getDoctrine()->getRepository(theme::class)->find($request->get('theme')));
-            $evenement->setPhoto($request->get('photo'));
 
+            $file = $request->files->get('imageUpload');
+            $nomfichier = md5(uniqid()) .'.'. $file->guessExtension();
+            $file->move($this->getParameter('img_directory'), $nomfichier);
+            $evenement->setPhoto($nomfichier);
+
+            /*$evenement->setPhoto($request->get('photo'));*/
+            dump($evenement);
             $em=$this->getDoctrine()->getManager();
             $em->persist($evenement);
             $em->flush();
 
-            return $this->redirectToRoute("evenement_evenement_ajouter");
+          /*  return $this->redirectToRoute("evenement_evenement_ajouter");*/
 
             }
         $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
-        return $this->render('@evenement/evenement/ajouterevenement.html.twig',array(
+
+       // $evenement = $this->getDoctrine()->getRepository(evenement::class)->findAll();
+
+
+       return $this->render('@evenement/evenement/ajouterevenement.html.twig',array(
             'themes'=>$theme
         ));
 
@@ -67,8 +77,8 @@ class evenementController extends Controller
         if ($request->isMethod('POST')) {
             $evenement->setNom($request->get('nom'));
             $evenement->setNombreplaces($request->get('nombreplaces'));
-            $evenement->setDatedebut($request->get('datedebut'));
-            $evenement->setDatefin($request->get('datefin'));
+            $evenement->setDatedebut(new \DateTime( $request->get('datedebut')));
+            $evenement->setDatefin(new \DateTime( $request->get('datefin')));
             $evenement->setDiscription($request->get('discription'));
             $evenement->setTheme($request->get('theme'));
             $evenement->setPhoto($request->get('photo'));
