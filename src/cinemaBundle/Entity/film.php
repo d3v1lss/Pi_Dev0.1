@@ -48,57 +48,6 @@ class film
 
     private $datesotie;
 
-
-
-
-
-
-
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $like;
-
-
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $dislike;
-
-    /**
-     * @return mixed
-     */
-    public function getLike()
-    {
-        return $this->like;
-    }
-
-    /**
-     * @param mixed $like
-     */
-    public function setLike($like)
-    {
-        $this->like = $like;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDislike()
-    {
-        return $this->dislike;
-    }
-
-    /**
-     * @param mixed $dislike
-     */
-    public function setDislike($dislike)
-    {
-        $this->dislike = $dislike;
-    }
-
     /**
      * @return mixed
      */
@@ -194,9 +143,6 @@ class film
     {
         $this->datesotie = $datesotie;
     }
-
-
-
 
 
 

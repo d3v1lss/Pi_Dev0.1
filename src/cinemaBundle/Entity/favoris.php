@@ -27,16 +27,9 @@ class favoris
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="film")
-     * @ORM\JoinColumn(name="film_id",referencedColumnName="id")
+     * @ORM\Column(type="string")
      */
-    private $idfilm;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="salle")
-     * @ORM\JoinColumn(name="salle_id",referencedColumnName="id")
-     */
-    private $idsalle;
+    private $iduser;
 
     /**
      * @return mixed
@@ -57,36 +50,40 @@ class favoris
     /**
      * @return mixed
      */
-    public function getIdfilm()
+    public function getIduser()
     {
-        return $this->idfilm;
+        return $this->iduser;
     }
 
     /**
-     * @param mixed $idfilm
+     * @param mixed $iduser
      */
-    public function setIdfilm($idfilm)
+    public function setIduser($iduser)
     {
-        $this->idfilm = $idfilm;
+        $this->iduser = $iduser;
     }
 
     /**
      * @return mixed
      */
-    public function getIdsalle()
+    public function getFilm()
     {
-        return $this->idsalle;
+        return $this->film;
     }
 
     /**
-     * @param mixed $idsalle
+     * @param mixed $film
      */
-    public function setIdsalle($idsalle)
+    public function setFilm($film)
     {
-        $this->idsalle = $idsalle;
+        $this->film = $film;
     }
 
+    /**
+     * @ORM\Column(type="string")
+     */
 
+  private $film;
 
 
 }

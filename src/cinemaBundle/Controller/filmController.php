@@ -2,7 +2,9 @@
 
 namespace cinemaBundle\Controller;
 
+use AppBundle\Entity\user;
 use cinemaBundle\Entity\favoris;
+use cinemaBundle\Form\favorisType;
 use Symfony\Component\HttpFoundation\Request;
 use cinemaBundle\Entity\film;
 use cinemaBundle\Form\filmType;
@@ -106,17 +108,17 @@ class filmController extends Controller
 
     }
 
-    public function favorisFilmAction(){
+    public function favorisFilmAction($id , $user){
+        $em=$this->getDoctrine()->getManager();
         $favoris = new favoris();
-        $form_favoris  = $this->createForm(new favorisType(), $favoris);
-        $em=  $this->getDoctrine()->getEntityManager();
-        $idfilm=$em->getRepository('cinemaBundle:film')->find(id);
-        $iduser=$em->getRepository('AppBundle:user  ')->find(id);
-        return array(
-            'idfilm'=>$idfilm,
-            'id user' => $ifuser,
-            'form_personne'   => $form_personne->createView()
-        );
+
+
+
+        $favoris ->setIduser($user);
+        $favoris ->setFilm($id);
+        $em->persist($favoris);
+        $em->flush();
+
 
     }
 

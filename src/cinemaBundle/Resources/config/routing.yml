@@ -42,6 +42,15 @@ deletefilm:
 
 
 
+favorisfilm:
+    path:     /fav/{user},{id}
+    defaults: { _controller: cinemaBundle:favoris:favorisFilm}
+
+
+deletefavorisfilm:
+    path:     /delete1/{id}
+    defaults: { _controller: cinemaBundle:favoris:delete}
+
 
 
 
