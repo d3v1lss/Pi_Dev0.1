@@ -43,7 +43,7 @@ class film
     private $categorie;
     /**
 
-    @ORM\Column(type="string")
+    @ORM\Column(type="date")
      */
 
     private $datesotie;

@@ -87,6 +87,9 @@ deletesalle:
     defaults: { _controller: cinemaBundle:salle:delete}
 
 
+
+
+
 Ajout:
     path: /Ajout
     defaults: { _controller: cinemaBundle:Avis:Ajout }

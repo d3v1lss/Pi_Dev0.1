@@ -16,7 +16,7 @@
 
 
     <tr >
-        <td>id </td>
+
         <td>nom</td>
         <td>discription</td>
         <td>duree</td>
@@ -28,12 +28,12 @@
     {% for m in film %}
 
         <tr>
-            <td>{{ m.id }}</td>
+            
             <td>{{ m.nom }}</td>
             <td>{{ m.discription }}</td>
             <td>{{ m.duree }}</td>
             <td>{{ m.categorie }}</td>
-            <td>{{ m.datesotie }}</td>
+            <td>{{ m.datesotie |date('Y-m-d') }}</td>
             <td><a href="{{ path('favorisfilm',{'id': m.nom ,'user':app.user.id}) }}">favoris</a> </td>
             
 
