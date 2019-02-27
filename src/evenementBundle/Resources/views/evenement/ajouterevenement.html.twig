@@ -77,6 +77,10 @@
                         </div>
                     </div>
 
+
+
+
+
                     <div class="form-group">
                         <label class="control-label col-sm-3">Date debut evenement <span class="text-danger">*</span></label>
                         <div class="col-md-8 col-sm-9">
@@ -102,10 +106,11 @@
                         </div>
                     </div>
                 <div class="form-group">
-                    <select>
-                        <option selected>choisir theme</option>
-                            {% for m in evenement %}
-                        <option> {{ m.nom }}</option>
+                    <label class="control-label col-sm-3">Theme <span class="text-danger">*</span></label>
+                    <select name="theme">
+                        <option selected> theme</option>
+                            {% for theme in themes %}
+                        <option value="{{ theme.id }}"> {{ theme.nom }}</option>
                         {% endfor %}
                      </option>
                     </select>

@@ -22,7 +22,7 @@ class evenementController extends Controller
             $evenement->setDatedebut($request->get('datedebut'));
             $evenement->setDatefin($request->get('datefin'));
             $evenement->setDiscription($request->get('discription'));
-            $evenement->setTheme($request->get('nom'));
+            $evenement->setTheme($this->getDoctrine()->getRepository(theme::class)->find($request->get('theme')));
             $evenement->setPhoto($request->get('photo'));
 
             $em=$this->getDoctrine()->getManager();
@@ -32,12 +32,13 @@ class evenementController extends Controller
             return $this->redirectToRoute("evenement_evenement_ajouter");
 
             }
-        $evenement = $this->getDoctrine()->getRepository(evenement::class)->findbyid();
+        $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
         return $this->render('@evenement/evenement/ajouterevenement.html.twig',array(
-            'evenement'=>$evenement
+            'themes'=>$theme
         ));
 
     }
+
 
     public function afficherevenementAction()
     {
