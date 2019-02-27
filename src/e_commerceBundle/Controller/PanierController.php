@@ -9,6 +9,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
+use Twilio\Rest\Client;
+
+
 
 class PanierController extends Controller
 {
@@ -141,7 +144,7 @@ class PanierController extends Controller
         return $this->render('@e_commerce/validation.html.twig', array('cmd' => $commande));
     }
   public function factureAction(Request $request){
-        $snappy = $this->get('knp_snappy.pdf');
+    /*    $snappy = $this->get('knp_snappy.pdf');
       $session = $request->getSession();
       $em = $this->getDoctrine()->getManager();
       $commande = $em ->getRepository('e_commerceBundle:commande')->find($session->get('commande'));
@@ -152,7 +155,21 @@ class PanierController extends Controller
 
         return new Response($snappy->getOutputFromHtml($html),200,array(
             'Content-Type' => 'application/pdf','Content-Disposition' =>'inline; filename="'.$filename.'.pdf"'
-        ));
+        ));*/
+
+      $account_sid = 'ACed820621f7c9b919ec960ad9118fcd5c';
+      $auth_token = '2627619814422b8411d32a357b82ffe7';
+      $twilio_phone_number = "+12016279424";
+
+      $client = new Client($account_sid, $auth_token);
+
+      $client->messages->create(
+          '+21650927486',
+          array(
+              "from" => $twilio_phone_number,
+              "body" => "Whaddup from PHP!"
+          )
+      );
   }
 
 }
