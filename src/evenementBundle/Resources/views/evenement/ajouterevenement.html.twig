@@ -1,3 +1,5 @@
+{% extends "base.html.twig" %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -63,7 +65,7 @@
 
 
                     <div class="form-group">
-                        <label class="control-label col-sm-3">Full Name <span class="text-danger">*</span></label>
+                        <label class="control-label col-sm-3">nom <span class="text-danger">*</span></label>
                         <div class="col-md-8 col-sm-9">
                             <input type="text" class="form-control" name="nom" id="mem_name" placeholder="Enter your Name here" value="">
                         </div>
@@ -155,3 +157,5 @@
 </script>
 </body>
 </htm
+
+{% endblock %}

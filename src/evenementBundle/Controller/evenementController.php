@@ -80,17 +80,19 @@ class evenementController extends Controller
             $evenement->setDatedebut(new \DateTime( $request->get('datedebut')));
             $evenement->setDatefin(new \DateTime( $request->get('datefin')));
             $evenement->setDiscription($request->get('discription'));
-            $evenement->setTheme($request->get('theme'));
-            $evenement->setPhoto($request->get('photo'));
+         //   $evenement->setTheme($request->get('theme'));
             $em->flush();
 
             return $this->redirectToRoute("evenement_evenement_afficher");
 
         }
 
-        return $this->render('@evenement/theme/modifiertheme.html.twig', array(
+        return $this->render('@evenement/evenement/modifierevenement.html.twig', array(
             'evenement' => $evenement
         ));
     }
+
+
+
 
 }
