@@ -84,7 +84,7 @@ class evenementController extends Controller
         {
             $em->remove($evenement_del);
             $em->flush();
-            return $this->redirectToRoute("evenement_evenement_afficher");
+            return $this->redirectToRoute("evenement_evenement_affuser");
 
         }
     }
@@ -103,13 +103,21 @@ class evenementController extends Controller
          //   $evenement->setTheme($request->get('theme'));
             $em->flush();
 
-            return $this->redirectToRoute("evenement_evenement_afficher");
+            return $this->redirectToRoute("evenement_evenement_affuser");
 
         }
 
         return $this->render('@evenement/evenement/modifierevenement.html.twig', array(
             'evenement' => $evenement
         ));
+    }
+
+    public  function RechercheAction(Request $request)
+    {
+        $evenement="";
+        $evenement=$this->getDoctrine()->getRepository(Evenement::class)->findtheme($request->get('theme'));
+
+        return $this->render('@Evenement/Evenement/recherche.html.twig', array( 'evenement' => $evenement));
     }
 
 
