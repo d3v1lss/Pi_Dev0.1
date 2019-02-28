@@ -16,7 +16,7 @@ class ProduitsAjout extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')->add('discription')->add('prix')->add('disponible')->add('photo')->add('tva', EntityType::class,array(
+        $builder->add('nom')->add('description')->add('prix')->add('disponible')->add('photo')->add('tva', EntityType::class,array(
         'class' => 'e_commerceBundle\Entity\tva',
         'choice_label' => 'valeur',
         'multiple' => false,

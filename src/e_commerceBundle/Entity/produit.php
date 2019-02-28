@@ -35,7 +35,7 @@ class produit
     /**
      * @ORM\Column(type="string")
      */
-    private $discription;
+    private $description;
     /**
      * @ORM\Column(type="string")
      */
@@ -149,17 +149,17 @@ class produit
     /**
      * @return mixed
      */
-    public function getDiscription()
+    public function getDescription()
     {
-        return $this->discription;
+        return $this->description;
     }
 
     /**
-     * @param mixed $discription
+     * @param mixed $description
      */
-    public function setDiscription($discription)
+    public function setDescription($description)
     {
-        $this->discription = $discription;
+        $this->description = $description;
     }
 
     /**

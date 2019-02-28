@@ -30,8 +30,6 @@ class produitAdminController extends Controller
            'choice_label'=>'valeur',
            'multiple'=>false,
        ))->getForm();
-
-
         $em = $this->getDoctrine()->getManager();
         $form->handleRequest($request);
         if($request->isMethod('POST')){
@@ -39,9 +37,8 @@ class produitAdminController extends Controller
             $produit->setNom($request->get("nom"));
             $produit->setDisponible($request->get("stock"));
             $produit->setPrix($request->get("prix"));
-            $produit->setDiscription($request->get("description"));
-
-           $produit->setTva($p->getTva());
+            $produit->setDescription($request->get("description"));
+            $produit->setTva($p->getTva());
 
         if ($request->files->get('imageUpload')!=NULL) {
             $file=$request->files->get("imageUpload");
@@ -52,8 +49,6 @@ class produitAdminController extends Controller
             );
         }
             $produit->setPhoto('img/'.$nomfichier);
-
-
 
             $em->persist($produit);
             $em->flush();

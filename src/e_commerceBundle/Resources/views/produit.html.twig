@@ -93,11 +93,11 @@
 
         <div class="row" style="margin-right: auto;margin-left: auto">
                 <div class="span5">
-                    <img  width="350" height="250" src="{{ asset(produit.getPhoto()) }}">
+                    <img  width="458" height="458" src="{{ asset(produit.getPhoto()) }}">
                 </div>
             <div class="span4"  style="padding-left: 50px;margin-top: 30px;margin-bottom: auto;">
                 <b>{{ produit.nom }}</b>
-                <p>{{ produit.discription }}</p>
+                <p style="width: 300px;">{{ produit.description }}</p>
                 <b>Prix : {{ produit.prix }} dt</b>
                 {% if panier[produit.id] is not defined %}
                     <form action="{{ path('ajouterAuPanier',{'id':produit.id}) }}" method="get">
