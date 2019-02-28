@@ -1,7 +1,7 @@
 <?php
 
 namespace cinemaBundle\Repository;
-
+use cinemaBundle\Entity\favoris;
 /**
  * favorisRepository
  *
@@ -10,6 +10,13 @@ namespace cinemaBundle\Repository;
  */
 class favorisRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function rechDQL($iduser)
+    {
+
+        $query=$this->getEntityManager()
+            ->createQuery("Select m from cinemaBundle:favoris m WHERE m.iduser= $iduser");
+        return $query->getResult();
+        }
 
     
 }

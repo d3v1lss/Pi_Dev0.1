@@ -18,11 +18,11 @@ class favorisController extends Controller
     }
 
 
-    public function afficheAction($id){
+    public function afficheAction($iduser){
 
         $em=$this->getDoctrine()->getManager();
 
-        $favoris=$em->
+        $favoris=$em->getRepository("cinemaBundle:favoris")->rechDQL($iduser);
 
         return $this->render('@cinema/Default/favoris.html.twig', array('favoris' => $favoris));
 

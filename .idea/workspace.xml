@@ -4,7 +4,11 @@
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,52 +26,51 @@
         <counts>
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="5" />
-          <entry key="twig" value="2" />
+          <entry key="php" value="11" />
+          <entry key="twig" value="3" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="5" />
-          <entry key="Twig" value="2" />
+          <entry key="PHP" value="11" />
+          <entry key="Twig" value="3" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="12" />
+          <entry key="php" value="92" />
+          <entry key="twig" value="7" />
+          <entry key="yml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="12" />
+          <entry key="PHP" value="92" />
+          <entry key="Twig" value="7" />
+          <entry key="YAML" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+            <state relative-caret-position="408">
+              <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+              <folding>
+                <element signature="e#42#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,17 +78,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="272">
+              <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="112">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -135,10 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/back/index.html.twig" />
-        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/back/admin.html.twig" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" />
         <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/back/workshop.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/rechercherworkshop.html.twig" />
@@ -183,9 +182,13 @@
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresclub.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" />
-        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/noteController.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig" />
       </list>
     </option>
   </component>
@@ -246,10 +249,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="141" />
+    <option name="y" value="2" />
+    <option name="width" value="1232" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -259,6 +262,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +287,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cinemaBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinemaBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
@@ -327,29 +338,28 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ATELIER" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\president" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Controller" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Repository" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\client" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\userBundle\Resources\views\Default" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\president" />
       <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views" />
       <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\Default\club" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\cinemaBundle\Controller" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\president" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Controller" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Repository" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,11 +412,12 @@
       <workItem from="1551216944749" duration="17341000" />
       <workItem from="1551329578846" duration="6000" />
       <workItem from="1551373534247" duration="1343000" />
+      <workItem from="1551375160839" duration="2767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115095000" />
+    <option name="totallyTimeSpent" value="117862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +432,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22163388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -472,20 +483,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="52" column="73" selection-start-line="50" selection-start-column="20" selection-end-line="52" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/rechercherclubType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/request_content.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -520,13 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/rechercherclub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/rechercherclub.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/e_commerceBundle/Entity/commande.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-867" />
@@ -542,44 +533,14 @@
         <state relative-caret-position="-204" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/updateworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/updateclubpresident.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/clubType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="94" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/updateworkshop.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/updateclubpresident.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/clubType.php" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/club.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="211" column="41" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/club.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -587,49 +548,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/workshopType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" />
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/president2.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="76" column="137" selection-start-line="76" selection-start-column="137" selection-end-line="76" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -637,27 +562,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -665,41 +572,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherworkshoppresident.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/listeclub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/listeworkshop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/listeclubRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherworkshoppresident.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/listeclub.php" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/listeworkshop.php" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/listeclubRepository.php" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -707,20 +584,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/clubController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="56" column="59" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresworkshop.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/club.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -735,63 +600,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresclub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresclub.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php" />
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" />
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Repository/filmRepository.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/AfficheDQL.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1595" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+        <state relative-caret-position="243">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="407">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="373">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/noteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="408">
+          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+          <folding>
+            <element signature="e#42#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>

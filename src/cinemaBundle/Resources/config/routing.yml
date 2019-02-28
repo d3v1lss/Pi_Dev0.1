@@ -40,6 +40,11 @@ rechfil:
 
 
 
+affichefav:
+    path:     /affichefav/{iduser}
+    defaults: { _controller: cinemaBundle:favoris:affiche}
+
+
 
 
 
@@ -70,13 +75,6 @@ updatesalle:
 deletesalle:
     path:     /deletesalle/{id}
     defaults: { _controller: cinemaBundle:salle:delete}
-
-
-affichefav:
-    path:     /affichefav
-    defaults: { _controller: cinemaBundle:favoris:affiche}
-
-
 Ajout:
     path: /Ajout
     defaults: { _controller: cinemaBundle:Avis:Ajout }
