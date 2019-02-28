@@ -34,6 +34,11 @@ class StoreController extends Controller
         $session= new Session();
         $em = $this->getDoctrine()->getManager();
         $prods=$em->getRepository('e_commerceBundle:produit')->findBy(array('disponible' => 1));
+        if ($request->isMethod('post'))
+        {
+            $prods=$em->getRepository("e_commerceBundle:produit")->rechercher($request->get('rech'));
+        }
+
        // $prods=array();
         if ($session->has('panier')) {
             $panier = $session->get('panier');
@@ -46,7 +51,6 @@ class StoreController extends Controller
             $double[]=$produits[$i+1];
             $prods[]=$double;
         }*/
-
         if ($request->isXmlHttpRequest()) {
             $serializer=new Serializer((array(new ObjectNormalizer())));
 
@@ -62,6 +66,78 @@ class StoreController extends Controller
         return $this->render('@e_commerce/store.html.twig',array('produits'=>$produits,'panier'=>$panier));
 
     }
+    public function AfficherProduits1Action(Request $request)
+    {
+        $session= new Session();
+        $em = $this->getDoctrine()->getManager();
+        $prods=$em->getRepository('e_commerceBundle:produit')->getProduitPrixDesc();
+        if ($request->isMethod('post'))
+        {
+            $prods=$em->getRepository("e_commerceBundle:produit")->rechercher($request->get('rech'));
+        }
+        // $prods=array();
+        if ($session->has('panier')) {
+            $panier = $session->get('panier');
+        }else{
+            $panier=false;
+        }
+        /*for ($i=0;$i<sizeof($produits)-1;$i+=2){
+            $double=array();
+            $double[]=$produits[$i];
+            $double[]=$produits[$i+1];
+            $prods[]=$double;
+        }*/
+        if ($request->isXmlHttpRequest()) {
+            $serializer=new Serializer((array(new ObjectNormalizer())));
+
+            $result=$em->getRepository('e_commerceBundle:produit')->findNom($request->get('nom'));
+            $data=$serializer->normalize($result);
+            return $this->render('@e_commerce/store.html.twig',array('data'=>$data));
+        }
+        $produits =  $this->get('knp_paginator')->paginate(
+            $prods, /* query NOT result */
+            $request->query->getInt('page', 1)/*page number*/,
+            3/*limit per page*/
+        );
+        return $this->render('@e_commerce/store.html.twig',array('produits'=>$produits,'panier'=>$panier));
+
+    }
+    public function AfficherProduits2Action(Request $request)
+{
+    $session= new Session();
+    $em = $this->getDoctrine()->getManager();
+    $prods=$em->getRepository('e_commerceBundle:produit')->getProduitPrixAsc();
+    if ($request->isMethod('post'))
+    {
+        $prods=$em->getRepository("e_commerceBundle:produit")->rechercher($request->get('rech'));
+    }
+    // $prods=array();
+    if ($session->has('panier')) {
+        $panier = $session->get('panier');
+    }else{
+        $panier=false;
+    }
+    /*for ($i=0;$i<sizeof($produits)-1;$i+=2){
+        $double=array();
+        $double[]=$produits[$i];
+        $double[]=$produits[$i+1];
+        $prods[]=$double;
+    }*/
+    if ($request->isXmlHttpRequest()) {
+        $serializer=new Serializer((array(new ObjectNormalizer())));
+
+        $result=$em->getRepository('e_commerceBundle:produit')->findNom($request->get('nom'));
+        $data=$serializer->normalize($result);
+        return $this->render('@e_commerce/store.html.twig',array('data'=>$data));
+    }
+    $produits =  $this->get('knp_paginator')->paginate(
+        $prods, /* query NOT result */
+        $request->query->getInt('page', 1)/*page number*/,
+        3/*limit per page*/
+    );
+    return $this->render('@e_commerce/store.html.twig',array('produits'=>$produits,'panier'=>$panier));
+
+}
     //juste la page d info
     public function produitAction($id)
     {

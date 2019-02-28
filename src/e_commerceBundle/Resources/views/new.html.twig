@@ -10,41 +10,63 @@
     <div class="offset1" style="margin-left: 21px">
 
     <form method="post" action="{{ path('produitNew') }}" enctype="multipart/form-data">
-    <td> Nom   </td>
+        <div class="col col-md-3">
+        <label class="form-control-label"> Nom   </label>
+        </div>
         <br>
-    <input type="text" name="nom" id="nom"/>
+        <div class="col-12 col-md-9">
+    <input type="text" name="nom" id="nom" class="form-control"/>
+        </div>
         <br>
 <br>
-        <td> Prix  </td>
+        <div class="col col-md-3">
+        <label class="form-control-label"> Prix  </label>
+        </div>
         <br>
-        <input type="number" name="prix" id="prix"/>
+        <div class="col-12 col-md-9">
+        <input type="number" name="prix" id="prix" class="form-control"/>
+        </div>
         <br>
         <br>
-        <td> Description  </td>
+        <div class="col-12 col-md-3">
+        <label for="textarea-input" class="form-control-label"> Description  </label>
+        </div>
         <br>
-        <textarea name="description" id="description">
+        <div class="col-12 col-md-9">
+        <textarea name="description" id="description" rows="9" placeholder="Content..." class="form-control">
         </textarea>
+        </div>
         <br>
         <br>
-    <td> Disponibilité </td>
-        <input type="checkbox" name="stock" id="stock"/>
+        <div class="col col-md-3">
+        <label class="form-control-label">
+            <input type="checkbox" name="stock" id="stock" class="checkbox" class="form-check-input"/>
+            Disponibilité
+        </label>
+        </div>
         <br>
-        <br>
-        {{ form_start(form, {'method': 'POST'}) }}
-        {{ form_row(form.tva) }}
-
+        {{ form_start(form) }}
+        <div class="col-12 col-md-9">
+              {{ form_row(form.tva) }}
+        </div>
         <br>
     <td> Photo du produit</td>
         <input type='file' name="imageUpload" id="imageUpload" accept=".png, .jpg, .jpeg" />
         <br>
         <br>
-        <input class="btn btn-success" type="submit" value="Ajouter " />
-        <a class="btn btn-success" href="{{ path('produitIndex') }}">Annuler</a>
+            <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa fa-dot-circle-o"></i> Ajouter
+            </button>
+            <button type="reset" class="btn btn-danger btn-sm">
+                <i class="fa fa-ban"></i> Annuler
+            </button>
+
+        {{ form_end(form) }}
     </form>
 
 
 
-        {{ form_end(form) }}
+
     </div>
 
 

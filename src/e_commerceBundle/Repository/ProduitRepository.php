@@ -33,5 +33,21 @@ class ProduitRepository extends EntityRepository
             ->setParameter('nom','%'.$nom.'%');
         return $query->getResult();
     }
+    public function getProduitPrixDesc()
+    {
+        $query=$this->getEntityManager()->createQuery("SELECT a FROM e_commerceBundle:produit a WHERE a.disponible = 1 ORDER BY a.prix DESC ");
+        return $query->getResult();
+    }
+    public function getProduitPrixAsc()
+    {
+        $query=$this->getEntityManager()->createQuery("SELECT a FROM e_commerceBundle:produit a  WHERE a.disponible = 1 ORDER BY a.prix ASC ");
+        return $query->getResult();
+    }
+    function rechercher($rech)
+    {
+        $query=$this->getEntityManager()->createQuery("SELECT a FROM e_commerceBundle:produit a WHERE a.nom LIKE :rech ");
+        $query->setParameter(":rech","%".$rech."%");
+        return $query->getResult();
+    }
 
 }

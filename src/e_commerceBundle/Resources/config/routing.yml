@@ -4,6 +4,12 @@ e.commerce_homepage:
 store:
     path:     /store
     defaults: { _controller: e_commerceBundle:Store:AfficherProduits }
+store1:
+    path:     /store1
+    defaults: { _controller: e_commerceBundle:Store:AfficherProduits1 }
+store2:
+    path:     /store2
+    defaults: { _controller: e_commerceBundle:Store:AfficherProduits2 }
 supprimerPanier:
     path:     /supprimerPanier
     defaults: { _controller: e_commerceBundle:Panier:supprimer }
