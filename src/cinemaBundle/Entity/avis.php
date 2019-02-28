@@ -1,20 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: HCHAICHI
- * Date: 17/02/2019
- * Time: 15:25
- */
 
 namespace cinemaBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+
 /**
  * avis
  *
  * @ORM\Table(name="avis")
- * @ORM\Entity(repositoryClass="cinemaBundle\avisRepository")
+ * @ORM\Entity(repositoryClass="cinemaBundle\Repository\avisRepository")
  */
 class avis
 {

@@ -79,7 +79,7 @@ class AvisController extends Controller
 
             ]
         );
-        $pieChart->getOptions()->setTitle('Statistique Avis sur le notre Site');
+        $pieChart->getOptions()->setTitle('Statistique Avis sur notre service');
         $pieChart->getOptions()->setHeight(500);
         $pieChart->getOptions()->setWidth(900);
         $pieChart->getOptions()->getTitleTextStyle()->setBold(true);
