@@ -74,7 +74,7 @@ deletesalle:
 
 affichefav:
     path:     /affichefav
-    defaults: { _controller: cinemaBundle:favoris:affichefav}
+    defaults: { _controller: cinemaBundle:favoris:affiche}
 
 
 Ajout:

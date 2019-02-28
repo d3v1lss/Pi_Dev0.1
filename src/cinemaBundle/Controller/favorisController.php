@@ -22,7 +22,7 @@ class favorisController extends Controller
 
         $em=$this->getDoctrine()->getManager();
 
-        $favoris=$em->getRepository('cinemaBundle:favoris')->findListe($id);
+        $favoris=$em->
 
         return $this->render('@cinema/Default/favoris.html.twig', array('favoris' => $favoris));
 
