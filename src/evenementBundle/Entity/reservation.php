@@ -18,7 +18,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Conseil
  *
  * @ORM\Table(name="reservation")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="evenementBundle\Repository\reservationRepository")
  */
 class reservation
 {
@@ -29,12 +29,7 @@ class reservation
      */
     private $id;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="nombrplaces", type="integer")
-     */
-    private $nombrplaces;
+
 
     /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="reservations")

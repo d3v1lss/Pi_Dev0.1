@@ -22,7 +22,7 @@ class reservationController extends Controller
             $reservation->setUser($user);
 
 
-            $reservation->setNombrplaces($request->get('nombreplaces'));
+           // $reservation->setNombrplaces($request->get('nombreplaces'));
             $reservation->setEvenement($this->getDoctrine()->getRepository(evenement::class)->find($request->get('evenement')));
             $em=$this->getDoctrine()->getManager();
 
@@ -33,7 +33,7 @@ class reservationController extends Controller
             $em->persist($reservation);
             $em->flush();
 
-          //  return $this->redirectToRoute("evenement_evenement_affuser");
+            return $this->redirectToRoute("evenement_reservation_afficher");
 
         }
         $evenement = $this->getDoctrine()->getRepository(evenement::class)->findAll();
@@ -52,8 +52,9 @@ class reservationController extends Controller
 
     public function afficherreservationAction()
     {
-        return $this->render('@evenement:reservation:afficherreservation.html.twig', array(// ...
-        ));
+        $reservation = $this->getDoctrine()->getRepository(reservation::class)->findbyid($this->getUser()->getId());
+        return $this->render('@evenement/reservation/afficherreservation.html.twig', array('reservation'=>$reservation));
+
     }
 
 
@@ -72,7 +73,7 @@ class reservationController extends Controller
         {
             $em->remove($reservation);
             $em->flush();
-            return $this->redirectToRoute("evenement_evenement_afficher");
+            return $this->redirectToRoute("evenement_reservation_afficher");
 
         }
 

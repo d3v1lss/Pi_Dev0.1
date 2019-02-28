@@ -35,7 +35,7 @@ evenement_reservation_modifier:
     path:     /modifierreservation
     defaults: { _controller: evenementBundle:reservation:modifierreservation }
 evenement_reservation_supprimer:
-    path:     /supprimerreservation
+    path:     /supprimerreservation/{id}
     defaults: { _controller: evenementBundle:reservation:supprimerreservation }
 evenement_evenement_affuser:
     path:     /affev
