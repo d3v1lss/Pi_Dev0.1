@@ -3,27 +3,22 @@
 namespace cinemaBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Vich\UploaderBundle\Form\Type\VichImageType;
 
-
-class filmType extends AbstractType
+class RechercheType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nom')
-            ->add('discription')
-            ->add('duree')
-            ->add('categorie')
-            ->add('datesotie')
-            ->add('save',SubmitType::class)
+        $builder
 
-        ;
+            ->add('nom')
+
+            ->add('submit',SubmitType::class);
     }/**
      * {@inheritdoc}
      */
@@ -33,10 +28,6 @@ class filmType extends AbstractType
             'data_class' => 'cinemaBundle\Entity\film'
         ));
     }
-
-
-
-
 
     /**
      * {@inheritdoc}

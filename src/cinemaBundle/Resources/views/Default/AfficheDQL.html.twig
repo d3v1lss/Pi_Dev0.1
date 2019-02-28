@@ -32,7 +32,7 @@
                 <td>{{ m.discription }}</td>
                 <td>{{ m.duree }}</td>
                 <td>{{ m.categorie }}</td>
-                <td>{{ m.datesotie }}</td>
+                <td>{{ m.datesotie |date('Y-m-d') }}</td>
 
 
             </tr>
@@ -40,5 +40,7 @@
     </table>
 
     </br></br></br></br></br>
+
+    <a href="{{ path('readFilmGuest') }}"> Retour </a>
 
 {% endblock %}

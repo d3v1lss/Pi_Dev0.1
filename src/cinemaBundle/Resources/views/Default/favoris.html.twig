@@ -11,15 +11,15 @@
 
 
         <tr >
-            <td>id </td>
-            <td>idfilm</td>
-            <td>iduser</td>
+
+            <td>id film</td>
+            <td>id user</td>
 
         </tr>
         {% for m in favoris %}
 
             <tr>
-                <td>{{ m.id }}</td>
+
                 <td>{{ m.film }}</td>
                 <td>{{ m.iduser }}</td>
 
@@ -30,6 +30,10 @@
     </table>
     </center>
     </br></br></br></br></br>
+
+
+    <a href="{{ path('rechfilm') }}"> Rechercher un film </a>
+    <a href="{{ path('readFilmGuest') }}"> Retour </a>
 
 
 {% endblock %}

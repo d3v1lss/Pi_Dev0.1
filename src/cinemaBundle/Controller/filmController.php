@@ -5,6 +5,7 @@ namespace cinemaBundle\Controller;
 use AppBundle\Entity\user;
 use cinemaBundle\Entity\favoris;
 use cinemaBundle\Form\favorisType;
+use cinemaBundle\Form\RechercheType;
 use Symfony\Component\HttpFoundation\Request;
 use cinemaBundle\Entity\film;
 use cinemaBundle\Form\filmType;
@@ -120,6 +121,26 @@ class filmController extends Controller
         $em->flush();
 
 
+    }
+
+
+
+
+    public function rechAction(Request $request)
+    {
+
+        $film = new film();
+        $form = $this->createForm(RechercheType::class, $film);
+        $form = $form->handleRequest($request);
+        if ($form->isSubmitted()) {
+
+            $film= $this->getDoctrine()->getRepository(film::class)->findBy(array('nom' => $film->getNom()));
+        }
+        else{
+            $film= $this->getDoctrine()->getRepository(film::class)->findAll();
+
+        }
+        return $this->render('@cinema/Default/rechercher.html.twig', array('formulaire' => $form->createView(),'film'=>$film));
     }
 
 
