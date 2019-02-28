@@ -37,3 +37,24 @@ rechfilm:
 rechfil:
     path:     /aff
     defaults: { _controller: cinemaBundle:film;affiche}
+readsalle:
+    path:     /readsalle
+    defaults: { _controller: cinemaBundle:salle:read}
+readSalleGuest:
+    path:     /readSalleGuest
+    defaults: { _controller: cinemaBundle:salle:readSalleGuest}
+createsalle:
+    path:     /createsalle
+    defaults: { _controller: cinemaBundle:salle:create}
+updatesalle:
+    path:     /updatesalle/{id}
+    defaults: { _controller: cinemaBundle:salle:update}
+deletesalle:
+    path:     /deletesalle/{id}
+    defaults: { _controller: cinemaBundle:salle:delete}
+Ajout:
+    path: /Ajout
+    defaults: { _controller: cinemaBundle:Avis:Ajout }
+StatAvis:
+    path:     /StatAvis
+    defaults: { _controller: cinemaBundle:Avis:index }

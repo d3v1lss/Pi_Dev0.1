@@ -3,8 +3,11 @@
 namespace e_commerceBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 class StoreController extends Controller
 {
@@ -43,6 +46,14 @@ class StoreController extends Controller
             $double[]=$produits[$i+1];
             $prods[]=$double;
         }*/
+
+        if ($request->isXmlHttpRequest()) {
+            $serializer=new Serializer((array(new ObjectNormalizer())));
+
+            $result=$em->getRepository('e_commerceBundle:produit')->findNom($request->get('nom'));
+            $data=$serializer->normalize($result);
+            return $this->render('@e_commerce/store.html.twig',array('data'=>$data));
+        }
         $produits =  $this->get('knp_paginator')->paginate(
             $prods, /* query NOT result */
             $request->query->getInt('page', 1)/*page number*/,

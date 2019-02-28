@@ -52,3 +52,7 @@ confirmation:
 supprimerCommande:
     path:     /supprimerCommande/{id}
     defaults: { _controller: e_commerceBundle:CommandeAdmin:supprimerCommande}
+search_produit:
+    path: /search
+    defaults: {_controller: e_commerceBundle:Store:AfficherProduits}
+    methods: POST

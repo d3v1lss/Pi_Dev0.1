@@ -25,5 +25,13 @@ class ProduitRepository extends EntityRepository
         return $produits;
     }
 
+    function findNom($nom)
+    {
+        $query=$this->getEntityManager()
+            ->createQuery("
+            select l from e_commerceBundle:produit p where p.nom LIKE :nom")
+            ->setParameter('nom','%'.$nom.'%');
+        return $query->getResult();
+    }
 
 }

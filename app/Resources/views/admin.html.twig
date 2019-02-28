@@ -60,12 +60,35 @@
                             <li><a class="dropdown-item" href="{{ path('produitIndex') }}">Afficher les produits</a></li>
                             <li><a class="dropdown-item" href="{{ path('AfficherCommande') }}">Afficher les Commandes</a></li>
                         </ul>
-
-
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fas fa-film"></i> Cinema</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="sub-nav5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cinema
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="sub-nav5">
+                            <li>
+                                <a href="{{  path('readfilm')}}">liste  des films </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-check-square"></i>liste des salles </a>
+                            </li>
+                            <li>
+                                <a href="{{  path('createfilm')}}">
+                                    <i class="fas fa-table"></i> Ajout film </a>
+                            </li>
+
+                            <li>
+                                <a href="{{  path('createsalle')}}">
+                                    <i class="fas fa-table"></i>Ajout salle </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-table"></i>Consulter les avis </a>
+                            </li>
+
+                        </ul>
                     </li>
                     <li>
                         <a href="#">

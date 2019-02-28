@@ -90,38 +90,46 @@
                 <div class="col-8"></div>
             </div>
         </div>
-    <div class="span9">
-        <div class="row">
-            <table>
+
+        <div class="row" style="margin-right: auto;margin-left: auto">
                 <div class="span5">
                     <img  width="350" height="250" src="{{ asset(produit.getPhoto()) }}">
                 </div>
-            </table>
-
-            <div class="span4">
-                <h4>{{ produit.nom }}</h4>
+            <div class="span4"  style="padding-left: 50px;margin-top: 30px;margin-bottom: auto;">
+                <b>{{ produit.nom }}</b>
                 <p>{{ produit.discription }}</p>
-                <h4>{{ produit.prix }} dt</h4>
-
+                <b>Prix : {{ produit.prix }} dt</b>
                 {% if panier[produit.id] is not defined %}
                     <form action="{{ path('ajouterAuPanier',{'id':produit.id}) }}" method="get">
-                        <select name="qte" class="span1">
+                        <b> Quantité :  </b> <select name="qte" class="span1">
                             {% for i in 1..10 %}
-                                <option value="{{ i }}">{{ i }}</option>
+                             <option value="{{ i }}">{{ i }}</option>
                             {% endfor %}
                         </select>
-                        <div>
-                            <button class="btn btn-primary">Ajouter au panier</button>
-                        </div>
                     </form>
-                {% else %}
-                    <a class="btn btn-success" href="{{ path('afficherPanier')}}">Déja au panier</a>
-                {% endif %}
 
+                    <div>
+                        <br>
+                        <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('ajouterAuPanier',{'id':produit.id} ) }}">Ajouter au panier</a>
+                    </div>
+                    <div>
+                        <br>
+                        <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('store') }}">Revenir au store</a>
+                    </div>
+                {% else %}
+
+                    <div>
+                        <br>
+                    <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('afficherPanier')}}">Déja au panier</a>
+                    </div>
+                    <div>
+                        <br>
+                        <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('store') }}">Revenir au store</a>
+                    </div>{% endif %}
             </div>
         </div>
     </div>
-    </div>
+
 </div>
     </body>
 {% endblock %}

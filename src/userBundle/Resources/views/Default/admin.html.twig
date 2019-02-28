@@ -35,7 +35,7 @@
                 <div class="image img-cir img-120">
                     <img src="images/icon/aa.png" />
                 </div>
-                <h4 class="name">Hchaichi Akrem</h4>
+                <h4 class="name">The devils</h4>
                 <a href="#">Sign out</a>
             </div>
             <nav class="navbar-sidebar2">
@@ -62,13 +62,40 @@
                         </ul>
 
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-film"></i> Cinema</a>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="sub-nav5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cinema
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="sub-nav5">
+                            <li>
+                                <a href="{{  path('readfilm')}}">
+                                    <i class="fas fa-table"></i>liste  des films </a>
+                            </li>
+                            <li>
+                                <a href="{{  path('readsalle')}}">
+                                    <i class="far fa-check-square"></i>liste des salles </a>
+                            </li>
+                            <li>
+                                <a href="{{  path('createfilm')}}">
+                                    <i class="fas fa-table"></i> Ajout film </a>
+                            </li>
+
+                            <li>
+                                <a href="{{  path('createsalle')}}">
+                                    <i class="fas fa-table"></i>Ajout salle </a>
+                            </li>
+
+                            <li>
+                                <a href="{{  path('StatAvis')}}">
+                                    <i class="fas fa-table"></i>Consulter les avis </a>
+                            </li>
+
+                        </ul>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fas fa-calendar-alt"></i> Evenement</a>
+
                     </li>
                     <li>
                         <a href="#">
