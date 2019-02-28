@@ -25,6 +25,14 @@
         Liste des evenements
     </h3>
 
+
+    <h5 class="pb-3 mb-4 font-italic border-bottom">
+        Ajouter un  evenement
+        <a  href="{{  path('evenement_evenement_ajouter' )  }} " class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">ajouter</a>
+
+    </h5>
+
+
     {% for evenement in evenement %}
     <div class="row">
         <div class="col-md-6">
@@ -44,10 +52,7 @@
 
 
 
-                    <a  href=" {{  path('evenement_evenement_modifier',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">modifier</a>
 
-
-                    <a  href=" {{  path('evenement_evenement_supprimer',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">supprimer</a>
 
                     <a  href=" {{  path('evenement_reservation_ajouter',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">reserver une place</a>
 

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/affevent.hml.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/evenementBundle/Controller/evenementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Controller/evenementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/modifierevenement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/modifierevenement.html.twig" afterDir="false" />
@@ -39,34 +41,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="687" />
-          <entry key="twig" value="812" />
+          <entry key="php" value="947" />
+          <entry key="twig" value="854" />
           <entry key="txt" value="86" />
-          <entry key="yml" value="85" />
+          <entry key="yml" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="687" />
+          <entry key="PHP" value="947" />
           <entry key="PLAIN_TEXT" value="86" />
-          <entry key="Twig" value="812" />
-          <entry key="YAML" value="85" />
+          <entry key="Twig" value="854" />
+          <entry key="YAML" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="14" />
+          <entry key="php" value="15" />
           <entry key="rnc" value="1" />
-          <entry key="twig" value="29" />
+          <entry key="twig" value="30" />
           <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="14" />
+          <entry key="PHP" value="15" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RNG Compact" value="1" />
-          <entry key="Twig" value="27" />
+          <entry key="Twig" value="28" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
@@ -77,8 +79,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/evenementBundle/Controller/evenementController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="67" column="74" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+            <state relative-caret-position="201">
+              <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+              <folding>
+                <element signature="e#46#83#0#PHP" expanded="true" />
+                <element signature="e#1746#1795#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/affevent.hml.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#3108#3144#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,21 +113,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="152">
+              <caret line="41" column="63" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/reservation/afficherreservation.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/evenementBundle/Entity/reservation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="353">
               <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
@@ -133,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="51">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -143,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/modifierevenement.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="114" selection-start-line="114" selection-end-line="114" />
+              <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -151,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/ajouterevenement.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="120" column="12" lean-forward="true" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+            <state relative-caret-position="-831">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -178,6 +200,7 @@
       <find>40</find>
       <find>40 Percent of People Can’t Afford Basics</find>
       <find>se</find>
+      <find>evenement_evenement_affuser</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -218,7 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/commande.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/emprunt.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/evenement.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/film.php" />
@@ -256,7 +278,6 @@
         <option value="$PROJECT_DIR$/src/evenementBundle/Repository/themeRepository.php" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Form/evenementType.php" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Entity/theme.php" />
-        <option value="$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Entity/evenement.php" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/ajouterev.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
@@ -264,11 +285,13 @@
         <option value="$PROJECT_DIR$/src/evenementBundle/Entity/reservation.php" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Controller/reservationController.php" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenementuserr.html.twig" />
-        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig" />
-        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/modifierevenement.html.twig" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/ajouterevenement.html.twig" />
+        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/modifierevenement.html.twig" />
+        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/evenementBundle/Controller/evenementController.php" />
+        <option value="$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php" />
+        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/affevent.hml.twig" />
+        <option value="$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig" />
       </list>
     </option>
   </component>
@@ -326,10 +349,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -370,6 +392,13 @@
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="evenementBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="evenementBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -399,15 +428,6 @@
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="evenementBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -418,7 +438,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BonPlan/Projet_pidev" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -490,12 +510,12 @@
       <workItem from="1551259373208" duration="2505000" />
       <workItem from="1551286136091" duration="1529000" />
       <workItem from="1551291320966" duration="45000" />
-      <workItem from="1551291388745" duration="4894000" />
+      <workItem from="1551291388745" duration="14073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115721000" />
+    <option name="totallyTimeSpent" value="124900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,7 +530,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -561,7 +581,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/reservation.php" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/forum.php" />
     <entry file="file://$PROJECT_DIR$/src/forumBundle/Entity/forum.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -679,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/ajouterev.html.twig" />
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -755,13 +767,6 @@
     <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/reservation/afficherreservation.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Entity/reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/evenementBundle/Entity/theme.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -794,38 +799,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Entity/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/modifierevenement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/ajouterevenement.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="120" column="12" lean-forward="true" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+        <state relative-caret-position="-831">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="41" column="63" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Repository/evenementRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/affevent.hml.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#3108#3144#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/evenementBundle/Resources/views/evenement/afficherevenement.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/evenementBundle/Controller/evenementController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="67" column="74" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+        <state relative-caret-position="201">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <folding>
+            <element signature="e#46#83#0#PHP" expanded="true" />
+            <element signature="e#1746#1795#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

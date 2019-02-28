@@ -1,0 +1,81 @@
+{% extends "base.html.twig." %}
+
+{% block content %}
+    <head>
+        <meta charset="utf-8">
+        <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+        <title>LIST PRODUCTSSS - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ asset ('http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css') }}" rel="stylesheet">
+        <style type="text/css">
+
+        </style>
+        <script src="{{ asset ('http://code.jquery.com/jquery-1.11.1.min.js')}}"></script>
+        <script src="{{ asset ('http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js') }}"></script>
+    </head>
+    <body>
+    <link href="{{ asset ('//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
+    <script src="{{ asset('//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset ('//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')}}"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <div class="container">
+        <h3 class="pb-3 mb-4 font-italic border-bottom">
+            Liste des evenements
+        </h3>
+
+        {% for evenement in evenement %}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 text-primary"> {{ evenement.nom }}</strong>
+
+                            <div class="mb-1 text-muted small">{{ evenement.datedebut  | date}}</div>
+                            <div class="mb-1 text-muted small"> {{ evenement.datefin  | date}}</div>
+                            <p > nombre de place : {{ evenement.nombreplaces }} </p>
+                            <p > description : {{ evenement.discription }} </p>
+                            <p > theme : {{ evenement.theme.nom }} </p>
+
+
+
+
+
+
+
+                            <a  href=" {{  path('evenement_evenement_modifier',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">modifier</a>
+
+
+                            <a  href=" {{  path('evenement_evenement_supprimer',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">supprimer</a>
+
+
+
+                        </div>
+
+                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Image" src =" {{ asset('img/uploads/'~evenement.photo) }}" style="width: 200px; height: 250px;">
+                    </div>
+                </div>
+
+            </div>
+        {% endfor %}
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr>
+    <a href="http://www.jquery2dotnet.com/" class="mx-auto pb-3 text-center">
+
+    </a>
+    </div>
+
+    <script type="text/javascript">
+
+    </script>
+    </body>
+
+{% endblock %}

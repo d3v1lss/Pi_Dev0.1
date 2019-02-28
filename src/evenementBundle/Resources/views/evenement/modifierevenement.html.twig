@@ -81,21 +81,19 @@
 
 
 
-
-
-                 {#   <div class="form-group">
+                   <div class="form-group">
                         <label class="control-label col-sm-3">Date debut evenement <span class="text-danger">*</span></label>
                         <div class="col-md-8 col-sm-9">
-                            <input type="Date" class="form-control" name="datedebut" id="start" value="{{ evenement.datedebut }}">
+                            <input type="Date" class="form-control" name="datedebut" id="start" value="{{ evenement.datedebut | date }}">
                         </div>
-                    </div>#}
+                    </div>
 
-               {#     <div class="form-group">
+                    <div class="form-group">
                         <label class="control-label col-sm-3">Date fin evenement <span class="text-danger">*</span></label>
                         <div class="col-md-8 col-sm-9">
-                            <input type="Date" class="form-control" name="datefin" id="start" value="{{ evenement.datefin }}">
+                            <input type="Date" class="form-control" name="datefin" id="start" value="{{ evenement.datefin  | date}}">
                         </div>
-                    </div>#}
+                    </div>
 
 
 

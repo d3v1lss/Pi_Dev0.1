@@ -11,9 +11,10 @@ namespace evenementBundle\Repository;
 
 class evenementRepository extends \Doctrine\ORM\EntityRepository
 {
-     public function findbyid (){
+     public function findbyid ($id){
          $query = $this->getEntityManager()
-             ->createQuery("SELECT m FROM evenementBundle:theme m ")
-             ->getResult();
+             ->createQuery("SELECT m FROM evenementBundle:evenement m WHERE m.user=:id ")
+             ->setParameter('id',$id);
+           return $query->getResult();
      }
 }
