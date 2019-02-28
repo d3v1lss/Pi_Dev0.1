@@ -51,31 +51,38 @@
                             <td>{{ c.statut }}</td>
                             <td>
                                 <a class="table-data-feature">
-                                    <a href="{{ path('update_club_president',{'id':c.id}) }}">
-                                        <button class="item" data-toggle="tooltip" data-placement="top" >
-
-                                            <i class="zmdi zmdi-mail-send"></i>
-                                        </button></a>
+                                    <a href="{{ path('update_club_president',{'id':c.id}) }}"
+                                       class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-4">update </a>
 
                                 </a>
                                 <a class="table-data-feature">
-                                    <a href="{{ path('membres_club',{'id':c.id}) }}">
-                                        <button class="item" data-toggle="tooltip" data-placement="top" >
-
-                                            <i class="zmdi zmdi-mail-send"></i>
-                                        </button></a>
+                                    <a href="{{ path('membres_club',{'id':c.id}) }}"
+                                        class="font-25 semi-font fables-second-text-color u
+                                        fables-main-hover-color ml-4">membres </a>
 
                                 </a>
                             </td>
 
                         </tr>
-                        <tr>  <td>
+                        <tr>
+                            <td>
                                 <a href="{{  path('ajouter_workshop')}}"
                                    class="font-25 semi-font fables-second-text-color u
                            fables-main-hover-color ml-2">Ajouter workshop </a></p>
 
 
-                            </td></tr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="{{  path('mail')}}"
+                                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-2">envoyer mail</a></p>
+
+
+                            </td>
+                        </tr>
                     {% endfor %}
                     </tbody>
                 </table>

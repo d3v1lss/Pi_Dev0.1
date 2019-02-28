@@ -16,31 +16,38 @@ class mailController extends Controller
     {
         $mail = new Mail();
         $form=  $this->createForm(MailType::class,  $mail);
-
-
-        // $request = Request::createFromGlobals();
         $form->handleRequest($request) ;
+
+
         if ($form->isValid()) {
+
+            $from = $mail->getFrom();
+            $to = $mail->getTo();
+            $objet = $mail->getObjet();
+            $text= $mail->getText();
+
+
+
+
+
             $message = \Swift_Message::newInstance()
-                ->setSubject('Accusé de réception')
-                ->setFrom('hchaichi-akrem@outlook.fr')
-                ->setTo($mail->getEmail())
-                ->setBody(
-                    $this->renderView(
-                        '@club/president/mailok.html.twig',
-                        array('nom' => $mail->getNom(), 'prenom'=>$mail->getPrenom())
-                    ),
-                    'text/html'
-                );
+
+                ->setFrom($from)
+                ->setTo($to)
+                ->setSubject($objet)
+                ->setBody($text);
+
             $this->get('mailer')->send($message);
             return $this->redirect($this->generateUrl('mail_ok'));
         }
+
+
 
         return $this->render('@club/president/mail.html.twig'
             , array('form'=>$form->createView()));
     }
 
     public function successAction(){
-        return new Response("email envoyé avec succès, Merci de vérifier votre adresse mail.");
+        return $this->render('@club/president/mailok.html.twig');
     }
 }

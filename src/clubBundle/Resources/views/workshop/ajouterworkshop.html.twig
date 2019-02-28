@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'president2.html.twig' %}
 
 {% block content %}
 
@@ -33,7 +33,7 @@
                     <div class="input-icon">
 
                         {{ form_widget(form.user, { 'attr': {'class': 'form-control rounded-0
-                   py-3 pl-5 font-13 sign-register-input','placeholder':'club'} }) }}
+                  sign-register-input','placeholder':'club'} }) }}
 
                     </div>
                     <br>
@@ -57,16 +57,14 @@
                     <br>
                     <div class="input-icon">
 
-                        {{ form_widget(form.datedebut, { 'attr': {'class': 'form-control rounded-0
-                   py-3 pl-5 font-13 sign-register-input','placeholder':'datedebut'} }) }}
+                        {{ form_widget(form.datedebut) }}
 
                     </div>
                     <br>
                     <br>
                     <div class="input-icon">
 
-                        {{ form_widget(form.datefin, { 'attr': {'class': 'form-control rounded-0
-                   py-3 pl-5 font-13 sign-register-input','placeholder':'datefin'} }) }}
+                        {{ form_widget(form.datefin) }}
 
                     </div>
                     <br>
@@ -82,7 +80,7 @@
                     <div class="input-icon">
 
                         {{ form_widget(form.club, { 'attr': {'class': 'form-control rounded-0
-                   py-3 pl-5 font-13 sign-register-input','placeholder':'club'} }) }}
+                   sign-register-input','placeholder':'club'} }) }}
 
                     </div>
                     <br>

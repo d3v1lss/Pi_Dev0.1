@@ -1,7 +1,7 @@
 <?php
 
 namespace clubBundle\Controller;
-
+use clubBundle\Entity\club;
 use clubBundle\Entity\workshop;
 use clubBundle\Form\clubType;
 use clubBundle\Form\rechercherworkshopType;
@@ -47,7 +47,7 @@ class workshopController extends Controller
             $em->flush();
 
 
-            return $this->redirectToRoute('afficher_workshop_president');
+            return $this->redirectToRoute('president_homepage');
         }
         return $this->render('@club/workshop/ajouterworkshop.html.twig',
             array('form' => $form->createView()));
@@ -60,7 +60,7 @@ class workshopController extends Controller
 
         $em->remove($workshop);
         $em->flush();
-        return $this->redirectToRoute("afficher_workshop");
+        return $this->redirectToRoute("president_homepage");
     }
 
     public function updateAction($id, Request $request)
@@ -70,30 +70,10 @@ class workshopController extends Controller
         $form = $form->handleRequest($request);
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager()->flush();
-            return $this->redirectToRoute('afficher_workshop_president');
+            return $this->redirectToRoute('president_homepage');
         }
         return $this->render('@club/workshop/updateworkshop.html.twig', array('form' => $form->createView()));
 
-    }
-    public function rechercherAction(Request $request)
-    {
-
-        $workshop = new workshop();
-        $form = $this->createForm(rechercherworkshopType::class, $workshop);
-        $form = $form->handleRequest($request);
-        if ($form->isSubmitted()) {
-
-            $workshop= $this->getDoctrine()->getRepository(workshop::class)
-                ->findBy(array('nom' => $workshop->getNom()));
-
-        }
-        else{
-            $workshop= $this->getDoctrine()->getRepository(workshop::class)
-                ->findAll();
-
-        }
-        return $this->render('@club/workshop/rechercherworkshop.html.twig', array('form' =>
-            $form->createView(),'workshop'=>$workshop));
     }
 
     /**

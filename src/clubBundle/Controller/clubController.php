@@ -78,7 +78,7 @@ class clubController extends Controller
         if ($form->isValid()) {
 
             $em = $this->getDoctrine()->getManager()->flush();
-            return $this->redirectToRoute('afficher_club_president2');
+            return $this->redirectToRoute('president_homepage');
         }
         return $this->render('@club/president/updateclubpresident.html.twig',
             array('form' => $form->createView()));

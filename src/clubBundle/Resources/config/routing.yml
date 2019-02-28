@@ -66,6 +66,9 @@ inscrit_club:
     path:     /inscritc/{user},{id}
     defaults: { _controller: clubBundle:listeclub:inscrit}
 
+
+
+
 membres_club:
     path:     /membresc/{id}
     defaults: { _controller: clubBundle:listeclub:membres}

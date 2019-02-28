@@ -11,73 +11,59 @@ namespace clubBundle\Entity;
 
 class Mail
 {
-    private $nom;
-    private $prenom;
-    private $tel;
-    private $email;
+    private $to;
+    private $from;
+    private $objet;
+    private $text;
+
+
 
     /**
      * @return mixed
      */
-    public function getNom()
+    public function getTo()
     {
-        return $this->nom;
+        return $this->to;
     }
 
     /**
-     * @param mixed $nom
+     * @param mixed $to
      */
-    public function setNom($nom)
+    public function setTo($to)
     {
-        $this->nom = $nom;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
-    }
-
-    /**
-     * @param mixed $prenom
-     */
-    public function setPrenom($prenom)
-    {
-        $this->prenom = $prenom;
+        $this->to = $to;
     }
 
     /**
      * @return mixed
      */
-    public function getTel()
+    public function getFrom()
     {
-        return $this->tel;
+        return $this->from;
     }
 
     /**
-     * @param mixed $tel
+     * @param mixed $from
      */
-    public function setTel($tel)
+    public function setFrom($from)
     {
-        $this->tel = $tel;
+        $this->from = $from;
     }
 
     /**
      * @return mixed
      */
-    public function getEmail()
+    public function getObjet()
     {
-        return $this->email;
+        return $this->objet;
     }
 
     /**
-     * @param mixed $email
+     * @param mixed $objet
      */
-    public function setEmail($email)
+    public function setObjet($objet)
     {
-        $this->email = $email;
+        $this->objet = $objet;
     }
 
     /**
@@ -95,5 +81,7 @@ class Mail
     {
         $this->text = $text;
     }
-    private $text;
+
+
+
 }

@@ -27,7 +27,7 @@
                         <th>datefin</th>
                         <th>discription</th>
 
-                        <th>     </th>
+                        <th colspan="2">  operations  </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -47,22 +47,22 @@
                             <td>{{ w.discription }}</td>
 
                             <td>
-                                <a class="table-data-feature">
-                                    <a href="{{ path('update_workshop',{'id':w.id}) }}">
-                                        <button class="item" data-toggle="tooltip" data-placement="top" >
 
-                                            <i class="zmdi zmdi-mail-send"></i>
-                                        </button></a>
+                                <a href="{{ path('update_workshop',{'id':w.id}) }}"
+                                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-4">update </a>
+                            </td>
+                            <td>
+                                    <a href="{{ path('membres_workshop',{'id':w.id}) }}"
+                                       class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-4">liste </a>
 
-                                </a>
-                                <a class="table-data-feature">
-                                    <a href="{{ path('membres_workshop',{'id':w.id}) }}">
-                                        <button class="item" data-toggle="tooltip" data-placement="top" >
+                            </td>
+                            <td>
+                                <a href="{{ path('supp_workshop',{'id':w.id}) }}"
+                                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-4">supp </a>
 
-                                            <i class="zmdi zmdi-mail-send"></i>
-                                        </button></a>
-
-                                </a>
                             </td>
                         </tr>
 
@@ -76,11 +76,7 @@
     <div class="container">
         <div class="row my-4 my-lg-5">
 
-            <div class="input-icon">
-                <a href="{{  path('rechercher_club')}}"
-                   class="font-25 semi-font fables-second-text-color u
-                           fables-main-hover-color ml-2">Rechercher </a></p>
-            </div>
+
             <div class="input-icon">
                 <a href="{{  path('ajouter_workshop')}}"
                    class="font-25 semi-font fables-second-text-color u

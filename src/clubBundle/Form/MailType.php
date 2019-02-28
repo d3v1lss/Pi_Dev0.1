@@ -15,12 +15,12 @@ class MailType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nom', TextType::class)
-            ->add('prenom', TextType::class)
-            ->add('tel', IntegerType::class)
-            ->add('email', EmailType::class)
-            ->add('text', TextareaType::class)
-            ->add('valider', SubmitType::class) ;
+            ->add('to', EmailType::class)
+            ->add('from', EmailType::class)
+
+            ->add('objet', TextType::class)
+            ->add('text', TextareaType::class);
+
     }
 
 
