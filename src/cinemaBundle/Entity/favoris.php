@@ -1,19 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: HCHAICHI
- * Date: 17/02/2019
- * Time: 15:24
- */
 
 namespace cinemaBundle\Entity;
-
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="cinemaBundle\Repository\filmRepository")
-
+ * favoris
+ *
+ * @ORM\Table(name="favoris")
+ * @ORM\Entity(repositoryClass="cinemaBundle\Repository\favorisRepository")
  */
 class favoris
 {
@@ -22,6 +17,7 @@ class favoris
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
+
     private $id;
 
 
@@ -83,7 +79,8 @@ class favoris
      * @ORM\Column(type="string")
      */
 
-  private $film;
+    private $film;
 
 
 }
+
