@@ -36,6 +36,14 @@ rechercher_workshop:
     defaults: { _controller: clubBundle:workshop:rechercher}
 
 
+mail:
+    path:     /mail
+    defaults: { _controller: clubBundle:mail:index}
+
+mail_ok:
+    path:      /success
+    defaults: { _controller: clubBundle:mail:success}
+
 
 afficher_club_president:
     path:     /club/{id}
