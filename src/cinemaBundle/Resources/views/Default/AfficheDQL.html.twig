@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+
+    <center xmlns:>
+
+    <h1 style="color: #C82829" align="41">LA LISTE DES FILMS</h1>
+</center>
+    <br><br><br><br><br>
+
+
+    <table style="width:100%" :hover {background-color: #f5f5f5;} >
+
+
+
+        <tr :hover {background-color: #f5f5f5;} >
+
+            <td>nom</td>
+            <td>discription</td>
+            <td>duree</td>
+            <td>categorie</td>
+            <td>datesotie</td>
+
+        </tr>
+        {% for m in film %}
+
+            <tr>
+
+                <td>{{ m.nom }}</td>
+                <td>{{ m.discription }}</td>
+                <td>{{ m.duree }}</td>
+                <td>{{ m.categorie }}</td>
+                <td>{{ m.datesotie |date('Y-m-d') }}</td>
+
+
+            </tr>
+        {% endfor %}
+    </table>
+
+    </br></br></br></br></br>
+
+    <a href="{{ path('readFilmGuest') }}"> Retour </a>
+
+{% endblock %}

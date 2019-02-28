@@ -45,19 +45,19 @@ class CommandeAdminController extends Controller
 
        $client = new Client($account_sid, $auth_token);
 
-        $client->messages->create(
+       /* $client->messages->create(
             '+21650927486',
             array(
                 "from" => $twilio_phone_number,
                 "body" => "Votre Commande a été comfirmer !"
             )
-        );
+        );*/
 
         $commandes->setValider(1);
         /*var_dump($commandes);
         die();*/
         $em->persist($commandes);
-$em->flush();
+         $em->flush();
         return $this->redirectToRoute('AfficherCommande');
     }
 

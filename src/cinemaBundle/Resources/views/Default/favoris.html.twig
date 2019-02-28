@@ -1,0 +1,39 @@
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <br><br><br><br><br>
+
+
+    <table style="width:100%" :hover {background-color: #f5f5f5;}}>
+
+
+
+        <tr >
+
+            <td>id film</td>
+            <td>id user</td>
+
+        </tr>
+        {% for m in favoris %}
+
+            <tr>
+
+                <td>{{ m.film }}</td>
+                <td>{{ m.iduser }}</td>
+
+
+
+            </tr>
+        {% endfor %}
+    </table>
+    </center>
+    </br></br></br></br></br>
+
+
+    <a href="{{ path('rechfilm') }}"> Rechercher un film </a>
+    <a href="{{ path('readFilmGuest') }}"> Retour </a>
+
+
+{% endblock %}
