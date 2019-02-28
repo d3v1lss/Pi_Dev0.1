@@ -14,31 +14,40 @@ class reservationController extends Controller
 
     public function ajouterreservationAction(Request $request)
     {
-        if ($request->isMethod('POST')) {
+        //   $em=$this->getDoctrine()->getManager();
+        if($request->isMethod('POST')) {
             $reservation = new reservation();
-         //   $reservation->setNom($request->get('nom'));
+            //   $user=$em->getRepository(user)->find($id);
+            $user = $this->getUser();
+            $reservation->setUser($user);
 
+
+            $reservation->setNombrplaces($request->get('nombreplaces'));
             $reservation->setEvenement($this->getDoctrine()->getRepository(evenement::class)->find($request->get('evenement')));
+            $em=$this->getDoctrine()->getManager();
 
 
             /*$evenement->setPhoto($request->get('photo'));*/
-            // dump($evenement);
-            $em = $this->getDoctrine()->getManager();
+          //  dump($reservation);
+
             $em->persist($reservation);
             $em->flush();
 
-            //return $this->redirectToRoute("evenement_evenement_afficher");
+          //  return $this->redirectToRoute("evenement_evenement_affuser");
 
         }
-        // $theme = $this->getDoctrine()->getRepository(theme::class)->findAll();
+        $evenement = $this->getDoctrine()->getRepository(evenement::class)->findAll();
 
-        $reservation = $this->getDoctrine()->getRepository(reservation::class)->findAll();
+        // $evenement = $this->getDoctrine()->getRepository(evenement::class)->findAll();
 
 
-        return $this->render('@evenement/reservation/ajouterreservation.html.twig', array(
-            'reservation' => $reservation
+        return $this->render('@evenement/reservation/ajouterreservation.html.twig',array(
+            'evenement'=>$evenement
         ));
     }
+
+
+
 
 
     public function afficherreservationAction()

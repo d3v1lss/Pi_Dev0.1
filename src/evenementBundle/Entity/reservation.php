@@ -30,9 +30,17 @@ class reservation
     private $id;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="nombrplaces", type="integer")
+     */
+    private $nombrplaces;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="reservations")
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
+
 
     private $user;
     /**
@@ -89,4 +97,28 @@ class reservation
         $this->id = $id;
     }
 
+
+    /**
+     * Set nombrplaces
+     *
+     * @param integer $nombrplaces
+     *
+     * @return reservation
+     */
+    public function setNombrplaces($nombrplaces)
+    {
+        $this->nombrplaces = $nombrplaces;
+
+        return $this;
+    }
+
+    /**
+     * Get nombrplaces
+     *
+     * @return integer
+     */
+    public function getNombrplaces()
+    {
+        return $this->nombrplaces;
+    }
 }

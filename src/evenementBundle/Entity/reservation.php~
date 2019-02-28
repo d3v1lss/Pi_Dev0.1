@@ -30,9 +30,17 @@ class reservation
     private $id;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="nombrplaces", type="integer")
+     */
+    private $nombrplaces;
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="reservations")
      * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
      */
+
 
     private $user;
     /**
