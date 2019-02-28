@@ -96,7 +96,7 @@ class PanierController extends Controller
     }
 
     public function validationAction(Request $request)
-    {   $generator = random_bytes(20);
+    {   $generator = random_bytes(10);
         $em = $this->getDoctrine()->getManager();
        // $session = $request->getSession();
         $session = $this->get('request_stack')->getCurrentRequest()->getSession();
