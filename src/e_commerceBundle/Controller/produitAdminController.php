@@ -16,7 +16,7 @@ class produitAdminController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $produits = $em->getRepository('e_commerceBundle:Produit')->findAll();
+        $produits = $em->getRepository('e_commerceBundle:produit')->findAll();
 
         return $this->render('@e_commerce/index.html.twig', array(
             'produits' => $produits,));
@@ -70,7 +70,7 @@ class produitAdminController extends Controller
     {
 
         $em=$this->getDoctrine()->getManager();
-        $produit=$em->getRepository("e_commerceBundle:Produit")->find($id);
+        $produit=$em->getRepository("e_commerceBundle:produit")->find($id);
         $em->remove($produit);
         $em->flush();
 
@@ -81,7 +81,7 @@ class produitAdminController extends Controller
     {
 
         $em=$this->getDoctrine()->getManager();
-        $produit=$em->getRepository("e_commerceBundle:Produit")->find($id);
+        $produit=$em->getRepository("e_commerceBundle:produit")->find($id);
         $Form = $this->createForm(ProduitsType::class,$produit);
         $Form->handleRequest($request);
         if ($Form->isValid())

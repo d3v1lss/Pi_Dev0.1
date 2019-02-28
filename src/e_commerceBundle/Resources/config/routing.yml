@@ -46,3 +46,9 @@ facture:
 AfficherCommande:
     path:     /AfficherCommande
     defaults: { _controller: e_commerceBundle:CommandeAdmin:AfficherCommande}
+confirmation:
+    path:     /confirmation/{id}
+    defaults: { _controller: e_commerceBundle:CommandeAdmin:confirmation}
+supprimerCommande:
+    path:     /supprimerCommande/{id}
+    defaults: { _controller: e_commerceBundle:CommandeAdmin:supprimerCommande}

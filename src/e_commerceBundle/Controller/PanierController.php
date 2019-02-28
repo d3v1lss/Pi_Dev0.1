@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Twilio\Rest\Client;
+//require __DIR__ . '..\..\..\vendor\twilio\sdk\Twilio\autoload.php';
 
 
 
@@ -122,18 +123,18 @@ class PanierController extends Controller
         }
         $liste['prixHT'] = round($totalHT,2);
         $liste['prixTTC'] = round($totalHT + $totalTVA,2);
-        $liste['token'] = bin2hex($generator);
-
-       // if($session->has('commande')){
+       // $liste['token'] = bin2hex($generator);
+      $token = bin2hex($generator);
+       //if($session->has('commande')){
             $commande = new commande();
         //}
-        //else $commande = $em->getRepository('e_commerceBundle:commande')->find($session->get('commande'));
+       // else $commande = $em->getRepository('e_commerceBundle:commande')->find($session->get('commande'));
 //session_destroy();
         $commande->setUser($this->container->get('security.token_storage')->getToken()->getUser());
         $commande->setValider(0);
-        $commande->setReference(0);
+        $commande->setReference($token);
         $commande->setCommande($liste);
-
+//session_destroy();
         if (!$session->has('commande'))
         {
             $em->persist($commande);
@@ -144,7 +145,8 @@ class PanierController extends Controller
         return $this->render('@e_commerce/validation.html.twig', array('cmd' => $commande));
     }
   public function factureAction(Request $request){
-    /*    $snappy = $this->get('knp_snappy.pdf');
+
+       $snappy = $this->get('knp_snappy.pdf');
       $session = $request->getSession();
       $em = $this->getDoctrine()->getManager();
       $commande = $em ->getRepository('e_commerceBundle:commande')->find($session->get('commande'));
@@ -155,21 +157,7 @@ class PanierController extends Controller
 
         return new Response($snappy->getOutputFromHtml($html),200,array(
             'Content-Type' => 'application/pdf','Content-Disposition' =>'inline; filename="'.$filename.'.pdf"'
-        ));*/
-
-      $account_sid = 'ACed820621f7c9b919ec960ad9118fcd5c';
-      $auth_token = '2627619814422b8411d32a357b82ffe7';
-      $twilio_phone_number = "+12016279424";
-
-      $client = new Client($account_sid, $auth_token);
-
-      $client->messages->create(
-          '+21650927486',
-          array(
-              "from" => $twilio_phone_number,
-              "body" => "Whaddup from PHP!"
-          )
-      );
+        ));
   }
 
 }

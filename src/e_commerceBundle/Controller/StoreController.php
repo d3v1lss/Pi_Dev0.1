@@ -30,25 +30,25 @@ class StoreController extends Controller
     {
         $session= new Session();
         $em = $this->getDoctrine()->getManager();
-        $produits=$em->getRepository('e_commerceBundle:produit')->findBy(array('disponible' => 1));
-        $prods=array();
+        $prods=$em->getRepository('e_commerceBundle:produit')->findBy(array('disponible' => 1));
+       // $prods=array();
         if ($session->has('panier')) {
             $panier = $session->get('panier');
         }else{
             $panier=false;
         }
-        for ($i=0;$i<sizeof($produits)-1;$i+=2){
+        /*for ($i=0;$i<sizeof($produits)-1;$i+=2){
             $double=array();
             $double[]=$produits[$i];
             $double[]=$produits[$i+1];
             $prods[]=$double;
-        }
-        /*$produit =  $this->get('knp_paginator')->paginate(
+        }*/
+        $produits =  $this->get('knp_paginator')->paginate(
             $prods, /* query NOT result */
-            //$request->query->getInt('page', 1)/*page number*/,
-            //4/*limit per page*/
-       //);
-        return $this->render('@e_commerce/store.html.twig',array('produits'=>$prods,'panier'=>$panier));
+            $request->query->getInt('page', 1)/*page number*/,
+            4/*limit per page*/
+       );
+        return $this->render('@e_commerce/store.html.twig',array('produits'=>$produits,'panier'=>$panier));
 
     }
     //juste la page d info

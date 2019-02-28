@@ -20,11 +20,12 @@
         {% for commande in commandes %}
             <tr>
                 <td>{{ commande.id }} </td>
-                <td>{% if commande.valider %}Yes{% else %}No{% endif %}</td>
+                <td>{% if commande.valider == 1  %}Yes{% else %}No{% endif %}</td>
                 <td>{{ commande.reference }}</td>
-                <td>{{ commande.user.id }}</td>
+                <td>{{ commande.user.nom}}</td>
                 <td>
-                    <a href="{{ path('facture', { 'id' : commande.id }) }}" target="_blank"><i class="fas fa-file"></i></a>
+                    <a href="{{ path('supprimerCommande', { 'id': commande.id }) }}"><i class="far fa-trash-alt"></i></a>
+                    <a href="{{ path('confirmation', { 'id' : commande.id }) }}" target="_blank"><i class="fas fa-check"></i></a>
                 </td>
 
             </tr>

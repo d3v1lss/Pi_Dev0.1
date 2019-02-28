@@ -95,8 +95,8 @@
                         <tr>
                             <td>{{ produit.reference }}</td>
                             <td> {{ produit.quantite }} </td>
-                            <td>{{ produit.prixHT }} €</td>
-                            <td>{{ produit.prixHT * produit.quantite }} €</td>
+                            <td>{{ produit.prixHT }} dt</td>
+                            <td>{{ produit.prixHT * produit.quantite }} dt</td>
                         </tr>
                         {% set totalHT = totalHT+ (produit.prixHT * produit.quantite)  %}
                         {% set totalTTC= totalTTC + (produit.prixTTC * produit.quantite )%}
@@ -134,7 +134,7 @@
             <div class="clearfix"></div>
 
             <form action="{{ path('facture', { 'id' : cmd.id }) }}" method="post" >
-                <input name="token" type="hidden" value="{{ cmd.commande.token }}" />
+                <input name="token" type="hidden" value="{{ cmd.reference }}" />
                 <input name="prix" type="hidden" value="{{ cmd.commande.prixTTC }}" />
 
                 <button type="submit" class="btn btn-primary">Facture</button>
