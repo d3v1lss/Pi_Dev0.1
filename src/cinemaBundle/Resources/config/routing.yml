@@ -86,3 +86,9 @@ StatAvis:
     path:     /StatAvis
     defaults: { _controller: cinemaBundle:Avis:index }
 
+
+
+ratefilm:
+    path: /rate/{id},{nom}
+    defaults: { _controller: cinemaBundle:rate:rateFilm }
+

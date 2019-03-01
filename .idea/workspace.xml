@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinemaBundle/Entity/rate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleClient.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/client.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cinemaBundle/Form/rateType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmGuest.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmGuest.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleGuest.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleGuest.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,32 +33,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="25" />
-          <entry key="twig" value="22" />
-          <entry key="yml" value="5" />
+          <entry key="php" value="43" />
+          <entry key="twig" value="34" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="25" />
-          <entry key="Twig" value="22" />
-          <entry key="YAML" value="5" />
+          <entry key="PHP" value="43" />
+          <entry key="Twig" value="34" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="289" />
-          <entry key="twig" value="22" />
-          <entry key="txt" value="10" />
-          <entry key="yml" value="51" />
+          <entry key="php" value="422" />
+          <entry key="twig" value="100" />
+          <entry key="txt" value="34" />
+          <entry key="yml" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="289" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Twig" value="22" />
-          <entry key="YAML" value="51" />
+          <entry key="PHP" value="422" />
+          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="Twig" value="100" />
+          <entry key="YAML" value="78" />
         </counts>
       </usages-collector>
     </session>
@@ -73,53 +66,34 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="285" column="7" selection-start-line="285" selection-start-column="7" selection-end-line="285" selection-end-column="7" />
+            <state relative-caret-position="69">
+              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
               <folding>
-                <element signature="e#13013#16676#0#Twig" />
-                <element signature="e#16681#18102#0#Twig" />
+                <element signature="e#43#72#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php">
+        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+            <state relative-caret-position="549">
+              <caret line="40" column="35" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="35" />
+              <folding>
+                <element signature="e#42#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleGuest.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="320" column="7" selection-start-line="320" selection-start-column="7" selection-end-line="320" selection-end-column="7" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="e#2063#12797#0#Twig" />
-                <element signature="e#13219#16882#0#Twig" />
-                <element signature="e#16887#18308#0#Twig" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmGuest.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="248" selection-start-line="248" selection-end-line="332" selection-end-column="7" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="e#2063#12797#0#Twig" />
-                <element signature="e#13564#17227#0#Twig" />
-                <element signature="e#17232#18653#0#Twig" />
-              </folding>
+            <state relative-caret-position="321">
+              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -133,11 +107,11 @@
       <find>dev</find>
       <find>club</find>
       <find>centre</find>
+      <find>cen</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s doctrine:schema:update --force " />
       <command text="c clear-cache" />
       <command text="c dump-autoload" />
       <command text="s doctrine:schema:update --force " />
@@ -162,6 +136,7 @@
       <command text="c dump-autoload" />
       <command text="s doctrine:schema:update" />
       <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:form cinemaBundle:rate" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -174,10 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/rechercherclub.html.twig" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Form/rechercherclubType.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig" />
-        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/club.php" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/admin.html.twig" />
@@ -213,18 +184,22 @@
         <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Entity/rate.php" />
-        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php" />
         <option value="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php" />
-        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/client.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmGuest.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleClient.html.twig" />
-        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleGuest.html.twig" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rateDQL.html.twig" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Form/rateType.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php" />
+        <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" />
       </list>
     </option>
   </component>
@@ -284,7 +259,7 @@
       <path value="$PROJECT_DIR$/vendor/cmen/google-charts-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="141" />
     <option name="y" value="2" />
     <option name="width" value="1232" />
@@ -307,24 +282,6 @@
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,6 +296,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cinemaBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinemaBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cinemaBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
@@ -371,56 +342,6 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -505,7 +426,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125802000" />
+    <option name="totallyTimeSpent" value="131709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,7 +441,29 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.301059" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32733223" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.25204584" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -540,28 +483,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28825912" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.5747331" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,12 +492,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/club.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" />
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/president2.html.twig" />
@@ -626,13 +541,6 @@
         <state relative-caret-position="-262" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="456" column="32" lean-forward="true" selection-start-line="456" selection-start-column="20" selection-end-line="456" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Repository/favorisRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -640,62 +548,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/film.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/salle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="32" column="7" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="22" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/rate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/favoris.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="26" column="7" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="24" column="92" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
-          <folding>
-            <element signature="e#43#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#42#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Form/favorisType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
@@ -709,20 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -746,48 +589,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="285" column="7" selection-start-line="285" selection-start-column="7" selection-end-line="285" selection-end-column="7" />
-          <folding>
-            <element signature="e#13013#16676#0#Twig" />
-            <element signature="e#16681#18102#0#Twig" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleClient.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmGuest.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="248" selection-start-line="248" selection-end-line="332" selection-end-column="7" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="e#2063#12797#0#Twig" />
-            <element signature="e#13564#17227#0#Twig" />
-            <element signature="e#17232#18653#0#Twig" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,6 +606,144 @@
             <element signature="e#13219#16882#0#Twig" />
             <element signature="e#16887#18308#0#Twig" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/salleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="285" column="7" selection-start-line="285" selection-start-column="7" selection-end-line="285" selection-end-column="7" />
+          <folding>
+            <element signature="e#13013#16676#0#Twig" />
+            <element signature="e#16681#18102#0#Twig" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/film.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/ajout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="431" column="16" selection-start-line="431" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmGuest.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="247" column="4" lean-forward="true" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
+          <folding>
+            <element signature="e#2063#12797#0#Twig" />
+            <element signature="e#13564#17227#0#Twig" />
+            <element signature="e#17232#18653#0#Twig" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Form/rateType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="e#37#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Form/filmType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/read.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="445" selection-start-line="445" selection-end-line="445" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/favoris.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Form/favorisType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/rate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1094">
+          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/favoris.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="26" column="7" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/filmController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+          <folding>
+            <element signature="e#43#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Controller/favorisController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="40" column="35" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="e#42#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
         </state>
       </provider>
     </entry>
