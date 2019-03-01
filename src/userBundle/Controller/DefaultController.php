@@ -18,6 +18,7 @@ class DefaultController extends Controller
     }
     public function adminAction()
     {
+
         return $this->render('@user/Default/admin.html.twig');
     }
 }

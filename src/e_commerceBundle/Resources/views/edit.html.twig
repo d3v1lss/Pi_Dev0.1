@@ -1,0 +1,54 @@
+{% extends 'admin.html.twig' %}
+
+{% block container %}
+
+    <br>
+    <br>
+    <br>
+    <center> <h1>Modifier</h1></center>
+
+<table>
+    {{ form_start(form) }}
+    <div class="offset1">
+        <div class="col col-md-3">
+            <label class="form-control-label"> Nom  </label>
+        </div>
+        <div class="col-12 col-md-9">
+        {{ form_row(form.nom) }}
+        </div>
+        <div class="col col-md-3">
+        <label class="form-control-label"> Prix  </label>
+        </div>
+        <div class="col-12 col-md-9">
+        {{ form_row(form.prix) }}
+        </div>
+        <div class="col col-md-3">
+        <label class="form-control-label"> Description  </label>
+        </div>
+
+        <div class="col-12 col-md-9">
+        {{ form_row(form.description) }}
+        </div>
+        <div class="col col-md-3" >
+            {{  form_row(form.disponible) }}
+        </div>
+
+        </div>
+    <div class="col col-md-3">
+    <label class="form-control-label"> TVA  </label>
+    </div>
+        <div class="col-12 col-md-9">
+        {{ form_row(form.tva) }}
+        </div>
+        <br>
+    <button type="submit" class="btn btn-primary btn-sm">
+        <i class="fa fa-dot-circle-o"></i> Modifier
+    </button>
+    <button  class="btn btn-danger btn-sm">
+        <i class="fa fa-ban"></i> Annuler
+    </button>
+    {{ form_end(form) }}
+</table>
+
+{% endblock %}
+

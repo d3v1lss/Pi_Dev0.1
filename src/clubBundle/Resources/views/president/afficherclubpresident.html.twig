@@ -1,0 +1,101 @@
+
+{% extends 'president2.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row my-4 my-lg-5">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
+
+                <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">mon club</p>
+
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- DATA TABLE -->
+
+            <div class="table-responsive table-responsive-data2">
+                <table class="table table-data2">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>description</th>
+                        <th>nbrparticipant</th>
+                        <th>activité</th>
+                        <th>president</th>
+                        <th>status</th>
+
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for c in club %}
+                        <tr class="tr-shadow">
+
+                            <td>{{ c.Id}}</td>
+                            <td class="desc">{{c.nom}}</td>
+                            <td>
+                                <span class="block-email">{{ c.mail}}</span>
+                            </td>
+                            <td>
+                                <span class="status--process">{{ c.discription }}</span>
+                            </td>
+                            <td>{{c.nbrparticipant}}</td>
+                            <td>{{ c.activite }}</td>
+                            <td>{{ c.president }}</td>
+                            <td>{{ c.statut }}</td>
+                            <td>
+                                <a class="table-data-feature">
+                                    <a href="{{ path('update_club_president',{'id':c.id}) }}"
+                                       class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-4">update </a>
+
+                                </a>
+                                <a class="table-data-feature">
+                                    <a href="{{ path('membres_club',{'id':c.id}) }}"
+                                        class="font-25 semi-font fables-second-text-color u
+                                        fables-main-hover-color ml-4">membres </a>
+
+                                </a>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="{{  path('ajouter_workshop')}}"
+                                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-2">Ajouter workshop </a></p>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="{{  path('mail')}}"
+                                   class="font-25 semi-font fables-second-text-color u
+                           fables-main-hover-color ml-2">envoyer mail</a></p>
+
+
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+
+            </div>
+            <!-- END DATA TABLE -->
+        </div>
+    </div>
+
+    </div>
+    <br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br>
+{% endblock %}

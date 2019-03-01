@@ -12,6 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="e_commerceBundle\Repository\ProduitRepository")
  * @ORM\Table(name="produit")
  */
 
@@ -34,15 +35,17 @@ class produit
     /**
      * @ORM\Column(type="string")
      */
-    private $discription;
+    private $description;
     /**
      * @ORM\Column(type="string")
      */
     private $photo;
     /**
-     * @ORM\Column(type="integer")
+     * @var bool
+     *
+     * @ORM\Column(name="disponible", type="boolean")
      */
-    private $stockprosuit;
+    private $disponible;
     /**
      * @ORM\ManyToOne(targetEntity="e_commerceBundle\Entity\tva" ,inversedBy="produits")
      * @ORM\JoinColumn(name="tva_id",referencedColumnName="id")
@@ -146,33 +149,33 @@ class produit
     /**
      * @return mixed
      */
-    public function getDiscription()
+    public function getDescription()
     {
-        return $this->discription;
+        return $this->description;
     }
 
     /**
-     * @param mixed $discription
+     * @param mixed $description
      */
-    public function setDiscription($discription)
+    public function setDescription($description)
     {
-        $this->discription = $discription;
+        $this->description = $description;
     }
 
     /**
      * @return mixed
      */
-    public function getStockprosuit()
+    public function getDisponible()
     {
-        return $this->stockprosuit;
+        return $this->disponible;
     }
 
     /**
-     * @param mixed $stockprosuit
+     * @param mixed $disponible
      */
-    public function setStockprosuit($stockprosuit)
+    public function setDisponible($disponible)
     {
-        $this->stockprosuit = $stockprosuit;
+        $this->disponible = $disponible;
     }
 
 

@@ -29,10 +29,6 @@ class commande
     protected $id;
 
     /**
-     * @ORM\Column(type="float")
-     */
-    private  $prix;
-    /**
      * @ORM\Column(type="boolean")
      */
     private  $valider;
@@ -55,10 +51,11 @@ class commande
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity="e_commerceBundle\Entity\produit" ,inversedBy="commandes")
-     * @ORM\JoinColumn(name="produits_id",referencedColumnName="id")
+     * @var array
+     *
+     * @ORM\Column(name="commande", type="array")
      */
-    private $produit;
+    private $commande;
 
 
     /**
@@ -67,6 +64,22 @@ class commande
     public function getValider()
     {
         return $this->valider;
+    }
+
+    /**
+     * @return array
+     */
+    public function getCommande()
+    {
+        return $this->commande;
+    }
+
+    /**
+     * @param array $commande
+     */
+    public function setCommande($commande)
+    {
+        $this->commande = $commande;
     }
 
     /**
@@ -93,21 +106,6 @@ class commande
         $this->valider = $valider;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getProduit()
-    {
-        return $this->produit;
-    }
-
-    /**
-     * @param mixed $produit
-     */
-    public function setProduit($produit)
-    {
-        $this->produit = $produit;
-    }
 
     /**
      * @return mixed
@@ -136,18 +134,7 @@ class commande
     /**
      * @return mixed
      */
-    public function getPrix()
-    {
-        return $this->prix;
-    }
 
-    /**
-     * @param mixed $prix
-     */
-    public function setPrix($prix)
-    {
-        $this->prix = $prix;
-    }
 
 
 }

@@ -1,0 +1,95 @@
+{% extends 'president2.html.twig' %}
+
+{% block content %}
+
+
+<html>
+<body>
+
+
+
+<div class="container">
+    <div class="row my-4 my-lg-5">
+        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+
+
+
+            <div class="container">
+                <div class="row my-4 my-lg-5">
+                    <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
+
+                        <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">update a  club</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+
+                {{ form_start(form, {'method': 'post' ,
+                    'attr': {'class': 'fos_user_registration_register'}}) }}
+
+
+
+                <div class="input-icon">
+
+                    {{ form_widget(form.nom, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'username'} }) }}
+
+                </div>
+                <br>
+                <br>
+                <div class="input-icon">
+
+                    {{ form_widget(form.mail, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'mail'} }) }}
+
+                </div>
+                <br>
+                <br>
+                <div class="input-icon">
+
+                    {{ form_widget(form.discription, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'discription'} }) }}
+
+                </div>
+                <br>
+                <br>
+                <div class="input-icon">
+
+                    {{ form_widget(form.activite, { 'attr': {'class': 'form-control rounded-0
+                   py-3 pl-5 font-13 sign-register-input','placeholder':'activite'} }) }}
+
+                </div>
+                <br>
+                <br>
+                <div class="input-icon">
+
+                    {{ form_widget(form.president, { 'attr': {'class': 'form-control rounded-0
+               sign-register-input','placeholder':'president'} }) }}
+
+                </div>
+                <br>
+                <br>
+                <div class="input-icon">
+                    <input type="submit" class="btn btn-primary block full-width m-b" value="UPDATE" />
+                </div>
+
+                {{ form_end(form) }}
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+
+
+{% endblock %}

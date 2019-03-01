@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+{% block barre %} {% endblock %}
+
+    {% block title %} {{ produit.nom }} {% endblock %}
+    {% block description %}{{ produit.description }}{% endblock %}
+{% block content %}
+    <body>
+    <div class="search-section">
+        <a class="close-search" href="#"></a>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <form method="post" action="#" class="w-50">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="search" value="" class="form-control palce bg-transparent border-0 search-input"
+                               placeholder="Search Here ..."/>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <button type="submit" class="btn bg-transparent text-white"><i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row my-4 my-md-5">
+        <div class="col-12 col-md-4 col-lg-3">
+            <div class="fables-store-search mb-4">
+                <form>
+                    <div class="input-icon">
+                        <span class="fables-iconsearch-icon fables-input-icon"></span>
+                        <input type="text"
+                               class="form-control rounded-0 form-control rounded-0 font-14 fables-store-input pl-5 py-2"
+                               placeholder="Search Product">
+                    </div>
+
+                </form>
+            </div>
+            <div class="rage-slider">
+
+                <form>
+                    <div class="rage-slider">
+                        <h2 class="font-16 semi-font fables-forth-text-color   p-3 mb-4">Filtrer par prix : </h2>
+                        <form>
+
+                            <a href="{{ path('store1' )}}" class="btn btn-block  fables-light-gary-background  p-3 mb-4 rounded-0 fables-forth-text-color  p-2 font-15 ">Filter Prix Descandant</a>
+                            <a  href="{{ path('store2' )}}" class="btn btn-block fables-light-gary-background  p-3 mb-4 rounded-0 fables-forth-text-color  p-2 font-15">Filter Prix Ascendant</a>
+                        </form>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="row mb-3">
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0"></div>
+                <div class="col-8">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0">
+                </div>
+                <div class="col-8"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0"></div>
+                <div class="col-8"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0"></div>
+                <div class="col-8"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0"></div>
+                <div class="col-8"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0">
+                </div>
+                <div class="col-8"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 pr-0"></div>
+                <div class="col-8"></div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-right: auto;margin-left: auto">
+                <div class="span5">
+                    <img  width="458" height="458" src="{{ asset(produit.getPhoto()) }}">
+                </div>
+            <div class="span4"  style="padding-left: 50px;margin-top: 30px;margin-bottom: auto;">
+                <b>{{ produit.nom }}</b>
+                <p style="width: 300px;">{{ produit.description }}</p>
+                <b>Prix : {{ produit.prix }} dt</b>
+                {% if panier[produit.id] is not defined %}
+                    <form action="{{ path('ajouterAuPanier',{'id':produit.id}) }}" method="get">
+                        <b> Quantité :  </b> <select name="qte" class="span1">
+                            {% for i in 1..10 %}
+                             <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                        </select>
+                    </form>
+
+                    <div>
+                        <br>
+                        <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('ajouterAuPanier',{'id':produit.id} ) }}">Ajouter au panier</a>
+                    </div>
+                    <div>
+                        <br>
+                        <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('store') }}">Revenir au store</a>
+                    </div>
+                {% else %}
+
+                    <div>
+                        <br>
+                    <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('afficherPanier')}}">Déja au panier</a>
+                    </div>
+                    <div>
+                        <br>
+                        <a class="btn btn-primary  fables-btn-rounded  text-center fables-second-hover-background-color" href="{{ path('store') }}">Revenir au store</a>
+                    </div>{% endif %}
+            </div>
+        </div>
+    </div>
+
+</div>
+    </body>
+{% endblock %}

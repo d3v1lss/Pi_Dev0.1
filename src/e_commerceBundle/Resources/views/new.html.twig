@@ -1,0 +1,76 @@
+{% extends 'admin.html.twig' %}
+
+{% block container %}
+    <br>
+    <br>
+    <br>
+
+    <center><h1>Nouveau Produit </h1></center>
+<br>
+    <div class="offset1" style="margin-left: 21px">
+
+    <form method="post" action="{{ path('produitNew') }}" enctype="multipart/form-data">
+        <div class="col col-md-3">
+        <label class="form-control-label"> Nom   </label>
+        </div>
+        <br>
+        <div class="col-12 col-md-9">
+    <input type="text" name="nom" id="nom" class="form-control"/>
+        </div>
+        <br>
+<br>
+        <div class="col col-md-3">
+        <label class="form-control-label"> Prix  </label>
+        </div>
+        <br>
+        <div class="col-12 col-md-9">
+        <input type="number" name="prix" id="prix" class="form-control"/>
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-3">
+        <label for="textarea-input" class="form-control-label"> Description  </label>
+        </div>
+        <br>
+        <div class="col-12 col-md-9">
+        <textarea name="description" id="description" rows="9" placeholder="Content..." class="form-control">
+        </textarea>
+        </div>
+        <br>
+        <br>
+        <div class="col col-md-3">
+        <label class="form-control-label">
+            <input type="checkbox" name="stock" id="stock" class="checkbox" class="form-check-input"/>
+            Disponibilité
+        </label>
+        </div>
+        <br>
+        {{ form_start(form) }}
+        <div class="col-12 col-md-9">
+              {{ form_row(form.tva) }}
+        </div>
+        <br>
+    <td> Photo du produit</td>
+        <input type='file' name="imageUpload" id="imageUpload" accept=".png, .jpg, .jpeg" />
+        <br>
+        <br>
+            <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa fa-dot-circle-o"></i> Ajouter
+            </button>
+            <button type="reset" class="btn btn-danger btn-sm">
+                <i class="fa fa-ban"></i> Annuler
+            </button>
+
+        {{ form_end(form) }}
+    </form>
+
+
+
+
+    </div>
+
+
+
+
+
+{% endblock %}
