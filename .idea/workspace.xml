@@ -129,7 +129,7 @@
           <entry key="ini" value="2" />
           <entry key="json" value="2" />
           <entry key="php" value="6878" />
-          <entry key="twig" value="7438" />
+          <entry key="twig" value="7446" />
           <entry key="txt" value="244" />
           <entry key="yml" value="1417" />
         </counts>
@@ -141,7 +141,7 @@
           <entry key="JavaScript" value="1" />
           <entry key="PHP" value="6878" />
           <entry key="PLAIN_TEXT" value="252" />
-          <entry key="Twig" value="7437" />
+          <entry key="Twig" value="7445" />
           <entry key="YAML" value="1417" />
         </counts>
       </usages-collector>
@@ -180,8 +180,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="-78">
+              <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -296,8 +296,8 @@
         <option value="$PROJECT_DIR$/src/e_commerceBundle/Resources/views/store.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" />
       </list>
     </option>
   </component>
@@ -425,6 +425,12 @@
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="e_commerceBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="userBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,15 +447,6 @@
               <item name="userBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Default" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
@@ -529,7 +526,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219404000" />
+    <option name="totallyTimeSpent" value="219918000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,6 +539,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.23562753" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.23157895" />
@@ -925,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="-78">
+          <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
         </state>
       </provider>
     </entry>
