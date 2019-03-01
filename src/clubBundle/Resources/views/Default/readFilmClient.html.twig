@@ -23,6 +23,7 @@
         <td>categorie</td>
         <td>datesotie</td>
         <td>favoris</td>
+        <td>Donner un rating</td>
 
     </tr>
     {% for m in film %}
@@ -35,6 +36,8 @@
             <td>{{ m.categorie }}</td>
             <td>{{ m.datesotie |date('Y-m-d') }}</td>
             <td> <a href="{{ path('favorisfilm',{'id': m.nom ,'user':app.user.id}) }}"> favoris </a> </td>
+            <td> <a href="{{ path('ratefilm',{'nom': m.nom ,'id':app.user.username}) }}">rating </a> </td>
+
             
 
         </tr>

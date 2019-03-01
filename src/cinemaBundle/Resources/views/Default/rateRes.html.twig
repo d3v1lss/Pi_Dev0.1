@@ -78,9 +78,15 @@
                                     <i class="fas fa-table"></i>Ajout salle </a>
                             </li>
 
+
                             <li>
                                 <a href="{{  path('StatAvis')}}">
                                     <i class="fas fa-table"></i>Consulter les avis </a>
+                            </li>
+
+                            <li>
+                                <a href="{{  path('rateReadFilm')}}">
+                                    <i class="fas fa-table"></i> Notes des films par les utilisateurs </a>
                             </li>
 
                         </ul>
@@ -413,7 +419,7 @@
                                         <li class="list-inline-item seprate">
                                             <span>/</span>
                                         </li>
-                                        <li class="list-inline-item">La liste des films </li>
+                                        <li class="list-inline-item">Notes des films par les utilisateurs</li>
 
                                     </ul>
                                 </div>
@@ -425,52 +431,59 @@
             </div>
 
         </section>
-        <center> <h1 style="overflow-x:auto;" align="41">LA LISTE DES FILMS</h1>
+
         <!-- END BREADCRUMB-->
-        <br><br><br><br><br>
+        <center>
+    <p>Notes des utilisateurs sur les films</p>
+
+    <br><br><br><br><br>
 
 
-        <table style="width:100%" :hover {background-color: #f5f5f5;}}>
+    <table style="width:100%" :hover {background-color: #f5f5f5;}}>
 
 
 
-            <tr >
+        <tr >
 
-                <td>nom</td>
-                <td>description</td>
-                <td>duree</td>
-                <td>categorie</td>
-                <td>datesotie</td>
-                <td>update</td>
-                <td>delete</td>
+
+            <td>nom du film</td>
+            <td>nom utilisateur</td>
+            <td>note</td>
+            
+
+        </tr>
+        {% for m in note %}
+
+            <tr>
+
+                <td>{{ m.film}}</td>
+                <td>{{ m.iduser }}</td>
+                <td>{{ m.note }}</td>
+
+
 
             </tr>
-            {% for m in film %}
-
-                <tr>
-
-                    <td>{{ m.nom }}</td>
-                    <td>{{ m.discription }}</td>
-                    <td>{{ m.duree }}</td>
-                    <td>{{ m.categorie }}</td>
-                    <td>{{ m.datesotie |date('Y-m-d') }}</td>
-                    <td><a href="{{ path('updatefilm',{'id':m.id}) }}">modif</a> </td>
-                    <td><a href="{{ path('deletefilm',{'id':m.id}) }}">supp</a> </td>
+        {% endfor %}
+    </table>
+    </center>
+    </br></br></br></br></br>
 
 
 
-                </tr>
-            {% endfor %}
-        </table>
-        </center>
-        </br></br></br></br></br>
-
-        <a href="{{ path('pdf') }}"> imprimer liste des films </a>
 
 
         <section>
 
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            <p>Copyright © 2019 Dev_ils. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </div>
@@ -501,3 +514,4 @@
 {% endblock %}
 </body>
 </html>
+<!-- end document--><!-- end document-->

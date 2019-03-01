@@ -86,3 +86,16 @@ StatAvis:
     path:     /StatAvis
     defaults: { _controller: cinemaBundle:Avis:index }
 
+
+
+ratefilm:
+    path: /rate/{id},{nom}
+    defaults: { _controller: cinemaBundle:rate:rateFilm }
+rateReadFilm:
+    path: /rateRead
+    defaults: { _controller: cinemaBundle:rate:read }
+
+pdf:
+    path: /pdf
+    defaults: { _controller: cinemaBundle:pdf:index}
+
