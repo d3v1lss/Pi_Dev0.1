@@ -19,6 +19,15 @@ class reservationRepository extends \Doctrine\ORM\EntityRepository
         return $query->getResult();
     }
 
+    public function countReservations($id){
+
+        $query=$this->getEntityManager()->
+        createQuery("SELECT count(r) FROM evenementBundle:reservation r WHERE r.evenement=:id")
+            ->setParameter('id',$id);
+        return $query->getSingleScalarResult();
+
+    }
+
 
 
 

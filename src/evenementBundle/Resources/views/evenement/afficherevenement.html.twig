@@ -22,7 +22,24 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <div class="container">
     <h3 class="pb-3 mb-4 font-italic border-bottom">
+
         Liste des evenements
+        <div class="fables-blog-search">
+            <form>
+                <div class="row">
+                    <div class="col-12 col-sm-9 col-md-8 mb-3 mb-md-0">
+                        <div class="input-icon">
+                            <span class="fables-iconsearch-icon fables-input-icon font-14"></span>
+                            <input type="text" class="form-control rounded-0 py-2 width-100">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-4 pl-md-0">
+                        <a  href="{{  path('evenement_evenement_ajouter' )  }} " class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">recherche</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
     </h3>
 
 
@@ -30,8 +47,12 @@
         Ajouter un  evenement
         <a  href="{{  path('evenement_evenement_ajouter' )  }} " class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">ajouter</a>
 
-    </h5>
 
+    </h5>
+    <h5 class="pb-3 mb-4 font-italic border-bottom">
+       Reserver une place
+    <a  href=" {{  path('evenement_reservation_ajouter' )}}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">reserver </a>
+    </h5>
 
     {% for evenement in evenement %}
     <div class="row">
@@ -44,7 +65,7 @@
                     <div class="mb-1 text-muted small"> {{ evenement.datefin  | date}}</div>
                     <p > nombre de place : {{ evenement.nombreplaces }} </p>
                     <p > description : {{ evenement.discription }} </p>
-                    <p > theme : {{ evenement.theme.nom }} </p>
+                   {# <p > theme : {{ evenement.theme.nom }} </p>#}
 
 
 
@@ -54,7 +75,6 @@
 
 
 
-                    <a  href=" {{  path('evenement_reservation_ajouter',        {'id':evenement.id} )  }}" class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">reserver une place</a>
 
                 </div>
 

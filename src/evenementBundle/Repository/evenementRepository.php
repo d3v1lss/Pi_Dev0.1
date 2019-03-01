@@ -18,11 +18,18 @@ class evenementRepository extends \Doctrine\ORM\EntityRepository
            return $query->getResult();
      }
 
-    public function findtheme ($theme)
+    public function findBytheme ($theme)
     {
         $query=$this->getEntityManager()->
         createQuery("SELECT evenement FROM evenementBundle:evenement evenement  WHERE evenement.theme=:theme")
             ->setParameter('theme',$theme);
+        return $query->getResult();
+
+    }
+    public function findBynom ($nom)
+    {
+        $query=$this->getEntityManager()->
+        createQuery("SELECT evenement FROM evenementBundle:evenement evenement  WHERE evenement.nom='$nom'");
         return $query->getResult();
 
     }

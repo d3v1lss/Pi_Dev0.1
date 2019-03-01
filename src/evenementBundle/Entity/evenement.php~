@@ -86,7 +86,7 @@ class evenement
      * @ORM\ManyToOne(targetEntity="evenementBundle\Entity\theme" ,inversedBy="evenements")
      * @ORM\JoinColumn(name="theme_id",referencedColumnName="id")
      */
-    private $theme;
+    protected $theme;
 
     /**
      * @return mixed

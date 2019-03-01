@@ -40,6 +40,9 @@ evenement_reservation_supprimer:
 evenement_evenement_affuser:
     path:     /affev
     defaults: { _controller: evenementBundle:evenement:affevent }
+evenement_evenement_recherche:
+    path:     /recherche
+    defaults: { _controller: evenementBundle:evenement:recherche }
 
 
 

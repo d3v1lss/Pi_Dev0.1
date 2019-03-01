@@ -1,0 +1,11 @@
+{% extends'base.html.twig' %}
+{% block content %}
+    <div>
+        {{ form_start(searchform, { 'attr': {'class': 'navbar-form navbar-left'} }) }}
+        <div class="form-group">
+            {{ form_widget(searchform.nom, { 'attr': {'class': 'form-control','placeholder': 'nom evenement...'} }) }}
+            {{ form_widget(searchform.Recherche, { 'attr': {'class': 'btn btn-primary'} }) }}
+        </div>
+        {{ form_end(searchform) }}
+    </div>
+{% endblock %}

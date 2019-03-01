@@ -29,6 +29,26 @@ class theme
      * @ORM\Column(type="string")
      */
     private $nom;
+    /**
+     * @ORM\OneToMany(targetEntity="evenementBundle\Entity\evenement" , mappedBy="theme")
+     */
+    private $evenements;
+
+    /**
+     * @return mixed
+     */
+    public function getEvenements()
+    {
+        return $this->evenements;
+    }
+
+    /**
+     * @param mixed $evenements
+     */
+    public function setEvenements($evenements)
+    {
+        $this->evenements = $evenements;
+    }
 
     /**
      * theme constructor.
@@ -71,28 +91,4 @@ class theme
         $this->nom = $nom;
     }
 
-
-    /**
-     * Add evenement
-     *
-     * @param \evenementBundle\Entity\evenement $evenement
-     *
-     * @return theme
-     */
-    public function addEvenement(\evenementBundle\Entity\evenement $evenement)
-    {
-        $this->evenements[] = $evenement;
-
-        return $this;
-    }
-
-    /**
-     * Remove evenement
-     *
-     * @param \evenementBundle\Entity\evenement $evenement
-     */
-    public function removeEvenement(\evenementBundle\Entity\evenement $evenement)
-    {
-        $this->evenements->removeElement($evenement);
-    }
 }

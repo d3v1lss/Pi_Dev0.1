@@ -18,7 +18,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Conseil
  *
  * @ORM\Table(name="reservation")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="evenementBundle\Repository\reservationRepository")
  */
 class reservation
 {

@@ -25,6 +25,12 @@
              Mes evenements
         </h3>
 
+        <h5 class="pb-3 mb-4 font-italic border-bottom">
+            Ajouter un  evenement
+            <a  href="{{  path('evenement_evenement_ajouter' )  }} " class="btn btn-outline-primary btn-sm" role="button" href="http://www.jquery2dotnet.com/">ajouter</a>
+
+        </h5>
+
         {% for evenement in evenement %}
             <div class="row">
                 <div class="col-md-6">
@@ -37,6 +43,8 @@
                             <p > nombre de place : {{ evenement.nombreplaces }} </p>
                             <p > description : {{ evenement.discription }} </p>
                             <p > theme : {{ evenement.theme.nom }} </p>
+
+                           {{ socialButtons( { 'facebook': {'locale':'fr_FR', 'send':true}} ) }}
 
 
 

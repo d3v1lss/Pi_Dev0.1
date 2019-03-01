@@ -5,6 +5,7 @@ namespace evenementBundle\Controller;
 use AppBundle\Entity\user;
 use evenementBundle\Entity\evenement;
 use evenementBundle\Entity\reservation;
+use evenementBundle\Repository\reservationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
@@ -26,6 +27,18 @@ class reservationController extends Controller
             $reservation->setEvenement($this->getDoctrine()->getRepository(evenement::class)->find($request->get('evenement')));
             $em=$this->getDoctrine()->getManager();
 
+            $event = $this->getDoctrine()->getRepository(evenement::class)->find($request->get('evenement'));
+            if($event->getNombrePlaces() <= $this->getDoctrine()->getRepository(reservation::class)->countReservations($request->get('evenement'))){
+
+                $evenement = $this->getDoctrine()->getRepository(evenement::class)->findAll();
+
+                $errors = "Y'a pas de places , on est deja ".' '.$event->getNombrePlaces();
+                return $this->render('@evenement/reservation/ajouterreservation.html.twig',array(
+                    'evenement'=>$evenement,
+                    'errors'=>$errors
+                ));
+
+            }
 
             /*$evenement->setPhoto($request->get('photo'));*/
           //  dump($reservation);

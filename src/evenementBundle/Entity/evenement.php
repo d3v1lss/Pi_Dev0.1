@@ -83,7 +83,7 @@ class evenement
      */
     private $reservations;
     /**
-     * @ORM\ManyToOne(targetEntity="evenementBundle\Entity\theme" ,inversedBy="evenements")
+     * @ORM\ManyToOne(targetEntity="evenementBundle\Entity\theme" )
      * @ORM\JoinColumn(name="theme_id",referencedColumnName="id")
      */
     private $theme;
@@ -119,6 +119,8 @@ class evenement
     {
         $this->theme = $theme;
     }
+
+
 
     public function __construct()
     {

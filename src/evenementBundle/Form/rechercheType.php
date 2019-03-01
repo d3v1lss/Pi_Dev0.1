@@ -5,10 +5,11 @@ namespace evenementBundle\Form;
 use evenementBundle\Entity\theme;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class evenementType extends AbstractType
+class rechercheType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -16,13 +17,8 @@ class evenementType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('nom')
-            ->add('photo')
-            ->add('discription')
-            ->add('nombreplaces')
-            ->add('datedebut')
-            ->add('datefin')
-            ->add('user')
-            ->add('theme',HiddenType::class)
+            ->add('Recherche',SubmitType::class)
+
             ;
     }/**
      * {@inheritdoc}

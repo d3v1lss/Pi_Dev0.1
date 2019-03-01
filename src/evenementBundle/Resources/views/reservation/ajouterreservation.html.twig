@@ -77,10 +77,14 @@
 
 
 
+                        {% if errors is defined  %}
 
-
+                            <div class="alert alert-danger" role="alert">
+                                {{ errors }}
+                            </div>
+                        {% endif %}
                         <div class="form-group">
-                            <label class="control-label col-sm-3">reservation <span class="text-danger">*</span></label>
+                            <label class="control-label col-sm-3">Evenements disponibles <span class="text-danger">*</span></label>
                             <select name="evenement">
                                 <option selected> evenement</option>
                                 {% for evenement in evenement %}

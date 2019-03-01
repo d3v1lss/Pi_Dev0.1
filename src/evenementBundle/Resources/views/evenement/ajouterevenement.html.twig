@@ -81,8 +81,12 @@
 
 
 
+                    {% if errors is defined %}
 
-
+                        <div class="alert alert-danger" role="alert">
+                            {{ errors }}
+                        </div>
+                    {% endif %}
                     <div class="form-group">
                         <label class="control-label col-sm-3">Date debut evenement <span class="text-danger">*</span></label>
                         <div class="col-md-8 col-sm-9">
