@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-    <title>{% block title %}Cite de la culture{% endblock %}</title>
-    <link href="{{ asset('back/css/font-face.css" rel="stylesheet') }}"  rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/vector-map/jqvmap.min.css" rel="stylesheet') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/css/theme.css') }}" rel="stylesheet" media="all">
+<meta name="keywords" content="au theme template">
+<title>{% block title %}Cite de la culture{% endblock %}</title>
+<link href="{{ asset('back/css/font-face.css" rel="stylesheet') }}"  rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/vector-map/jqvmap.min.css" rel="stylesheet') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/css/theme.css') }}" rel="stylesheet" media="all">
 </head>
-{% block header %}
 
 <body class="animsition">
 
@@ -36,11 +27,8 @@
                 <div class="image img-cir img-120">
                     <img src="images/icon/aa.png" />
                 </div>
-                <a href="#"></a>
-                {% block admin_name %}{{ app.user.nom }}{% endblock %}
-                {% block admin_last_name %}{{app.user.prenom}}{% endblock %}
-                <a href=" {{ path('fos_user_security_logout') }} ">Sign out</a>
-
+                <h4 class="name">Hchaichi Akrem</h4>
+                <a href="#">Sign out</a>
             </div>
             <nav class="navbar-sidebar2">
                 <ul class="list-unstyled navbar__list">
@@ -90,6 +78,7 @@
                                     <i class="fas fa-table"></i>Ajout salle </a>
                             </li>
 
+
                             <li>
                                 <a href="{{  path('StatAvis')}}">
                                     <i class="fas fa-table"></i>Consulter les avis </a>
@@ -136,18 +125,15 @@
                     </li>
 
 
+
                 </ul>
                 </li>
                 </ul>
             </nav>
         </div>
     </aside>
-    {% endblock %}
-
     <!-- END MENU SIDEBAR-->
     <!-- HEADER DESKTOP-->
-
-    {% block feater %}
     <header class="header-desktop2">
         <div class="section__content section__content--p30">
             <div class="container-fluid">
@@ -411,8 +397,7 @@
 
     <!-- PAGE CONTAINER-->
     <div class="page-container2">
-        {% block content %}
-        {% endblock %}
+
         <!-- BREADCRUMB-->
         <section class="au-breadcrumb m-t-75">
             <div class="section__content section__content--p30">
@@ -424,12 +409,12 @@
                                     <span class="au-breadcrumb-span">You are here:</span>
                                     <ul class="list-unstyled list-inline au-breadcrumb__list">
                                         <li class="list-inline-item active">
-                                            <a href="#">Home</a>
+                                            <a href="#">Cinema</a>
                                         </li>
                                         <li class="list-inline-item seprate">
                                             <span>/</span>
                                         </li>
-                                        <li class="list-inline-item">Dashboard</li>
+                                        <li class="list-inline-item">Ajout Salle</li>
 
                                     </ul>
                                 </div>
@@ -443,25 +428,22 @@
         </section>
 
         <!-- END BREADCRUMB-->
+        <center>
+            {{form(formulaire)}}
+
+        </center>
+
+
 
         <section>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright">
-                            <p>Copyright © 2019 Dev_ils. All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
     </div>
     <!-- END PAGE CONTAINER-->
 </div>
-{% endblock %}
+
 
 
 {% block javascripts %}
@@ -486,4 +468,4 @@
 {% endblock %}
 </body>
 </html>
-<!-- end document--><!-- end document-->
+

@@ -44,10 +44,9 @@
 
                             <ul class="navbar-nav mx-auto fables-nav">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="{{  path('user_homepage')}}" >
+                                    <a class="dropdown-item" href="index.html.twig" id="sub-nav1" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                                         Home
                                     </a>
-
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="sub-nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,13 +68,11 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="sub-nav3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        CLUB
+                                        Clubs
                                     </a>
-
                                     <ul class="dropdown-menu" aria-labelledby="sub-nav3">
-                                        <li><a class="dropdown-item" href="{{  path('afficher_club_user')}}">Liste des clubs</a></li>
+                                        <li><a class="dropdown-item" href="about1.html">Liste des club</a></li>
 
-                                        <li><a class="dropdown-item" href="{{ path('afficher_workshop_user')}}">Liste des workshops</a></li>
 
                                     </ul>
                                 </li>
@@ -104,7 +101,7 @@
 
                                         <li><a class="dropdown-item" href=" {{  path('readFilmGuest')}}" > Liste film </a></li>
                                         <li><a class="dropdown-item" href=" {{  path('readSalleGuest')}}" > Liste des salles </a></li>
-                                        <li><a class="dropdown-item" href=" {{  path('Ajout')}}" > Votre Avis sur les salles cinema </a></li>
+
 
                                     </ul>
                                 </li>
@@ -166,7 +163,7 @@
                             </div>
                         </div>
                         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-
+                            {#{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |#}
 
                             <a href="{{ path('fos_user_security_logout') }} "
                                class="fables-third-text-color fables-second-hover-color font-18 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
@@ -187,12 +184,11 @@
 
     <div class="fables-header bg-white index-3-height bg-rules overflow-hidden">
         <div class="container position-relative z-index">
-            <div class="">
-                <div class=" col-lg-5  wow fadeInUpBig" data-wow-duration="1s">
+            <div class="row">
+                <div class="col-12 col-lg-7 offset-lg-4 wow fadeInUpBig" data-wow-duration="2s">
                     <div class="index-3-height-caption">
-                        <p class="fa-2x white-color">Bienvenue a la cité de la culture</p>
-
-
+                        <p class="font-30 fables-second-text-color">Bienvenue a la cité de la culture</p>
+                        <h1 class="fables-main-text-color bold-font mb-2 font-40"></h1>
                     </div>
                 </div>
             </div>
@@ -200,8 +196,55 @@
     </div>
     <!-- header of this page -->
 {% endblock %}
+
 {% block content %}
-    <!-- content of this page -->
+
+
+
+
+<center> <h1 style="overflow-x:auto;" align="41">LA LISTE DES FILMS</h1>
+
+
+<br><br><br><br><br>
+
+
+<table style="width:100%" :hover {background-color: #f5f5f5;}}>
+
+
+
+    <tr >
+
+        <td>nom</td>
+        <td>discription</td>
+        <td>duree</td>
+        <td>categorie</td>
+        <td>datesotie</td>
+
+
+    </tr>
+    {% for m in film %}
+
+        <tr>
+            
+            <td>{{ m.nom }}</td>
+            <td>{{ m.discription }}</td>
+            <td>{{ m.duree }}</td>
+            <td>{{ m.categorie }}</td>
+            <td>{{ m.datesotie |date('Y-m-d') }}</td>
+
+            
+
+        </tr>
+    {% endfor %}
+</table>
+</center>
+</br></br></br></br></br>
+
+    <a href="{{ path('rechfilm') }}"> Rechercher un film </a>
+
+
+
+
 {% endblock %}
 {% block feater %}
     <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules">
@@ -288,3 +331,4 @@
 {% endblock %}
 </body>
 </html>
+
