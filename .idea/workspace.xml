@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/Avis.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/Avis.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleGuest.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readSalleGuest.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,21 +28,21 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="php" value="61" />
-          <entry key="twig" value="67" />
+          <entry key="twig" value="68" />
           <entry key="yml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PHP" value="61" />
-          <entry key="Twig" value="67" />
+          <entry key="Twig" value="68" />
           <entry key="YAML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="php" value="538" />
-          <entry key="twig" value="362" />
+          <entry key="twig" value="496" />
           <entry key="txt" value="54" />
           <entry key="yml" value="111" />
         </counts>
@@ -56,7 +51,7 @@
         <counts>
           <entry key="PHP" value="538" />
           <entry key="PLAIN_TEXT" value="54" />
-          <entry key="Twig" value="362" />
+          <entry key="Twig" value="496" />
           <entry key="YAML" value="111" />
         </counts>
       </usages-collector>
@@ -103,11 +98,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -205,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rateDQL.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Form/rateType.php" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Controller/rateController.php" />
-        <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rateRes.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Form/avisType.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -220,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/readFilmClient.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/Avis.html.twig" />
         <option value="$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig" />
+        <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" />
       </list>
     </option>
   </component>
@@ -281,7 +285,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="141" />
     <option name="y" value="2" />
     <option name="width" value="1232" />
@@ -598,7 +602,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141316000" />
+    <option name="totallyTimeSpent" value="142854000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,7 +614,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24205749" />
@@ -852,13 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="108" column="40" selection-start-line="108" selection-start-column="38" selection-end-line="108" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -964,8 +961,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Resources/views/Default/rate.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="323">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
         </state>
       </provider>
     </entry>

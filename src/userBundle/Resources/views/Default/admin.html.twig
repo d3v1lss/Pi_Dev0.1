@@ -35,8 +35,9 @@
                 <div class="image img-cir img-120">
                     <img src="images/icon/aa.png" />
                 </div>
-                <h4 class="name">Hchaichi Akrem</h4>
-                <a href="#">Sign out</a>
+                <h4 class="name">{% block admin_name %}{{ app.user.nom }}{% endblock %}</h4>
+                {% block admin_last_name %}{{ app.user.prenom }}{% endblock %}
+                <a href="{{ path('fos_user_security_logout') }}">Sign out</a>
             </div>
             <nav class="navbar-sidebar2">
                 <ul class="list-unstyled navbar__list">
