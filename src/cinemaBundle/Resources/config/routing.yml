@@ -95,3 +95,7 @@ rateReadFilm:
     path: /rateRead
     defaults: { _controller: cinemaBundle:rate:read }
 
+pdf:
+    path: /pdf
+    defaults: { _controller: cinemaBundle:pdf:index}
+

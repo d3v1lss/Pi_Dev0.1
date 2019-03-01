@@ -15,7 +15,9 @@ class avisType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('avischoix',ChoiceType::class,array('choices'=>array('Mauvais'=>'Mauvais','Passable'=>'Passable','Assez Bien'=>'Assez Bien','Bien'=>'Bien','TrésBien'=>'TrésBien'),'data'=> false , 'expanded' => true,))
+        $builder->add('avischoix',ChoiceType::class
+            ,array('choices'=>array('Mauvais'=>'Mauvais','Passable'=>'Passable',
+                'Assez Bien'=>'Assez Bien','Bien'=>'Bien','TrésBien'=>'TrésBien'),'data'=> false , 'expanded' => true,))
             ->add('save',SubmitType::class);
     }/**
  * {@inheritdoc}
