@@ -1,0 +1,75 @@
+{% extends app.user.hasRole('ROLE_ADMIN') ? '@user/Default/admin.html.twig' %}
+
+
+{% block content %}
+
+    <head>
+        <meta charset="utf-8">
+        <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+        <title>5. Category - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{ asset('http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')}}" rel="stylesheet">
+        <style type="text/css">
+
+        </style>
+        <script src="{{ asset ('http://code.jquery.com/jquery-1.11.1.min.js')}}"></script>
+        <script src="{{  asset('http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')}}"></script>
+    </head>
+
+    <link href="{{ asset ('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')}}" rel="stylesheet" integrity="#" crossorigin="anonymous">
+
+
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-body">
+                <hr>   <div class="row">
+                    <div class="col-md-2 border-right">
+                        <h4></h4>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 bg-light card-body">
+                        <h5>Modifier forum</h5>
+                        <form method="post">
+                            <div class="form-group row">
+                                <label for="text" class="col-12 col-form-label">Nom</label>
+                                <div class="col-12">
+                                    <input id="text" name="nom" class="form-control here" type="text" value="{{ forum.nom }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="text" class="col-12 col-form-label">Description</label>
+                                <div class="col-12">
+                                    <input id="text" name="discription" class="form-control here" type="text" value="{{ forum.discription }}">
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="submit"  class="btn btn-sm btn-primary">Enregistrer</button>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="table table-hover ">
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+    </script>
+
+{% endblock %}
