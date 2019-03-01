@@ -33,6 +33,14 @@ class workshopController extends Controller
         return $this->render('@club/workshop/afficherworkshop.html.twig',
             array("workshop" => $workshop));
     }
+
+    public function afficher3Action()
+    {
+
+        $workshop = $this->getDoctrine()->getRepository(workshop::class)->findALL();
+        return $this->render('@club/workshop/afficherworkshopuser.html.twig',
+            array("workshop" => $workshop));
+    }
     public function addAction(Request $request)
     {
 

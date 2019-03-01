@@ -19,7 +19,12 @@ class clubController extends Controller
         $club = $this->getDoctrine()->getRepository(club::class)->findALL();
         return $this->render('@club/club/afficherclub.html.twig', array("club" => $club));
     }
+    public function afficher3Action()
+    {
 
+        $club = $this->getDoctrine()->getRepository(club::class)->findALL();
+        return $this->render('@club/club/afficherclubuser.html.twig', array("club" => $club));
+    }
     public function afficher2Action()
     {
 

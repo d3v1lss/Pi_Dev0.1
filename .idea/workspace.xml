@@ -2,30 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclubuser.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshopuser.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/client.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/mailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/mailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/Mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/Mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Form/MailType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Form/MailType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Form/rechercherworkshopType.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/back/workshop.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/back/workshop.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/rechercherclub.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/rechercherclub.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherworkshoppresident.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherworkshoppresident.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/mail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/mail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/mailok.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/mailok.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/updateclubpresident.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/president/updateclubpresident.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/rechercherworkshop.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/updateworkshop.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/updateworkshop.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +30,60 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306" />
+            <state relative-caret-position="153">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+            <state relative-caret-position="141">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/client.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="78" selection-end-line="287" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -103,12 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/user.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclubpresident.html.twig" />
-        <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/back/club.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Form/rechercherclubType.php" />
         <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/club.php" />
@@ -117,10 +144,8 @@
         <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/client/clientafficherclub.html.twig" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/president2.html.twig" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/liste.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/listeRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeController.php" />
@@ -128,20 +153,14 @@
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/listeworkshop.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresworkshop.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/affichermembresclub.html.twig" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/updateworkshop.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/rechercherclub.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Form/rechercherworkshopType.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherworkshoppresident.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/updateclub.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/updateclubpresident.html.twig" />
@@ -151,9 +170,23 @@
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/mail.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/mailController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/mailok.html.twig" />
-        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig" />
         <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/admin.html.twig" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/back/workshop.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclubuser.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshopuser.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
+        <option value="$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/client.html.twig" />
+        <option value="$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php" />
       </list>
     </option>
   </component>
@@ -279,99 +312,6 @@
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="back" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="club" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="president" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="workshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="userBundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,22 +362,31 @@
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftmailer" type="462c0819:PsiDirectoryNode" />
+              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftmailer" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftmailer" type="462c0819:PsiDirectoryNode" />
+              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
+              <item name="user-bundle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftmailer" type="462c0819:PsiDirectoryNode" />
-              <item name="swiftmailer" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
+              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
+              <item name="user-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="friendsofsymfony" type="462c0819:PsiDirectoryNode" />
+              <item name="user-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="Type" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -454,17 +403,17 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Pi_Dev0.1\vendor\symfony\symfony\src\Symfony\Bridge\Twig\Resources\views\Form" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\workshop" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\club" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\userBundle\Resources\views\Default" />
+      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\president" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\president" />
       <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views" />
       <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\Default\club" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\president" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Controller" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Form" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Repository" />
-      <recent name="C:\wamp64\www\Pi_Dev0.1\src\clubBundle\Resources\views\client" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -517,12 +466,13 @@
       <workItem from="1551216944749" duration="17341000" />
       <workItem from="1551288286999" duration="17341000" />
       <workItem from="1551353459575" duration="3060000" />
-      <workItem from="1551371342807" duration="6971000" />
+      <workItem from="1551371342807" duration="7139000" />
+      <workItem from="1551392116292" duration="5778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140916000" />
+    <option name="totallyTimeSpent" value="146862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,7 +487,7 @@
     <frame x="1359" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33441296" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34008098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -550,7 +500,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.58081704" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.30017763" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.8223801" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -585,71 +535,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/doc/01-usage.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/doc/messages.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/doc/sending.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/clubType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -658,20 +543,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -683,29 +554,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="76" column="137" selection-start-line="76" selection-start-column="137" selection-end-line="76" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/listeworkshop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="e#122#170#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#42#73#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -731,20 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="58" column="33" selection-start-line="52" selection-start-column="28" selection-end-line="58" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/workshopType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -755,44 +595,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/rechercherworkshopType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/rechercherworkshopType.php" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/rechercherclubType.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/rechercherworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/rechercherworkshop.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/workshop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="64" column="4" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#40#67#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,16 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/clubController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="e#41#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/Mail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -882,10 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/workshop.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="-68">
+          <caret line="197" column="81" selection-start-line="197" selection-start-column="81" selection-end-line="197" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -896,22 +697,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/workshop.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="197" column="81" selection-start-line="197" selection-start-column="81" selection-end-line="197" selection-end-column="81" />
+        <state relative-caret-position="306">
+          <caret line="76" column="137" selection-start-line="76" selection-start-column="137" selection-end-line="76" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="50" column="69" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshopuser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclubuser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="18" selection-start-line="60" selection-end-line="60" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeclubController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
+        <state relative-caret-position="68">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="e#40#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/club/afficherclub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/clubController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#41#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#42#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshop.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/president/afficherclubpresident.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+        <state relative-caret-position="459">
+          <caret line="84" column="29" selection-start-line="67" selection-start-column="24" selection-end-line="84" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ResettingFormType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ChangePasswordFormType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="78" selection-end-line="287" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/views/Default/client.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>

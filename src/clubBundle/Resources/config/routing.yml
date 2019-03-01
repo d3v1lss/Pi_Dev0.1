@@ -1,4 +1,8 @@
 
+afficher_workshop:
+    path:     /afficherw3
+    defaults: { _controller: clubBundle:workshop:afficher3}
+
 
 afficher_workshop_president:
     path:     /workshop/{id}
@@ -7,6 +11,7 @@ afficher_workshop_president:
 afficher_workshop_user:
     path:     /afficherw1
     defaults: { _controller: clubBundle:workshop:afficher1}
+
 afficher_workshop_admin:
     path:     /afficherw2
     defaults: { _controller: clubBundle:workshop:afficher2}
@@ -49,6 +54,9 @@ afficher_club_president:
     path:     /club/{id}
     defaults: { _controller: clubBundle:club:club}
 
+afficher_club:
+    path:     /afficherc3
+    defaults: { _controller: clubBundle:club:afficher3}
 
 afficher_club_user:
     path:     /afficherc1

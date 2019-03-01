@@ -9,7 +9,7 @@ class DefaultController extends Controller
 
     public function indexAction()
     {
-        // lahne ta3mel el redirection 7asseb les roles ba3ed el login
+
         if ($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')) {
             return $this->redirectToRoute('admin_homepage');
            }
@@ -18,7 +18,10 @@ class DefaultController extends Controller
                 return $this->redirectToRoute('president_homepage');
             }
 
-
+           else if
+           ($this->get('security.authorization_checker')->isGranted('ROLE_CLIENT')) {
+               return $this->redirectToRoute('client_homepage');
+           }
 
 
 
@@ -34,7 +37,12 @@ class DefaultController extends Controller
         return $this->render('@user/Default/president.html.twig');
     }
 
+    public function clientAction()
+    {
 
+
+        return $this->render('@user/Default/client.html.twig');
+    }
 
     public function adminAction()
     {

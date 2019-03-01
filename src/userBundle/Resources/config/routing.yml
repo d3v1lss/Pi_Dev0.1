@@ -2,6 +2,10 @@ user_homepage:
     path:     /
     defaults: { _controller: userBundle:Default:index }
 
+client_homepage:
+    path:     /client
+    defaults: { _controller: userBundle:Default:client }
+
 admin_homepage:
     path:     /admin
     defaults: { _controller: userBundle:Default:admin }
