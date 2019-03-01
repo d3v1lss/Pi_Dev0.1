@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-    <title>{% block title %}Cite de la culture{% endblock %}</title>
-    <link href="{{ asset('back/css/font-face.css" rel="stylesheet') }}"  rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/vector-map/jqvmap.min.css" rel="stylesheet') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/css/theme.css') }}" rel="stylesheet" media="all">
+<meta name="keywords" content="au theme template">
+<title>{% block title %}Cite de la culture{% endblock %}</title>
+<link href="{{ asset('back/css/font-face.css" rel="stylesheet') }}"  rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/vector-map/jqvmap.min.css" rel="stylesheet') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/css/theme.css') }}" rel="stylesheet" media="all">
 </head>
 
 <body class="animsition">
@@ -86,6 +78,7 @@
                                     <i class="fas fa-table"></i>Ajout salle </a>
                             </li>
 
+
                             <li>
                                 <a href="{{  path('StatAvis')}}">
                                     <i class="fas fa-table"></i>Consulter les avis </a>
@@ -93,7 +86,7 @@
 
                             <li>
                                 <a href="{{  path('rateReadFilm')}}">
-                                    <i class="fas fa-table"></i>Notes des films par les utilisateurs </a>
+                                    <i class="fas fa-table"></i> Notes des films par les utilisateurs </a>
                             </li>
 
                         </ul>
@@ -421,12 +414,12 @@
                                     <span class="au-breadcrumb-span">You are here:</span>
                                     <ul class="list-unstyled list-inline au-breadcrumb__list">
                                         <li class="list-inline-item active">
-                                            <a href="#">Home</a>
+                                            <a href="#">Cinema</a>
                                         </li>
                                         <li class="list-inline-item seprate">
                                             <span>/</span>
                                         </li>
-                                        <li class="list-inline-item">Dashboard</li>
+                                        <li class="list-inline-item">Notes des films par les utilisateurs</li>
 
                                     </ul>
                                 </div>
@@ -440,7 +433,40 @@
         </section>
 
         <!-- END BREADCRUMB-->
+        <center>
+    <p>Notes des utilisateurs sur les films</p>
 
+    <br><br><br><br><br>
+
+
+    <table style="width:100%" :hover {background-color: #f5f5f5;}}>
+
+
+
+        <tr >
+
+
+            <td>nom du film</td>
+            <td>nom utilisateur</td>
+            <td>note</td>
+            
+
+        </tr>
+        {% for m in note %}
+
+            <tr>
+
+                <td>{{ m.film}}</td>
+                <td>{{ m.iduser }}</td>
+                <td>{{ m.note }}</td>
+
+
+
+            </tr>
+        {% endfor %}
+    </table>
+    </center>
+    </br></br></br></br></br>
 
 
 

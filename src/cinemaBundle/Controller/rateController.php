@@ -39,5 +39,15 @@ class rateController extends Controller
     }
 
 
+    public function readAction()
+
+    {
+
+        $note = $this->getDoctrine()->getRepository(rate::class)->findAll();
+        return $this->render('@cinema/Default/rateRes.html.twig', array('note' => $note));
+
+    }
+
+
 
 }

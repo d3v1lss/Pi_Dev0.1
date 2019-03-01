@@ -91,4 +91,7 @@ StatAvis:
 ratefilm:
     path: /rate/{id},{nom}
     defaults: { _controller: cinemaBundle:rate:rateFilm }
+rateReadFilm:
+    path: /rateRead
+    defaults: { _controller: cinemaBundle:rate:read }
 
