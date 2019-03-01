@@ -1,3 +1,72 @@
+afficher_workshop_president:
+    path:     /workshop/{id}
+    defaults: { _controller: clubBundle:workshop:workshop}
+afficher_workshop_user:
+    path:     /afficherw1
+    defaults: { _controller: clubBundle:workshop:afficher1}
+afficher_workshop_admin:
+    path:     /afficherw2
+    defaults: { _controller: clubBundle:workshop:afficher2}
+ajouter_workshop:
+    path:     /ajouterw
+    defaults: { _controller: clubBundle:workshop:add}
+supp_workshop:
+    path:     /suppw/{id}
+    defaults: { _controller: clubBundle:workshop:supp}
+update_workshop:
+    path:     /updatew/{id}
+    defaults: { _controller: clubBundle:workshop:update}
+inscrit_workshop:
+    path:     /inscritw/{user},{id}
+    defaults: { _controller: clubBundle:listeworkshop:inscrit}
+membres_workshop:
+    path:      /membresw/{id}
+    defaults: { _controller: clubBundle:listeworkshop:membres}
+rechercher_workshop:
+    path:     /rechercherw
+    defaults: { _controller: clubBundle:workshop:rechercher}
+mail:
+    path:     /mail
+    defaults: { _controller: clubBundle:mail:index}
+mail_ok:
+    path:      /success
+    defaults: { _controller: clubBundle:mail:success}
+afficher_club_president:
+    path:     /club/{id}
+    defaults: { _controller: clubBundle:club:club}
+afficher_club_user:
+    path:     /afficherc1
+    defaults: { _controller: clubBundle:club:afficher1}
+afficher_club_admin:
+    path:     /afficherc2
+    defaults: { _controller: clubBundle:club:afficher2}
+ajouter_club:
+    path:     /ajouterc
+    defaults: { _controller: clubBundle:club:add}
+inscrit_club:
+    path:     /inscritc/{user},{id}
+    defaults: { _controller: clubBundle:listeclub:inscrit}
+membres_club:
+    path:     /membresc/{id}
+    defaults: { _controller: clubBundle:listeclub:membres}
+supp_membres_club:
+    path:     /suppc/{id}
+    defaults: { _controller: clubBundle:listeclub:supp}
+supp_club_president:
+    path:     /suppc1/{id}
+    defaults: { _controller: clubBundle:club:supp1}
+supp_club_admin:
+    path:     /suppc2/{id}
+    defaults: { _controller: clubBundle:club:supp2}
+update_club_president:
+    path:     /updatec1/{id}
+    defaults: { _controller: clubBundle:club:update1}
+update_club_admin:
+    path:     /updatec2/{id}
+    defaults: { _controller: clubBundle:club:update2}
+rechercher_club:
+    path:     /rechercherc
+    defaults: { _controller: clubBundle:club:rechercher}
 club_homepage:
     path:     /
     defaults: { _controller: clubBundle:Default:index }

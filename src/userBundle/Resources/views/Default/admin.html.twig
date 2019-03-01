@@ -47,13 +47,22 @@
                         </a>
 
                     </li>
-                    <li>
-                        <a href="#">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="sub-nav5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-comment-alt"></i> Club</a>
-
+                        <ul class="dropdown-menu" aria-labelledby="sub-nav5">
+                            <li>
+                                <a href="{{  path('afficher_club_admin')}}">
+                                    <i class="fas fa-table"></i>liste clubs</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('afficher_workshop_admin')}}">
+                                    <i class="far fa-check-square"></i>liste workshop</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="sub-nav5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="sub-nav5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             e_commerce
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="sub-nav5">

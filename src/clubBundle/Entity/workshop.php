@@ -33,14 +33,16 @@ class workshop
      */
     private $nombreplaces;
     /**
-
-    @ORM\Column(type="date")
+     * @var \DateTime
+     *
+     * @ORM\Column(name="datedebut", type="datetime")
      */
 
     private $datedebut;
     /**
-
-    @ORM\Column(type="date")
+     * @var \DateTime
+     *
+     * @ORM\Column(name="datefin", type="datetime")
      */
 
     private $datefin;
