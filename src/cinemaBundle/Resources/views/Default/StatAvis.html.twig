@@ -1,27 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-    <title>{% block title %}Cite de la culture{% endblock %}</title>
-    <link href="{{ asset('back/css/font-face.css" rel="stylesheet') }}"  rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/vendor/vector-map/jqvmap.min.css" rel="stylesheet') }}" rel="stylesheet" media="all">
-    <link href="{{  asset('back/css/theme.css') }}" rel="stylesheet" media="all">
+
+<meta name="keywords" content="au theme template">
+<title>{% block title %}Cite de la culture{% endblock %}</title>
+<link href="{{ asset('back/css/font-face.css" rel="stylesheet') }}"  rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+<link href="{{ asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/vendor/vector-map/jqvmap.min.css" rel="stylesheet') }}" rel="stylesheet" media="all">
+<link href="{{  asset('back/css/theme.css') }}" rel="stylesheet" media="all">
 </head>
 
 <body class="animsition">
@@ -85,6 +79,7 @@
                                 <a href="{{  path('createsalle')}}">
                                     <i class="fas fa-table"></i>Ajout salle </a>
                             </li>
+
 
                             <li>
                                 <a href="{{  path('StatAvis')}}">
@@ -416,12 +411,12 @@
                                     <span class="au-breadcrumb-span">You are here:</span>
                                     <ul class="list-unstyled list-inline au-breadcrumb__list">
                                         <li class="list-inline-item active">
-                                            <a href="#">Home</a>
+                                            <a href="#">Cinema</a>
                                         </li>
                                         <li class="list-inline-item seprate">
                                             <span>/</span>
                                         </li>
-                                        <li class="list-inline-item">Dashboard</li>
+                                        <li class="list-inline-item">Ajout d'un Film</li>
 
                                     </ul>
                                 </div>
@@ -435,24 +430,32 @@
         </section>
 
         <!-- END BREADCRUMB-->
+        <center>
 
 
 
+            <div class="widget-title"><span class="icon"> <i class="icon-th"></i> </span>
+                <h5>Statistique Avis</h5>
+            </div>
+            <div class="widget-content nopadding">
+
+                <div id="div_chart"></div>
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                    {{ gc_draw(piechart, 'div_chart') }}
+                </script>
+            </div>
+
+
+
+        </center>
 
 
 
         <section>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright">
-                            <p>Copyright © 2019 Dev_ils. All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
     </div>
@@ -483,4 +486,3 @@
 {% endblock %}
 </body>
 </html>
-<!-- end document--><!-- end document-->

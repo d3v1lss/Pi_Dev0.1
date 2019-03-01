@@ -10,11 +10,11 @@ namespace cinemaBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
- * Conseil
- *
- * @ORM\Table(name="film")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="cinemaBundle\Repository\filmRepository")
+ * @Vich\Uploadable
  */
 class film
 {
@@ -144,57 +144,11 @@ class film
         $this->datesotie = $datesotie;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getDatedebut()
-    {
-        return $this->datedebut;
-    }
 
-    /**
-     * @param mixed $datedebut
-     */
-    public function setDatedebut($datedebut)
-    {
-        $this->datedebut = $datedebut;
-    }
+
 
     /**
      * @return mixed
      */
-    public function getDatefin()
-    {
-        return $this->datefin;
-    }
 
-    /**
-     * @param mixed $datefin
-     */
-    public function setDatefin($datefin)
-    {
-        $this->datefin = $datefin;
-    }
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datedebut;
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datefin;
-    /**
-     * @ORM\ManyToOne(targetEntity="cinemaBundle\Entity\salle" ,inversedBy="films")
-     * @ORM\JoinColumn(name="salle_id",referencedColumnName="id")
-     */
-    private $film;
-    /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="films")
-     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
-     */
-    private $user;
 }

@@ -9,7 +9,7 @@ class DefaultController extends Controller
 
     public function indexAction()
     {
-        // lahne ta3mel el redirection 7asseb les roles ba3ed el login
+        
         if($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN'))
         {
             return $this->redirectToRoute('admin_homepage');

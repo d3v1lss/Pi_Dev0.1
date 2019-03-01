@@ -17,7 +17,7 @@ evenement:
 
 cinema:
     resource: "@cinemaBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /cinema
 
 club:
     resource: "@clubBundle/Resources/config/routing.yml"
