@@ -22,6 +22,16 @@ class filmController extends Controller
 
     }
 
+
+    public function readFilmClientAction()
+
+    {
+
+        $film = $this->getDoctrine()->getRepository(film::class)->findAll();
+        return $this->render('@cinema/Default/readFilmClient.html.twig', array('film' => $film));
+
+    }
+
     public function readFilmGuestAction()
 
     {

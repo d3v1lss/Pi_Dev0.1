@@ -4,3 +4,6 @@ user_homepage:
 admin_homepage:
     path:     /admin
     defaults: { _controller: userBundle:Default:admin }
+client_homepage:
+    path:     /client
+    defaults: { _controller: userBundle:Default:client }

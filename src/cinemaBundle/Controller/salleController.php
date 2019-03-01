@@ -18,12 +18,22 @@ class salleController extends Controller
 
     }
 
+
     public function readSalleGuestAction()
 
     {
 
         $salle = $this->getDoctrine()->getRepository(salle::class)->findAll();
         return $this->render('@cinema/Default/readSalleGuest.html.twig', array('salle' => $salle));
+
+    }
+
+    public function readSalleClientAction()
+
+    {
+
+        $salle = $this->getDoctrine()->getRepository(salle::class)->findAll();
+        return $this->render('@cinema/Default/readSalleClient.html.twig', array('salle' => $salle));
 
     }
 

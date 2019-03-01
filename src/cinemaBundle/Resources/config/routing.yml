@@ -7,6 +7,9 @@ readfilm:
 readFilmGuest:
     path:     /readFilmGuest
     defaults: { _controller: cinemaBundle:film:readFilmGuest}
+readFilmClient:
+    path:     /readFilmClient
+    defaults: { _controller: cinemaBundle:film:readFilmClient}
 createfilm:
     path:     /create
     defaults: { _controller: cinemaBundle:film:create}

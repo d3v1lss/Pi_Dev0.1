@@ -14,10 +14,27 @@ class DefaultController extends Controller
         {
             return $this->redirectToRoute('admin_homepage');
         }
+
+
+        else if($this->get('security.authorization_checker')->isGranted('ROLE_CLIENT'))
+        {
+            return $this->redirectToRoute('client_homepage');
+        }
+
+
         return $this->render('@user/Default/index.html.twig');
     }
+
+
+
     public function adminAction()
     {
         return $this->render('@user/Default/admin.html.twig');
+    }
+
+
+    public function clientAction()
+    {
+        return $this->render('@user/Default/client.html.twig');
     }
 }
