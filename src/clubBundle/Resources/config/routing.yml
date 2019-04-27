@@ -40,6 +40,9 @@ rechercher_workshop:
     path:     /rechercherw
     defaults: { _controller: clubBundle:workshop:rechercher}
 
+pdf_worksop:
+    path:     /pdf
+    defaults: { _controller: clubBundle:pdf:index}
 
 mail:
     path:     /mail
@@ -61,6 +64,16 @@ afficher_club:
 afficher_club_user:
     path:     /afficherc1
     defaults: { _controller: clubBundle:club:afficher1}
+
+
+afficher_club_user_mobile:
+    path:     /allclubs
+    defaults: { _controller: clubBundle:club:all}
+
+afficher_club_president_mobile:
+    path:     /find/{id}
+    defaults: { _controller: clubBundle:club:find}
+
 
 afficher_club_admin:
     path:     /afficherc2

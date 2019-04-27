@@ -199,10 +199,8 @@ class club
 
 
 
-
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="clubs")
-     * @ORM\JoinColumn(name="president",referencedColumnName="id")
+     * @ORM\Column(type="string")
      */
     private $president;
     /**

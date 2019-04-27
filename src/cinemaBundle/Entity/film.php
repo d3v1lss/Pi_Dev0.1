@@ -32,18 +32,35 @@ class film
     /**
      * @ORM\Column(type="string")
      */
+    private $image;
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @ORM\Column(type="string")
+     */
     private $discription;
     /**
      * @ORM\Column(type="string")
      */
     private $duree;
     /**
-     * @ORM\Column(type="string")
-     */
-    private $categorie;
-    /**
-
-    @ORM\Column(type="date")
+     *
+     * @ORM\Column(type="date")
      */
 
     private $datesotie;
@@ -112,21 +129,6 @@ class film
         $this->duree = $duree;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getCategorie()
-    {
-        return $this->categorie;
-    }
-
-    /**
-     * @param mixed $categorie
-     */
-    public function setCategorie($categorie)
-    {
-        $this->categorie = $categorie;
-    }
 
     /**
      * @return mixed
@@ -144,57 +146,8 @@ class film
         $this->datesotie = $datesotie;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getDatedebut()
-    {
-        return $this->datedebut;
-    }
-
-    /**
-     * @param mixed $datedebut
-     */
-    public function setDatedebut($datedebut)
-    {
-        $this->datedebut = $datedebut;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDatefin()
-    {
-        return $this->datefin;
-    }
-
-    /**
-     * @param mixed $datefin
-     */
-    public function setDatefin($datefin)
-    {
-        $this->datefin = $datefin;
-    }
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datedebut;
-    /**
-
-    @ORM\Column(type="date")
-     */
-
-    private $datefin;
-    /**
-     * @ORM\ManyToOne(targetEntity="cinemaBundle\Entity\salle" ,inversedBy="films")
-     * @ORM\JoinColumn(name="salle_id",referencedColumnName="id")
-     */
-    private $film;
-    /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="films")
-     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
-     */
-    private $user;
 }
+
+
+
+

@@ -7,8 +7,11 @@ use clubBundle\Entity\club;
 use clubBundle\Form\clubType;
 use clubBundle\Form\rechercherclubType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Session\Session;
+
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 class clubController extends Controller
 {
@@ -31,10 +34,6 @@ class clubController extends Controller
         $club = $this->getDoctrine()->getRepository(club::class)->findALL();
         return $this->render('@club/back/club.html.twig', array("club" => $club));
     }
-
-
-
-
     public function addAction(Request $request)
     {
 
@@ -50,11 +49,10 @@ class clubController extends Controller
             $em->flush();
 
 
-            return $this->redirectToRoute('afficher_club_president');
+            return $this->redirectToRoute('client_homepage');
         }
         return $this->render('@club/club/ajouterclub.html.twig', array('form' => $form->createView()));
     }
-
     public function supp1Action($id)
     {
 
@@ -89,7 +87,6 @@ class clubController extends Controller
             array('form' => $form->createView()));
 
     }
-
     public function update2Action($id, Request $request)
     {
         $club = $this->getDoctrine()->getRepository(club::class)->find($id);
@@ -108,7 +105,6 @@ class clubController extends Controller
             array('form' => $form->createView()));
 
     }
-
     public function rechercherAction(Request $request)
     {
 
@@ -129,12 +125,6 @@ class clubController extends Controller
         return $this->render('@club/club/rechercherclub.html.twig', array('form' =>
             $form->createView(),'club'=>$club));
     }
-
-    /**
-     * @param Session $session
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-
     public function clubAction($id){
         $em=$this->getDoctrine()->getManager();
 
@@ -147,7 +137,24 @@ class clubController extends Controller
 
     }
 
+    public function allAction()
+    {
+        $club = $this->getDoctrine()->getManager()
+            ->getRepository('clubBundle:club')
+            ->findAll();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($club);
+        return new JsonResponse($formatted);
+    }
 
-
+    public function findAction($id)
+    {
+        $club = $this->getDoctrine()->getManager()
+            ->getRepository('clubBundle:club')
+            ->find($id);
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($club);
+        return new JsonResponse($formatted);
+    }
 
 }
