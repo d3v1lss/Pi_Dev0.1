@@ -5,7 +5,7 @@ afficher_workshop:
 
 
 afficher_workshop_president:
-    path:     /workshop/{id}
+    path:     /workshop/{username}
     defaults: { _controller: clubBundle:workshop:workshop}
 
 afficher_workshop_user:
@@ -54,7 +54,7 @@ mail_ok:
 
 
 afficher_club_president:
-    path:     /club/{id}
+    path:     /club/{username}
     defaults: { _controller: clubBundle:club:club}
 
 afficher_club:
@@ -82,6 +82,10 @@ afficher_club_admin:
 ajouter_club:
     path:     /ajouterc
     defaults: { _controller: clubBundle:club:add}
+
+ajouter_club_mobile:
+    path:     /new
+    defaults: { _controller: clubBundle:club:new}
 
 inscrit_club:
     path:     /inscritc/{user},{id}

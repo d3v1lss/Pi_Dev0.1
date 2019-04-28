@@ -13,11 +13,11 @@ use Doctrine\ORM\QueryBuilder;
 
 class workshopRepository  extends EntityRepository
 {
-    public function workshopDQL($id){
+    public function workshopDQL($username){
 
         $query=$this->getEntityManager()
-            ->createQuery("Select w from clubBundle:workshop w WHERE w.user_id= :id")
-            ->setParameter('id',$id);
+            ->createQuery("Select w from clubBundle:workshop w WHERE w.president= :$username")
+            ->setParameter('username',$username);
         return $query->getResult();
 
 

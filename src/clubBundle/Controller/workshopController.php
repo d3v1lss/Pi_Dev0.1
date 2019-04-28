@@ -85,15 +85,15 @@ class workshopController extends Controller
     }
 
     /**
-     * @param $id
+     * @param $username
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function workshopAction($id){
+    public function workshopAction($username){
         $em=$this->getDoctrine()->getManager();
 
 
 
-        $workshop=$em->getRepository("clubBundle:club")->workshopDQL($id);
+        $workshop=$em->getRepository("clubBundle:club")->workshopDQL($username);
 
         return $this->render('@club/president/afficherworkshoppresident.html.twig'
             ,array('workshop'=>$workshop));
