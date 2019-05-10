@@ -13,3 +13,18 @@ admin_homepage:
 president_homepage:
     path:     /president
     defaults: { _controller: userBundle:Default:president }
+
+user_username:
+    path:     /find/{username}
+    defaults: { _controller: userBundle:Default:find }
+
+user_all:
+    path:     /all
+    defaults: { _controller: userBundle:Default:all }
+
+user:
+    path:     /login
+    defaults: { _controller: userBundle:Default:user }
+c_user:
+    path:     /Currentuser
+    defaults: { _controller: userBundle:Default:Current }

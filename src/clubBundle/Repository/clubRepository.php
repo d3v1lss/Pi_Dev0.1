@@ -31,5 +31,15 @@ class clubRepository  extends EntityRepository
 
     }
 
+    public function userDQL($username){
+
+        $query=$this->getEntityManager()
+            ->createQuery("Select u from userBundle:user u WHERE u.username= :username")
+            ->setParameter('username',$username);
+        return $query->getResult();
+
+
+    }
+
 
 }

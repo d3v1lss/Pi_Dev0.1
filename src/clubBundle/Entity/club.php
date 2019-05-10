@@ -67,21 +67,6 @@ class club
 
 
     /**
-     * @return mixed
-     */
-    public function getWorkshops()
-    {
-        return $this->workshops;
-    }
-
-    /**
-     * @param mixed $workshops
-     */
-    public function setWorkshops($workshops)
-    {
-        $this->workshops = $workshops;
-    }
-    /**
      * @ORM\Column(type="string")
      */
     private $statut;
@@ -203,17 +188,7 @@ class club
      * @ORM\Column(type="string")
      */
     private $president;
-    /**
-     * @ORM\OneToMany(targetEntity="clubBundle\Entity\workshop" ,mappedBy="club")
 
-     */
-    private $workshops;
-
-    public function __construct()
-    {
-
-        $this->workshops = new ArrayCollection();
-    }
 
 
 
