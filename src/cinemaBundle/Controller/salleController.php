@@ -6,6 +6,9 @@ use Symfony\Component\HttpFoundation\Request;
 use cinemaBundle\Entity\salle;
 use cinemaBundle\Form\salleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 class salleController extends Controller
 {
@@ -96,6 +99,42 @@ class salleController extends Controller
     }
 
 
+
+    public function allAction()
+    {
+        $tasks = $this->getDoctrine()->getManager()
+            ->getRepository('cinemaBundle:salle')
+            ->findAll();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($tasks);
+        return new JsonResponse($formatted);
+    }
+
+
+    public function newAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $salle = new salle();
+        $salle->setNom($request->get('nom'));
+        $salle->setCapacite($request->get('capacite'));
+        $em->persist($salle);
+        $em->flush();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($salle);
+        return new JsonResponse($formatted);
+    }
+
+
+
+    public function findAction($nom)
+    {
+        $nom = $this->getDoctrine()->getManager()
+            ->getRepository('cinemaBundle:Salle')
+            ->find($nom);
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($nom);
+        return new JsonResponse($formatted);
+    }
 
 
 }
