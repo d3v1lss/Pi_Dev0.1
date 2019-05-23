@@ -5,7 +5,10 @@ use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
 use cinemaBundle\Entity\avis;
 use cinemaBundle\Form\avisType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 
 class AvisController extends Controller
@@ -91,5 +94,26 @@ class AvisController extends Controller
 
         return $this->render("@cinema/Default/StatAvis.html.twig", array('piechart' => $pieChart));
     }
+
+
+
+
+
+
+    public function newAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $avis = new avis();
+        $avis->setNom($request->get('avis'));
+
+        $em->persist($avis);
+        $em->flush();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($avis);
+        return new JsonResponse($formatted);
+    }
+
+
+
 
 }

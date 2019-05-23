@@ -37,4 +37,16 @@ class DefaultController extends Controller
     {
         return $this->render('@user/Default/client.html.twig');
     }
+
+
+    public function findAction($nom)
+    {
+        $nom = $this->getDoctrine()->getManager()
+            ->getRepository('userBundle:user')
+            ->find($nom);
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($nom);
+        return new JsonResponse($formatted);
+    }
+
 }

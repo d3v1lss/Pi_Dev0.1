@@ -7,3 +7,7 @@ admin_homepage:
 client_homepage:
     path:     /client
     defaults: { _controller: userBundle:Default:client }
+
+find_task:
+    path:     /find/{nom}
+    defaults: { _controller: userBundle:Default:find}

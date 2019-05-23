@@ -72,7 +72,12 @@ createsalle:
 updatesalle:
     path:     /updatesalle/{id}
     defaults: { _controller: cinemaBundle:salle:update}
-
+salleAllView:
+    path:     /all
+    defaults: { _controller: cinemaBundle:salle:all }
+salleNew:
+    path:     /new
+    defaults: { _controller: cinemaBundle:salle:new }
 
 
 deletesalle:
@@ -82,9 +87,30 @@ Ajout:
     path: /Ajout
     defaults: { _controller: cinemaBundle:Avis:Ajout }
 
+
+
+
+
+
 StatAvis:
     path:     /StatAvis
     defaults: { _controller: cinemaBundle:Avis:index }
+
+create_task:
+  path:     /newAvis
+  defaults: { _controller: cinemaBundle:Avis:new}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,3 +125,11 @@ pdf:
     path: /pdf
     defaults: { _controller: cinemaBundle:pdf:index}
 
+find_task:
+    path:     /find/{nom}
+    defaults: { _controller: cinemaBundle:salle:find}
+
+
+all:
+    path:     /film/all
+    defaults: { _controller: cinemaBundle:film:all }

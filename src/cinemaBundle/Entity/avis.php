@@ -62,4 +62,8 @@ class avis
     {
         return $this->avischoix;
     }
+
+    public function setNom($get)
+    {
+    }
 }
