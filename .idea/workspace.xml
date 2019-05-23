@@ -4,6 +4,7 @@
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Devils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Devils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
@@ -333,6 +334,11 @@
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" afterDir="false" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" afterDir="false" />
+>>>>>>> parent of 3f337e2... 09:00
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -345,6 +351,7 @@
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <leaf />
@@ -388,6 +395,9 @@
       </file>
     </leaf>
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> parent of 3f337e2... 09:00
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -451,7 +461,10 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 3f337e2... 09:00
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/listeRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/listeController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/listeclubRepository.php" />
@@ -500,7 +513,10 @@
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/pdf.html.twig" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
+=======
+>>>>>>> parent of 3f337e2... 09:00
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" />
@@ -508,6 +524,7 @@
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/userRepository.php" />
@@ -525,6 +542,8 @@
 >>>>>>> parent of 3f337e2... 09:00
 =======
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+>>>>>>> parent of 3f337e2... 09:00
       </list>
     </option>
   </component>
@@ -580,15 +599,19 @@
 <<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
 =======
+=======
+>>>>>>> parent of 3f337e2... 09:00
     <option name="x" value="231" />
     <option name="y" value="38" />
     <option name="width" value="1382" />
     <option name="height" value="733" />
+<<<<<<< HEAD
 >>>>>>> parent of 3f337e2... 09:00
 =======
   <component name="ProjectFrameBounds" extendedState="7">
@@ -597,6 +620,8 @@
     <option name="width" value="1943" />
     <option name="height" value="1043" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+>>>>>>> parent of 3f337e2... 09:00
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -634,32 +659,48 @@
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> parent of 3f337e2... 09:00
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 <<<<<<< HEAD
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
 >>>>>>> parent of 3f337e2... 09:00
 =======
               <item name="Form" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
 =======
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
@@ -670,7 +711,12 @@
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
 =======
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
@@ -679,7 +725,30 @@
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
@@ -701,25 +770,20 @@
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="workshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+=======
 >>>>>>> parent of 3f337e2... 09:00
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="symfony" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+>>>>>>> parent of 3f337e2... 09:00
+=======
               <item name="symfony" type="462c0819:PsiDirectoryNode" />
               <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Symfony" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
@@ -728,6 +792,60 @@
               <item name="symfony" type="462c0819:PsiDirectoryNode" />
               <item name="symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
+              <item name="Twig" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
+              <item name="Twig" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
+              <item name="Twig" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 3f337e2... 09:00
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 <<<<<<< HEAD
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
@@ -795,12 +913,17 @@
               <item name="symfony" type="462c0819:PsiDirectoryNode" />
               <item name="symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> parent of 3f337e2... 09:00
               <item name="Symfony" type="462c0819:PsiDirectoryNode" />
               <item name="Bridge" type="462c0819:PsiDirectoryNode" />
               <item name="Twig" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Form" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+>>>>>>> parent of 3f337e2... 09:00
+=======
 >>>>>>> parent of 3f337e2... 09:00
             </path>
           </expand>
@@ -814,7 +937,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form" />
+>>>>>>> parent of 3f337e2... 09:00
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form" />
 >>>>>>> parent of 3f337e2... 09:00
@@ -911,6 +1038,7 @@
 <<<<<<< HEAD
       <workItem from="1556407231820" duration="8617000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1556504764379" duration="3862000" />
       <workItem from="1556552539158" duration="1522000" />
       <workItem from="1556752827893" duration="4294000" />
@@ -929,10 +1057,13 @@
 =======
       <workItem from="1556407231820" duration="5299000" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+>>>>>>> parent of 3f337e2... 09:00
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="197408000" />
@@ -942,6 +1073,9 @@
 =======
     <option name="totallyTimeSpent" value="175699000" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+    <option name="totallyTimeSpent" value="179017000" />
+>>>>>>> parent of 3f337e2... 09:00
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,6 +1087,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="1359" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -967,6 +1102,13 @@
 =======
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.31497976" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.29425114" />
+>>>>>>> parent of 3f337e2... 09:00
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1017,10 +1159,13 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/form_table_layout.html.twig" />
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/bootstrap_3_horizontal_layout.html.twig" />
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/foundation_5_layout.html.twig" />
 =======
+=======
+>>>>>>> parent of 3f337e2... 09:00
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/back/index.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1149,7 +1294,10 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 3f337e2... 09:00
     <entry file="file://$PROJECT_DIR$/src/cinemaBundle/Entity/film.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1957">
@@ -1208,6 +1356,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/userBundle/Resources/config/routing.yml">
+<<<<<<< HEAD
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshopuser.html.twig">
+>>>>>>> parent of 3f337e2... 09:00
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="53" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="53" />
@@ -1292,7 +1450,21 @@
         <state relative-caret-position="-1088" />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml">
+=======
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#125#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig">
+>>>>>>> parent of 3f337e2... 09:00
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
@@ -1327,6 +1499,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/workshop.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1401,6 +1574,8 @@
     </entry>
 =======
 >>>>>>> parent of 3f337e2... 09:00
+=======
+>>>>>>> parent of 3f337e2... 09:00
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/clubController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -1412,6 +1587,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php" />
     <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
 =======
@@ -1422,12 +1598,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+>>>>>>> parent of 3f337e2... 09:00
           <folding>
             <element signature="e#41#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1456,6 +1639,12 @@
         <state relative-caret-position="225">
           <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
 >>>>>>> parent of ecbe1c7... 05:00
+=======
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/workshop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+>>>>>>> parent of 3f337e2... 09:00
         </state>
       </provider>
     </entry>
