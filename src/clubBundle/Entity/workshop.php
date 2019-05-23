@@ -153,7 +153,8 @@ class workshop
      */
     private $president;
     /**
-     * @ORM\Column(type="string")
+     * @ORM\ManyToOne(targetEntity="clubBundle\Entity\club" ,inversedBy="workshops")
+     * @ORM\JoinColumn(name="club_id",referencedColumnName="id")
      */
     private $club;
 

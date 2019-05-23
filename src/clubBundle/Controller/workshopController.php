@@ -7,11 +7,7 @@ use clubBundle\Entity\workshop;
 
 use clubBundle\Form\workshopType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\Serializer;
-
 class workshopController extends Controller
 {
     public function indexAction()
@@ -103,15 +99,5 @@ class workshopController extends Controller
             ,array('workshop'=>$workshop));
 
 
-    }
-
-    public function allAction()
-    {
-        $workshop = $this->getDoctrine()->getManager()
-            ->getRepository('clubBundle:workshop')
-            ->findAll();
-        $serializer = new Serializer([new ObjectNormalizer()]);
-        $formatted = $serializer->normalize($workshop);
-        return new JsonResponse($formatted);
     }
 }

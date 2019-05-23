@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdc535f7-6bc3-4780-bcd9-a279bb1277fb" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Devils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Devils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
@@ -55,12 +56,21 @@
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/listeworkshopController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/mailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/mailController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/pdfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/pdfController.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_28_04_19_02_03_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_20_02_19_12_03_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_20_02_19_12_03_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_20_02_19_12_03_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_20_02_19_12_03_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" afterDir="false" />
+>>>>>>> parent of ecbe1c7... 05:00
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/Mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/Mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/club.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/club.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/listeclub.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/listeclub.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/listeworkshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/listeworkshop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Form/MailType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Form/MailType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Form/clubType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Form/clubType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Form/rechercherclubType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Form/rechercherclubType.php" afterDir="false" />
@@ -314,6 +324,15 @@
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" afterDir="false" />
 >>>>>>> parent of 3f337e2... 09:00
+=======
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" afterDir="false" />
+>>>>>>> parent of ecbe1c7... 05:00
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -327,10 +346,48 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <leaf />
 =======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
 >>>>>>> parent of 3f337e2... 09:00
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-375">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#41#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clubBundle/Form/workshopType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+              <folding>
+                <element signature="e#34#83#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> parent of ecbe1c7... 05:00
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -342,6 +399,18 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
+<<<<<<< HEAD
+=======
+      <command text="c require " />
+      <command text="1" />
+      <command text="c require " />
+      <command text="s doctrine:generate:form Mail" />
+      <command text="c clear-cache" />
+      <command text="php composer.phar require swiftmailer/swiftmailer" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c clear-cache" />
+      <command text="c require " />
+>>>>>>> parent of ecbe1c7... 05:00
       <command text="s doctrine:schema:update --force " />
       <command text="c clear-cache" />
       <command text="php bin/console fos:user:promote admin ROLE_ADMIN " />
@@ -358,6 +427,7 @@
       <command text="c clear-cache" />
       <command text="composer update" />
       <command text="c clear-cache" />
+<<<<<<< HEAD
       <command text="composer update" />
       <command text="s doctrine:schema:update --force " />
       <command text="c clear-cache" />
@@ -367,6 +437,8 @@
       <command text="composer update C:\wamp64\www\Pi_Dev0.1\composer.phar self-update" />
       <command text="s doctrine:database:create" />
       <command text="s doctrine:schema:update --force " />
+=======
+>>>>>>> parent of ecbe1c7... 05:00
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -423,12 +495,16 @@
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/clubController.php" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/president2.html.twig" />
         <option value="$PROJECT_DIR$/src/userBundle/Resources/views/Default/president.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/workshopRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/club/ajouterclub.html.twig" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/pdf.html.twig" />
+        <option value="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Form/workshopType.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php" />
         <option value="$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/clubBundle/Entity/workshop.php" />
@@ -447,6 +523,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/user.php" />
 =======
 >>>>>>> parent of 3f337e2... 09:00
+=======
+>>>>>>> parent of ecbe1c7... 05:00
       </list>
     </option>
   </component>
@@ -499,6 +577,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
     </include_path>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
     <option name="x" value="-8" />
@@ -511,6 +590,13 @@
     <option name="width" value="1382" />
     <option name="height" value="733" />
 >>>>>>> parent of 3f337e2... 09:00
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1355" />
+    <option name="y" value="-11" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
+>>>>>>> parent of ecbe1c7... 05:00
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -555,8 +641,19 @@
               <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
 >>>>>>> parent of 3f337e2... 09:00
+=======
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of ecbe1c7... 05:00
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
@@ -578,6 +675,32 @@
               <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="president" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Dev0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clubBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="workshop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pi_Dev0.1" type="b2602c69:ProjectViewProjectNode" />
@@ -785,6 +908,7 @@
       <workItem from="1556057104713" duration="680000" />
       <workItem from="1556142989426" duration="4497000" />
       <workItem from="1556274135953" duration="1497000" />
+<<<<<<< HEAD
       <workItem from="1556407231820" duration="8617000" />
 <<<<<<< HEAD
       <workItem from="1556504764379" duration="3862000" />
@@ -802,15 +926,22 @@
       <workItem from="1558562466403" duration="414000" />
 =======
 >>>>>>> parent of 3f337e2... 09:00
+=======
+      <workItem from="1556407231820" duration="5299000" />
+>>>>>>> parent of ecbe1c7... 05:00
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="197408000" />
 =======
     <option name="totallyTimeSpent" value="179017000" />
 >>>>>>> parent of 3f337e2... 09:00
+=======
+    <option name="totallyTimeSpent" value="175699000" />
+>>>>>>> parent of ecbe1c7... 05:00
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -822,15 +953,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1359" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.25340393" />
 =======
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.29425114" />
 >>>>>>> parent of 3f337e2... 09:00
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.31497976" />
+>>>>>>> parent of ecbe1c7... 05:00
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -841,7 +977,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="10" visible="true" weight="0.5253683" />
+=======
+      <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.54706925" />
+>>>>>>> parent of ecbe1c7... 05:00
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.82160395" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1074,10 +1214,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/clubController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="132" column="73" selection-start-line="132" selection-start-column="73" selection-end-line="132" selection-end-column="73" />
+          <folding>
+            <element signature="e#41#67#0#PHP" expanded="true" />
+            <element signature="e#5205#5648#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/afficherworkshopuser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/workshop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
         </state>
       </provider>
     </entry>
@@ -1134,6 +1292,13 @@
         <state relative-caret-position="-1088" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Repository/clubRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1141,13 +1306,6 @@
           <folding>
             <element signature="e#125#159#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1161,6 +1319,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1256,19 +1415,22 @@
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php" />
     <entry file="file://$PROJECT_DIR$/src/userBundle/Controller/DefaultController.php">
 =======
+=======
+>>>>>>> parent of ecbe1c7... 05:00
     <entry file="file://$PROJECT_DIR$/src/clubBundle/Controller/workshopController.php">
 >>>>>>> parent of 3f337e2... 09:00
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="-375">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
             <element signature="e#41#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clubBundle/Entity/workshop.php">
+    <entry file="file://$PROJECT_DIR$/src/clubBundle/Resources/views/workshop/ajouterworkshop.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="-238">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
@@ -1290,6 +1452,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1105">
           <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+=======
+        <state relative-caret-position="225">
+          <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+>>>>>>> parent of ecbe1c7... 05:00
         </state>
       </provider>
     </entry>

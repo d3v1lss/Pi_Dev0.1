@@ -3,9 +3,6 @@ afficher_workshop:
     path:     /afficherw3
     defaults: { _controller: clubBundle:workshop:afficher3}
 
-afficher_workshop_mobile:
-    path:     /allworkshop
-    defaults: { _controller: clubBundle:workshop:all}
 
 afficher_workshop_president:
     path:     /workshop/{username}
