@@ -2,6 +2,10 @@ user_homepage:
     path:     /
     defaults: { _controller: userBundle:Default:index }
 
+client_homepage:
+    path:     /client
+    defaults: { _controller: userBundle:Default:client }
+
 admin_homepage:
     path:     /admin
     defaults: { _controller: userBundle:Default:admin }
@@ -9,3 +13,18 @@ admin_homepage:
 president_homepage:
     path:     /president
     defaults: { _controller: userBundle:Default:president }
+
+user_username:
+    path:     /find/{username}
+    defaults: { _controller: userBundle:Default:find }
+
+user_all:
+    path:     /all
+    defaults: { _controller: userBundle:Default:all }
+
+user:
+    path:     /login
+    defaults: { _controller: userBundle:Default:user }
+c_user:
+    path:     /Currentuser
+    defaults: { _controller: userBundle:Default:Current }

@@ -28,7 +28,7 @@ class listeclubController extends Controller
         $em->flush();
 
 
-        return $this->redirectToRoute("user_homepage");
+        return $this->redirectToRoute("client_homepage");
     }
 
     public function membresAction($id){

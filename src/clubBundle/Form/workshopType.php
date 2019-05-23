@@ -37,9 +37,9 @@ class workshopType extends AbstractType
             ->add('discription', null,
                 array('label' => 'form.discription', 'translation_domain' => 'clubBundle'))
 
-            ->add('user',EntityType::class
-                ,array('class'=>'AppBundle:user','choice_label'=>'username','multiple'=>false),
-                array('label' => 'form.user', 'translation_domain' => 'clubBundle'))
+            ->add('president' ,null
+            ,
+                array('label' => 'form.president', 'translation_domain' => 'clubBundle'))
 
             ->add('club',EntityType::class
                 ,array('class'=>'clubBundle:club','choice_label'=>'nom','multiple'=>false),

@@ -28,7 +28,7 @@ class listeworkshopController extends Controller
             $em->flush();
 
 
-            return $this->redirectToRoute("user_homepage");}
+            return $this->redirectToRoute("client_homepage");}
     else{
 
 

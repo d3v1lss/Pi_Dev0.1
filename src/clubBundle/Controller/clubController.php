@@ -7,8 +7,11 @@ use clubBundle\Entity\club;
 use clubBundle\Form\clubType;
 use clubBundle\Form\rechercherclubType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Session\Session;
+
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 class clubController extends Controller
 {
@@ -19,17 +22,18 @@ class clubController extends Controller
         $club = $this->getDoctrine()->getRepository(club::class)->findALL();
         return $this->render('@club/club/afficherclub.html.twig', array("club" => $club));
     }
+    public function afficher3Action()
+    {
 
+        $club = $this->getDoctrine()->getRepository(club::class)->findALL();
+        return $this->render('@club/club/afficherclubuser.html.twig', array("club" => $club));
+    }
     public function afficher2Action()
     {
 
         $club = $this->getDoctrine()->getRepository(club::class)->findALL();
         return $this->render('@club/back/club.html.twig', array("club" => $club));
     }
-
-
-
-
     public function addAction(Request $request)
     {
 
@@ -41,15 +45,15 @@ class clubController extends Controller
 
     $club->setStatut('non');
     $club->setNbrparticipant(0);
+
             $em->persist($club);
             $em->flush();
 
 
-            return $this->redirectToRoute('afficher_club_president');
+            return $this->redirectToRoute('client_homepage');
         }
         return $this->render('@club/club/ajouterclub.html.twig', array('form' => $form->createView()));
     }
-
     public function supp1Action($id)
     {
 
@@ -83,8 +87,10 @@ class clubController extends Controller
         return $this->render('@club/president/updateclubpresident.html.twig',
             array('form' => $form->createView()));
 
-    }
 
+
+
+    }
     public function update2Action($id, Request $request)
     {
         $club = $this->getDoctrine()->getRepository(club::class)->find($id);
@@ -103,7 +109,6 @@ class clubController extends Controller
             array('form' => $form->createView()));
 
     }
-
     public function rechercherAction(Request $request)
     {
 
@@ -124,17 +129,11 @@ class clubController extends Controller
         return $this->render('@club/club/rechercherclub.html.twig', array('form' =>
             $form->createView(),'club'=>$club));
     }
-
-    /**
-     * @param Session $session
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-
-    public function clubAction($id){
+    public function clubAction($username){
         $em=$this->getDoctrine()->getManager();
 
 
-        $club=$em->getRepository("clubBundle:club")->monclubDQL($id);
+        $club=$em->getRepository("clubBundle:club")->monclubDQL($username);
 
         return $this->render('@club/president/afficherclubpresident.html.twig'
             ,array('club'=>$club));
@@ -142,7 +141,46 @@ class clubController extends Controller
 
     }
 
+    public function allAction()
+    {
+        $club = $this->getDoctrine()->getManager()
+            ->getRepository('clubBundle:club')
+            ->findAll();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($club);
+        return new JsonResponse($formatted);
+    }
+
+    public function findAction($id)
+    {
+        $club = $this->getDoctrine()->getManager()
+            ->getRepository('clubBundle:club')
+            ->find($id);
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($club);
+        return new JsonResponse($formatted);
+    }
+
+    public function newAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $club = new club();
+
+        $club->setNom($request->get('nom'));
+        $club->setMail($request->get('mail'));
+        $club->setDiscription($request->get('discription'));
+        $club->setNbrparticipant($request->get('nbrparticipant'));
+        $club->setActivite($request->get('activite'));
+        $club->setPresident($request->get('president'));
+        $club->setStatut($request->get('statut'));
 
 
+
+        $em->persist($club);
+        $em->flush();
+        $serializer = new Serializer([new ObjectNormalizer()]);
+        $formatted = $serializer->normalize($club);
+        return new JsonResponse($formatted);
+    }
 
 }

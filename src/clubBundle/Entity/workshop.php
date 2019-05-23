@@ -147,32 +147,33 @@ class workshop
         $this->discription = $discription;
     }
 
+
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\user" ,inversedBy="workshops")
-     * @ORM\JoinColumn(name="user_id",referencedColumnName="id")
+     * @ORM\Column(type="string")
      */
-    private $user;
+    private $president;
     /**
-     * @ORM\ManyToOne(targetEntity="clubBundle\Entity\club" ,inversedBy="workshops")
-     * @ORM\JoinColumn(name="club_id",referencedColumnName="id")
+     * @ORM\Column(type="string")
      */
     private $club;
 
     /**
      * @return mixed
      */
-    public function getUser()
+    public function getPresident()
     {
-        return $this->user;
+        return $this->president;
     }
 
     /**
-     * @param mixed $user
+     * @param mixed $president
      */
-    public function setUser($user)
+    public function setPresident($president)
     {
-        $this->user = $user;
+        $this->president = $president;
     }
+
+
 
     /**
      * @return mixed

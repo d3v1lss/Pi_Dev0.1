@@ -11,21 +11,31 @@ use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\QueryBuilder;
 class clubRepository  extends EntityRepository
 {
-    public function monclubDQL($id){
+    public function monclubDQL($username){
 
         $query=$this->getEntityManager()
-            ->createQuery("Select c from clubBundle:club c WHERE c.president= :id")
-        ->setParameter('id',$id);
+            ->createQuery("Select c from clubBundle:club c WHERE c.president= :username")
+        ->setParameter('username',$username);
         return $query->getResult();
 
 
     }
 
-    public function workshopDQL($id){
+    public function workshopDQL($username){
 
         $query=$this->getEntityManager()
-            ->createQuery("Select w from clubBundle:workshop w WHERE w.user= :id")
-            ->setParameter('id',$id);
+            ->createQuery("Select w from clubBundle:workshop w WHERE w.president= :username")
+            ->setParameter('username',$username);
+        return $query->getResult();
+
+
+    }
+
+    public function userDQL($username){
+
+        $query=$this->getEntityManager()
+            ->createQuery("Select u from userBundle:user u WHERE u.username= :username")
+            ->setParameter('username',$username);
         return $query->getResult();
 
 

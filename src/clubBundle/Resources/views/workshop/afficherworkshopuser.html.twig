@@ -1,4 +1,4 @@
-{% extends 'client2.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block content %}
     <div class="container">
@@ -47,22 +47,17 @@
                             <td>{{ w.discription }}</td>
 
                             <td>
-                                <a href="{{  path('inscrit_workshop',{'id':w.id,'user':app.user.username})}}"
+                                <a href="{{  path('fos_user_registration_register')}}"
                                    class="font-25 semi-font fables-second-text-color u
-                           fables-main-hover-color ml-2">s'inscrit </a>
+                           fables-main-hover-color ml-2">s'inscrit </a></p>
 
 
                             </td>
-
                         </tr>
 
                     {% endfor %}
                     </tbody>
                 </table>
-                <a  href="{{ path('pdf_worksop') }}"
-
-                    class="font-25 semi-font fables-second-text-color u
-                           fables-main-hover-color ml-2">telecharger liste workshop </a>
             </div>
             <!-- END DATA TABLE -->
         </div>

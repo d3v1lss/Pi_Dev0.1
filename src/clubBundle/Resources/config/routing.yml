@@ -1,12 +1,20 @@
 
+afficher_workshop:
+    path:     /afficherw3
+    defaults: { _controller: clubBundle:workshop:afficher3}
+
+afficher_workshop_mobile:
+    path:     /allworkshop
+    defaults: { _controller: clubBundle:workshop:all}
 
 afficher_workshop_president:
-    path:     /workshop/{id}
+    path:     /workshop/{username}
     defaults: { _controller: clubBundle:workshop:workshop}
 
 afficher_workshop_user:
     path:     /afficherw1
     defaults: { _controller: clubBundle:workshop:afficher1}
+
 afficher_workshop_admin:
     path:     /afficherw2
     defaults: { _controller: clubBundle:workshop:afficher2}
@@ -35,6 +43,9 @@ rechercher_workshop:
     path:     /rechercherw
     defaults: { _controller: clubBundle:workshop:rechercher}
 
+pdf_worksop:
+    path:     /pdf
+    defaults: { _controller: clubBundle:pdf:index}
 
 mail:
     path:     /mail
@@ -46,13 +57,26 @@ mail_ok:
 
 
 afficher_club_president:
-    path:     /club/{id}
+    path:     /club/{username}
     defaults: { _controller: clubBundle:club:club}
 
+afficher_club:
+    path:     /afficherc3
+    defaults: { _controller: clubBundle:club:afficher3}
 
 afficher_club_user:
     path:     /afficherc1
     defaults: { _controller: clubBundle:club:afficher1}
+
+
+afficher_club_user_mobile:
+    path:     /allclubs
+    defaults: { _controller: clubBundle:club:all}
+
+afficher_club_president_mobile:
+    path:     /find/{id}
+    defaults: { _controller: clubBundle:club:find}
+
 
 afficher_club_admin:
     path:     /afficherc2
@@ -61,6 +85,10 @@ afficher_club_admin:
 ajouter_club:
     path:     /ajouterc
     defaults: { _controller: clubBundle:club:add}
+
+ajouter_club_mobile:
+    path:     /new
+    defaults: { _controller: clubBundle:club:new}
 
 inscrit_club:
     path:     /inscritc/{user},{id}
