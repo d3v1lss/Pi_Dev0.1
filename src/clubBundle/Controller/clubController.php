@@ -87,9 +87,6 @@ class clubController extends Controller
         return $this->render('@club/president/updateclubpresident.html.twig',
             array('form' => $form->createView()));
 
-
-
-
     }
     public function update2Action($id, Request $request)
     {

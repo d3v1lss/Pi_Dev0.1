@@ -2,7 +2,7 @@ fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 user:
     resource: "@userBundle/Resources/config/routing.yml"
-    prefix:   /user
+    prefix:   /
 e.commerce:
     resource: "@e_commerceBundle/Resources/config/routing.yml"
     prefix:   /
