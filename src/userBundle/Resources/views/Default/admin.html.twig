@@ -41,14 +41,14 @@
             </div>
             <nav class="navbar-sidebar2">
                 <ul class="list-unstyled navbar__list">
-                    <li class="active has-sub">
-                        <a class="js-arrow" href="index2.html">
-                            <i class="fas fa-home"></i></i>Dashboard
-
-                        </a>
-
+                    <li>
+                        <a href="{{  path('admin_homepage')}}">
+                            <i class="fas fa-table"></i> Dashboard</a>
                     </li>
 
+
+
+                    </li>
                     <li class="has-sub">
                         <a class="js-arrow" href="#">
                             <i class="fas fa-comment-alt"></i>Club
@@ -72,9 +72,35 @@
                         <a href="#">
                             <i class="fas fa-shopping-basket"></i> eCommerce</a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-film"></i> Cinema</a>
+                    <li class="has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="fas fa-comment-alt"></i>Cinema
+                            <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                        </a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="{{  path('readfilm')}}">
+                                    <i class="fas fa-table"></i>liste films</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('readsalle')}}">
+                                    <i class="far fa-check-square"></i>liste salles</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('createfilm')}}">
+                                    <i class="fas fa-table"></i>ajouter film</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('createsalle')}}">
+                                    <i class="far fa-check-square"></i>ajouter salle</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('StatAvis')}}">
+                                    <i class="fas fa-table"></i>Stat Avis</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">
@@ -122,18 +148,18 @@
     </aside>
     <!-- END MENU SIDEBAR-->
     {% block header %}
-    <!-- HEADER DESKTOP-->
-    <header class="header-desktop2">
-        <div class="section__content section__content--p10">
-            <div class="container-fluid">
-                <div class="header-wrap2">
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop2">
+            <div class="section__content section__content--p10">
+                <div class="container-fluid">
+                    <div class="header-wrap2">
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- END HEADER DESKTOP-->
+        <!-- END HEADER DESKTOP-->
     {% endblock %}
     <!-- PAGE CONTAINER-->
     <div class="page-container2">
@@ -169,46 +195,46 @@
 
 
 
-</div>
+    </div>
     {% endblock %}
     {% block feater %}
         <div class="page-container2">
 
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright">
-                        <p>Copyright © 2019 Dev_ils. All rights reserved.
-                        </p>
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>Copyright © 2019 Dev_ils. All rights reserved.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-</div>
-{% endblock %}
-{% block javascripts %}
-    <script type="text/javascript" src="{{ asset('back/vendor/jquery-3.2.1.min.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/bootstrap-4.1/popper.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
-    <script  type="text/javascript" src="{{  asset('back/vendor/slick/slick.min.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/wow/wow.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('back/vendor/animsition/animsition.min.js') }}"></script>
-    <script  type="text/javascript" src="{{  asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('back/vendor/counter-up/jquery.waypoints.min.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/counter-up/jquery.counterup.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('back/vendor/circle-progress/circle-progress.min.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/chartjs/Chart.bundle.min.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/select2/select2.min.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/vector-map/jquery.vmap.js') }}"></script>
-    <script type="text/javascript" src="{{  asset('back/vendor/vector-map/jquery.vmap.min.js') }}"></script>
-    <script type="text/javascript "src="{{  asset('back/vendor/vector-map/jquery.vmap.sampledata.js') }}"></script>
-    <script type="text/javascript "src="{{  asset('back/vendor/vector-map/jquery.vmap.world.js') }}"></script>
-    <script  type="text/javascript" src="{{  asset('back/js/main.js') }}"></script>
-{% endblock %}
+        </div>
+    {% endblock %}
+    {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('back/vendor/jquery-3.2.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/bootstrap-4.1/popper.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('back/vendor/bootstrap-4.1/bootstrap.min.js') }}"></script>
+        <script  type="text/javascript" src="{{  asset('back/vendor/slick/slick.min.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/wow/wow.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('back/vendor/animsition/animsition.min.js') }}"></script>
+        <script  type="text/javascript" src="{{  asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('back/vendor/counter-up/jquery.waypoints.min.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/counter-up/jquery.counterup.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('back/vendor/circle-progress/circle-progress.min.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/chartjs/Chart.bundle.min.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/select2/select2.min.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/vector-map/jquery.vmap.js') }}"></script>
+        <script type="text/javascript" src="{{  asset('back/vendor/vector-map/jquery.vmap.min.js') }}"></script>
+        <script type="text/javascript "src="{{  asset('back/vendor/vector-map/jquery.vmap.sampledata.js') }}"></script>
+        <script type="text/javascript "src="{{  asset('back/vendor/vector-map/jquery.vmap.world.js') }}"></script>
+        <script  type="text/javascript" src="{{  asset('back/js/main.js') }}"></script>
+    {% endblock %}
 </body>
 </html>
 <!-- end document--><!-- end document-->

@@ -35,17 +35,18 @@
                 <div class="image img-cir img-120">
                     <img src="images/icon/aa.png" />
                 </div>
-                <h4 class="name">Hchaichi Akrem</h4>
+                <h4 class="name">{{ app.user.username }}</h4>
 
 
             </div>
             <nav class="navbar-sidebar2">
                 <ul class="list-unstyled navbar__list">
-                    <li class="active has-sub">
-                        <a class="js-arrow" href="#">
-                            <i class="fas fa-home"></i></i>Dashboard
+                    <li>
+                        <a href="{{  path('admin_homepage')}}">
+                            <i class="fas fa-table"></i> Dashboard</a>
+                    </li>
 
-                        </a>
+
 
                     </li>
                     <li class="has-sub">
@@ -71,9 +72,37 @@
                         <a href="#">
                             <i class="fas fa-shopping-basket"></i> eCommerce</a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-film"></i> Cinema</a>
+                    <li class="has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="fas fa-comment-alt"></i>Cinema
+                            <span class="arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                        </a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="{{  path('readfilm')}}">
+                                    <i class="fas fa-table"></i>liste films</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('readsalle')}}">
+                                    <i class="far fa-check-square"></i>liste salles</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('createfilm')}}">
+                                    <i class="fas fa-table"></i>ajouter film</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('createsalle')}}">
+                                    <i class="far fa-check-square"></i>ajouter salle</a>
+                            </li>
+                            <li>
+                                <a href="{{  path('StatAvis')}}">
+                                    <i class="fas fa-table"></i>Stat Avis</a>
+                            </li>
+
+
+                        </ul>
                     </li>
                     <li>
                         <a href="#">

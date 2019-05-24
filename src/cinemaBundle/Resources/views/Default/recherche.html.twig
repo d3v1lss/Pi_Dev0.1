@@ -1,0 +1,23 @@
+
+{% block body %}
+
+
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>film</th>
+                        <th>iduser</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for m in favoris %}
+                        <tr>
+                            <td><i>{{ m.id }}</i></td>
+                            <td>{{ m.film }}</td>
+                            <td>{{ m.iduser }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+{% endblock %}

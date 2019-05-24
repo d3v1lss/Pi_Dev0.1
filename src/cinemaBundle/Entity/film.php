@@ -10,11 +10,11 @@ namespace cinemaBundle\Entity;
 
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
- * Conseil
- *
- * @ORM\Table(name="film")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="cinemaBundle\Repository\filmRepository")
+ * @Vich\Uploadable
  */
 class film
 {
@@ -29,6 +29,26 @@ class film
      * @ORM\Column(type="string")
      */
     private $nom;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $discription;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $duree;
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $categorie;
+    /**
+
+    @ORM\Column(type="date")
+     */
+
+    private $datesotie;
+
+
     /**
      * @ORM\Column(type="string")
      */
@@ -50,20 +70,7 @@ class film
         $this->image = $image;
     }
 
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $discription;
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $duree;
-    /**
-     *
-     * @ORM\Column(type="date")
-     */
 
-    private $datesotie;
 
     /**
      * @return mixed
@@ -129,6 +136,21 @@ class film
         $this->duree = $duree;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * @param mixed $categorie
+     */
+    public function setCategorie($categorie)
+    {
+        $this->categorie = $categorie;
+    }
 
     /**
      * @return mixed
@@ -146,8 +168,11 @@ class film
         $this->datesotie = $datesotie;
     }
 
+
+
+
+    /**
+     * @return mixed
+     */
+
 }
-
-
-
-

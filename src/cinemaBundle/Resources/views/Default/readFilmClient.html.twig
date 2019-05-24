@@ -1,0 +1,55 @@
+{% extends 'Client2.html.twig' %}
+
+{% block content %}
+
+
+
+
+<center> <h1 style="overflow-x:auto;" align="41">LA LISTE DES FILMS</h1>
+
+
+<br><br><br><br><br>
+
+
+<table style="width:100%" :hover {background-color: #f5f5f5;}}>
+
+
+
+    <tr >
+
+        <td>Nom</td>
+        <td>Description</td>
+        <td>Duree</td>
+        <td>Categorie</td>
+        <td>Date de sotie</td>
+        <td>Favoris</td>
+        <td>Donner un rating</td>
+
+    </tr>
+    {% for m in film %}
+
+        <tr>
+            
+            <td>{{ m.nom }}</td>
+            <td>{{ m.discription }}</td>
+            <td>{{ m.duree }}</td>
+            <td>{{ m.categorie }}</td>
+            <td>{{ m.datesotie |date('Y-m-d') }}</td>
+            <td> <a href="{{ path('favorisfilm',{'id': m.nom ,'user':app.user.id}) }}"> favoris </a> </td>
+            <td> <a href="{{ path('ratefilm',{'nom': m.nom ,'id':app.user.username}) }}">rating </a> </td>
+
+            
+
+        </tr>
+    {% endfor %}
+</table>
+</center>
+</br></br></br></br></br>
+
+    <a href="{{ path('rechfilm') }}"> Rechercher un film </a>
+
+
+
+
+{% endblock %}
+
